@@ -12,7 +12,7 @@ const PortfolioSection = () => {
     { id: 'all', label: 'All Projects' },
     { id: 'website', label: 'Websites' },
     { id: 'mobile', label: 'Mobile Apps' },
-    { id: 'saas', label: 'SaaS Platforms' }
+    { id: 'webapp', label: 'Web Applications' }
   ];
 
   const projects = [
@@ -33,7 +33,7 @@ const PortfolioSection = () => {
       technologies: ['React', 'Node.js', 'Stripe', 'MongoDB'],
       challenges: 'Complex product categorization and inventory management',
       solution: 'Custom taxonomy system with real-time inventory tracking',
-      testimonial: "DevCraft Pro delivered exactly what we needed. The platform handles our complex product catalog beautifully and our sales have tripled since launch.",
+      testimonial: "QK Dev delivered exactly what we needed. The platform handles our complex product catalog beautifully and our sales have tripled since launch.",
       clientRole: 'CEO, GreenTech Solutions'
     },
     {
@@ -58,22 +58,22 @@ const PortfolioSection = () => {
     },
     {
       id: 3,
-      title: 'ProjectFlow SaaS',
-      category: 'saas',
-      type: 'Project Management Platform',
+      title: 'ProjectFlow Web App',
+      category: 'webapp',
+      type: 'Project Management Web Application',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
       client: 'Workflow Dynamics',
-      timeline: '20 weeks',
+      timeline: '16 weeks',
       results: {
         users: '10K+',
-        mrr: '$150K',
-        churn: '<5%'
+        efficiency: '+200%',
+        satisfaction: '95%'
       },
-      description: 'Enterprise project management platform with advanced analytics and team collaboration features.',
+      description: 'Comprehensive project management web application with advanced analytics and team collaboration features.',
       technologies: ['Next.js', 'PostgreSQL', 'Redis', 'Docker'],
-      challenges: 'Scalable multi-tenant architecture',
+      challenges: 'Scalable multi-user architecture',
       solution: 'Microservices architecture with automated scaling',
-      testimonial: "This platform transformed how our clients manage projects. The ROI has been incredible.",
+      testimonial: "This web application transformed how our clients manage projects. The ROI has been incredible.",
       clientRole: 'CTO, Workflow Dynamics'
     },
     {
@@ -99,21 +99,21 @@ const PortfolioSection = () => {
     {
       id: 5,
       title: 'LearnHub Platform',
-      category: 'saas',
-      type: 'Online Learning Platform',
+      category: 'webapp',
+      type: 'Online Learning Web Application',
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop',
       client: 'EduTech Innovations',
       timeline: '16 weeks',
       results: {
         students: '25K+',
         completion: '78%',
-        revenue: '$500K'
+        engagement: '+200%'
       },
-      description: 'Interactive online learning platform with video streaming, assessments, and progress tracking.',
+      description: 'Interactive online learning web application with video streaming, assessments, and progress tracking.',
       technologies: ['React', 'Node.js', 'AWS', 'WebRTC'],
       challenges: 'Video streaming optimization and progress analytics',
       solution: 'CDN-based video delivery with advanced analytics dashboard',
-      testimonial: "The platform handles thousands of concurrent users flawlessly. Student engagement has never been higher.",
+      testimonial: "The web application handles thousands of concurrent users flawlessly. Student engagement has never been higher.",
       clientRole: 'Founder, EduTech Innovations'
     },
     {

@@ -10,7 +10,7 @@ const FAQSection = () => {
     {
       id: 0,
       question: "How long does a typical project take?",
-      answer: "Project timelines vary based on complexity:\n\n• Landing pages: 1-2 weeks\n• Websites: 4-8 weeks\n• Mobile apps: 8-16 weeks\n• SaaS platforms: 12-24 weeks\n\nWe provide detailed timelines during consultation and stick to agreed deadlines with 98% on-time delivery rate.",
+      answer: "Project timelines vary based on complexity:\n\n• Landing pages: 1-2 weeks\n• Websites: 4-8 weeks\n• Web applications: 8-16 weeks\n• Mobile apps: 8-16 weeks\n\nWe provide detailed timelines during consultation and stick to agreed deadlines with 98% on-time delivery rate.",
       category: "Timeline",
       hasVideo: true,
       videoTitle: "Project Timeline Breakdown"
@@ -205,7 +205,7 @@ const FAQSection = () => {
               </button>
               <button
                 onClick={() => {
-                  window.open('mailto:hello@devcraftpro.com', '_blank');
+                  window.open('mailto:hello@qkdev.com', '_blank');
                 }}
                 className="inline-flex items-center space-x-2 border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >

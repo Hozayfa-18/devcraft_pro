@@ -17,7 +17,7 @@ const FeaturesSection = () => {
       examples: [
         'Landing page in 7 days vs 21 days',
         'Mobile app in 8 weeks vs 24 weeks',
-        'SaaS platform in 12 weeks vs 36 weeks'
+        'Web application in 10 weeks vs 30 weeks'
       ]
     },
     {
@@ -122,7 +122,7 @@ const FeaturesSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            Why Choose <span className="text-primary">DevCraft Pro?</span>
+            Why Choose <span className="text-primary">QK Dev?</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
             We don't just build software - we deliver competitive advantages that drive real business results.

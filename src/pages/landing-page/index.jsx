@@ -17,7 +17,7 @@ import FooterSection from './components/FooterSection';
 const LandingPage = () => {
   useEffect(() => {
     // Set page title
-    document.title = 'DevCraft Pro - Transform Your Ideas Into Powerful Digital Solutions';
+    document.title = 'QK Dev - Transform Your Ideas Into Powerful Digital Solutions';
     
     // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -34,15 +34,15 @@ const LandingPage = () => {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "DevCraft Pro",
+      "name": "QK Dev",
       "description": "Professional development agency specializing in web and mobile applications",
-      "url": "https://devcraftpro.com",
-      "logo": "https://devcraftpro.com/logo.png",
+      "url": "https://qkdev.com",
+      "logo": "https://qkdev.com/logo.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+1-555-123-4567",
         "contactType": "customer service",
-        "email": "hello@devcraftpro.com"
+        "email": "hello@qkdev.com"
       },
       "address": {
         "@type": "PostalAddress",
@@ -51,9 +51,9 @@ const LandingPage = () => {
         "addressCountry": "US"
       },
       "sameAs": [
-        "https://twitter.com/devcraftpro",
-        "https://linkedin.com/company/devcraftpro",
-        "https://github.com/devcraftpro"
+        "https://twitter.com/qkdev",
+        "https://linkedin.com/company/qkdev",
+        "https://github.com/qkdev"
       ]
     };
 
@@ -67,7 +67,7 @@ const LandingPage = () => {
       // Remove the structured data script when component unmounts
       const scripts = document.querySelectorAll('script[type="application/ld+json"]');
       scripts?.forEach(script => {
-        if (script?.text?.includes('DevCraft Pro')) {
+        if (script?.text?.includes('QK Dev')) {
           script?.remove();
         }
       });
