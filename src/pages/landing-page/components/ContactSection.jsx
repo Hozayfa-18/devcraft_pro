@@ -28,7 +28,7 @@ const ContactSection = () => {
     { id: 'landing-page', label: 'Landing Page', icon: 'FileText', price: 'From $2,500' },
     { id: 'website', label: 'Website', icon: 'Monitor', price: 'From $5,000' },
     { id: 'mobile-app', label: 'Mobile App', icon: 'Smartphone', price: 'From $15,000' },
-    { id: 'saas', label: 'SaaS Platform', icon: 'Cloud', price: 'From $25,000' },
+    { id: 'web-app', label: 'Web Application', icon: 'Globe', price: 'From $15,000' },
     { id: 'custom', label: 'Custom Solution', icon: 'Settings', price: 'Custom Quote' }
   ];
 
@@ -71,9 +71,9 @@ const ContactSection = () => {
     {
       icon: 'Mail',
       title: 'Email Us',
-      value: 'hello@devcraftpro.com',
+      value: 'hello@qkdev.com',
       description: 'We respond within 2 hours',
-      action: () => window.open('mailto:hello@devcraftpro.com')
+      action: () => window.open('mailto:hello@qkdev.com')
     },
     {
       icon: 'MessageCircle',
@@ -164,7 +164,7 @@ const ContactSection = () => {
       'landing-page': '1-2 weeks',
       'website': '4-8 weeks',
       'mobile-app': '8-16 weeks',
-      'saas': '12-24 weeks',
+      'web-app': '8-16 weeks',
       'custom': 'To be determined'
     };
     return timelineMap?.[formData?.projectType] || 'To be determined';
@@ -543,7 +543,7 @@ const ContactSection = () => {
                     </Button>
 
                     <div className="text-center text-sm text-text-secondary">
-                      By submitting this form, you agree to receive communication from DevCraft Pro. 
+                      By submitting this form, you agree to receive communication from QK Dev. 
                       We respect your privacy and never share your information.
                     </div>
                   </div>

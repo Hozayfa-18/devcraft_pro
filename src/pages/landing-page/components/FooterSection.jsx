@@ -9,7 +9,7 @@ const FooterSection = () => {
       { label: 'Landing Pages', href: '#services' },
       { label: 'Website Development', href: '#services' },
       { label: 'Mobile Apps', href: '#services' },
-      { label: 'SaaS Platforms', href: '#services' },
+      { label: 'Web Applications', href: '#services' },
       { label: 'Custom Solutions', href: '#contact' }
     ],
     company: [
@@ -36,11 +36,11 @@ const FooterSection = () => {
   };
 
   const socialLinks = [
-    { name: 'Twitter', icon: 'Twitter', href: 'https://twitter.com/devcraftpro' },
-    { name: 'LinkedIn', icon: 'Linkedin', href: 'https://linkedin.com/company/devcraftpro' },
-    { name: 'GitHub', icon: 'Github', href: 'https://github.com/devcraftpro' },
-    { name: 'Dribbble', icon: 'Dribbble', href: 'https://dribbble.com/devcraftpro' },
-    { name: 'YouTube', icon: 'Youtube', href: 'https://youtube.com/devcraftpro' }
+    { name: 'Twitter', icon: 'Twitter', href: 'https://twitter.com/qkdev' },
+    { name: 'LinkedIn', icon: 'Linkedin', href: 'https://linkedin.com/company/qkdev' },
+    { name: 'GitHub', icon: 'Github', href: 'https://github.com/qkdev' },
+    { name: 'Dribbble', icon: 'Dribbble', href: 'https://dribbble.com/qkdev' },
+    { name: 'YouTube', icon: 'Youtube', href: 'https://youtube.com/qkdev' }
   ];
 
   const certifications = [
@@ -75,7 +75,7 @@ const FooterSection = () => {
                 <Icon name="Code2" size={24} color="white" />
               </div>
               <div>
-                <div className="text-2xl font-heading text-white">DevCraft Pro</div>
+                <div className="text-2xl font-heading text-white">QK Dev</div>
                 <div className="text-sm text-white/60">Professional Development</div>
               </div>
             </div>
@@ -94,7 +94,7 @@ const FooterSection = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Mail" size={16} className="text-primary" />
-                <span className="text-white/80">hello@devcraftpro.com</span>
+                <span className="text-white/80">hello@qkdev.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="MapPin" size={16} className="text-primary" />
@@ -193,7 +193,7 @@ const FooterSection = () => {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-white/60 text-sm">
-              © {currentYear} DevCraft Pro. All rights reserved.
+              © {currentYear} QK Dev. All rights reserved.
             </div>
 
             {/* Legal Links */}
@@ -223,7 +223,7 @@ const FooterSection = () => {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <h3 className="text-xl font-semibold text-white mb-2">
-                Stay Updated with DevCraft Pro
+                Stay Updated with QK Dev
               </h3>
               <p className="text-white/80 text-sm">
                 Get development tips, industry insights, and project updates delivered to your inbox.

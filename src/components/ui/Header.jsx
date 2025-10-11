@@ -73,8 +73,7 @@ const Header = () => {
                   <Icon name="Code2" size={20} color="white" />
                 </div>
                 <div className="text-left">
-                  <div className="text-lg lg:text-xl font-heading text-primary">DevCraft</div>
-                  <div className="text-xs text-text-secondary font-medium">Pro</div>
+                  <div className="text-lg lg:text-xl font-heading text-primary">QK Dev</div>
                 </div>
               </button>
             </div>
@@ -143,7 +142,7 @@ const Header = () => {
                   <Icon name="Code2" size={18} color="white" />
                 </div>
                 <div>
-                  <div className="text-lg font-heading text-primary">DevCraft Pro</div>
+                  <div className="text-lg font-heading text-primary">QK Dev</div>
                 </div>
               </div>
               <button

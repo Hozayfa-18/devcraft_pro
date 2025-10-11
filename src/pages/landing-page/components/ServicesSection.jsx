@@ -56,23 +56,6 @@ const ServicesSection = () => {
       ],
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop',
       gradient: 'from-orange-500 to-red-600'
-    },
-    {
-      id: 'custom-saas',
-      title: 'Custom SaaS',
-      description: 'Scalable software solutions for your business needs',
-      icon: 'Cloud',
-      startingPrice: '$25,000',
-      features: [
-        'Full-stack development',
-        'Database architecture',
-        'User authentication',
-        'Payment integration',
-        'API development',
-        '12-16 week delivery'
-      ],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      gradient: 'from-purple-500 to-pink-600'
     }
   ];
 
@@ -85,13 +68,13 @@ const ServicesSection = () => {
             Professional Development <span className="text-primary">Services</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            From simple landing pages to complex SaaS platforms, we deliver quality solutions 
+            From simple landing pages to complex web applications and mobile apps, we deliver quality solutions 
             with transparent pricing and guaranteed timelines.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services?.map((service) => (
             <div
               key={service?.id}

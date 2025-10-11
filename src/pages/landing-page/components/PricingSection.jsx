@@ -3,27 +3,27 @@ import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 
 const PricingSection = () => {
-  const [selectedType, setSelectedType] = useState('website');
+  const [selectedType, setSelectedType] = useState('landing-page');
   const [billingCycle, setBillingCycle] = useState('project');
 
   const projectTypes = [
-    { id: 'website', label: 'Website', icon: 'Monitor' },
-    { id: 'mobile', label: 'Mobile App', icon: 'Smartphone' },
-    { id: 'saas', label: 'SaaS Platform', icon: 'Cloud' }
+    { id: 'landing-page', label: 'Landing Page', icon: 'FileText' },
+    { id: 'webapp', label: 'Web Application', icon: 'Globe' },
+    { id: 'mobile', label: 'Mobile Apps', icon: 'Smartphone' }
   ];
 
   const pricingData = {
-    website: {
+    'landing-page': {
       starter: {
-        name: 'Starter Website',
-        price: '$5,000',
-        timeline: '2-3 weeks',
-        description: 'Perfect for small businesses getting started online',
+        name: 'Basic Landing Page',
+        price: '$2,500',
+        timeline: '1-2 weeks',
+        description: 'Simple, high-converting landing page for your campaigns',
         features: [
-          'Up to 5 pages',
-          'Mobile responsive design',
-          'Basic SEO optimization',
+          'Single page design',
+          'Mobile responsive',
           'Contact form integration',
+          'Basic SEO optimization',
           'Social media links',
           '3 months support'
         ],
@@ -31,34 +31,84 @@ const PricingSection = () => {
         popular: false
       },
       professional: {
-        name: 'Professional Website',
-        price: '$12,000',
-        timeline: '4-6 weeks',
-        description: 'Comprehensive solution for growing businesses',
+        name: 'Professional Landing Page',
+        price: '$5,000',
+        timeline: '2-3 weeks',
+        description: 'Advanced landing page with conversion optimization',
         features: [
-          'Up to 15 pages',
           'Custom design & animations',
-          'Advanced SEO optimization',
-          'CMS integration',
-          'E-commerce ready',
-          'Analytics setup',
+          'A/B testing setup',
+          'Advanced analytics',
+          'Lead capture forms',
+          'Email integration',
           '6 months support'
         ],
         revisions: '5 rounds',
         popular: true
       },
       enterprise: {
-        name: 'Enterprise Website',
-        price: '$25,000',
-        timeline: '8-12 weeks',
-        description: 'Full-scale solution for large organizations',
+        name: 'Enterprise Landing Page',
+        price: '$10,000',
+        timeline: '3-4 weeks',
+        description: 'Full-scale landing page solution with advanced features',
         features: [
-          'Unlimited pages',
+          'Multi-variant testing',
+          'CRM integration',
+          'Advanced tracking',
           'Custom functionality',
-          'Multi-language support',
-          'Advanced integrations',
           'Performance optimization',
-          'Security hardening',
+          '12 months support'
+        ],
+        revisions: 'Unlimited',
+        popular: false
+      }
+    },
+    webapp: {
+      starter: {
+        name: 'Basic Web App',
+        price: '$15,000',
+        timeline: '8-12 weeks',
+        description: 'Simple web application with core functionality',
+        features: [
+          'Custom functionality',
+          'User authentication',
+          'Basic dashboard',
+          'Database integration',
+          'Responsive design',
+          '3 months support'
+        ],
+        revisions: '3 rounds',
+        popular: false
+      },
+      professional: {
+        name: 'Advanced Web App',
+        price: '$35,000',
+        timeline: '16-20 weeks',
+        description: 'Feature-rich web application ready for production',
+        features: [
+          'Advanced features',
+          'Multi-user system',
+          'Admin dashboard',
+          'API development',
+          'Third-party integrations',
+          'Analytics & reporting',
+          '6 months support'
+        ],
+        revisions: '5 rounds',
+        popular: true
+      },
+      enterprise: {
+        name: 'Enterprise Web App',
+        price: '$75,000',
+        timeline: '24-32 weeks',
+        description: 'Enterprise-grade web application with custom features',
+        features: [
+          'Custom architecture',
+          'Advanced security',
+          'Scalable infrastructure',
+          'Custom integrations',
+          'Advanced analytics',
+          'Priority support',
           '12 months support'
         ],
         revisions: 'Unlimited',
@@ -111,58 +161,6 @@ const PricingSection = () => {
           'Third-party integrations',
           'Advanced security',
           'Performance optimization',
-          '12 months support'
-        ],
-        revisions: 'Unlimited',
-        popular: false
-      }
-    },
-    saas: {
-      starter: {
-        name: 'MVP SaaS',
-        price: '$25,000',
-        timeline: '12-16 weeks',
-        description: 'Minimum viable product to test your idea',
-        features: [
-          'Core functionality',
-          'User authentication',
-          'Basic dashboard',
-          'Payment processing',
-          'Email notifications',
-          '3 months support'
-        ],
-        revisions: '3 rounds',
-        popular: false
-      },
-      professional: {
-        name: 'Full SaaS Platform',
-        price: '$75,000',
-        timeline: '20-24 weeks',
-        description: 'Complete platform ready for scale',
-        features: [
-          'Advanced features',
-          'Multi-tenant architecture',
-          'Admin dashboard',
-          'API development',
-          'Third-party integrations',
-          'Analytics & reporting',
-          '6 months support'
-        ],
-        revisions: '5 rounds',
-        popular: true
-      },
-      enterprise: {
-        name: 'Enterprise SaaS',
-        price: '$150,000',
-        timeline: '32-40 weeks',
-        description: 'Enterprise-grade solution with custom features',
-        features: [
-          'Custom architecture',
-          'Advanced security',
-          'White-label options',
-          'Custom integrations',
-          'Dedicated infrastructure',
-          'Priority support',
           '12 months support'
         ],
         revisions: 'Unlimited',
