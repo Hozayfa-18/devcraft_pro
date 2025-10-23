@@ -16,7 +16,7 @@ const PricingSection = () => {
     'landing-page': {
       starter: {
         name: 'Basic Landing Page',
-        price: '$2,500',
+        price: 'Starting from $500',
         timeline: '1-2 weeks',
         description: 'Simple, high-converting landing page for your campaigns',
         features: [
@@ -32,7 +32,7 @@ const PricingSection = () => {
       },
       professional: {
         name: 'Professional Landing Page',
-        price: '$5,000',
+        price: 'Starting from $1,000',
         timeline: '2-3 weeks',
         description: 'Advanced landing page with conversion optimization',
         features: [
@@ -48,7 +48,7 @@ const PricingSection = () => {
       },
       enterprise: {
         name: 'Enterprise Landing Page',
-        price: '$10,000',
+        price: 'Starting from $2,000',
         timeline: '3-4 weeks',
         description: 'Full-scale landing page solution with advanced features',
         features: [
@@ -66,8 +66,8 @@ const PricingSection = () => {
     webapp: {
       starter: {
         name: 'Basic Web App',
-        price: '$15,000',
-        timeline: '8-12 weeks',
+        price: 'Starting from $5,000',
+        timeline: '3-4 weeks',
         description: 'Simple web application with core functionality',
         features: [
           'Custom functionality',
@@ -82,8 +82,8 @@ const PricingSection = () => {
       },
       professional: {
         name: 'Advanced Web App',
-        price: '$35,000',
-        timeline: '16-20 weeks',
+        price: 'Starting from $7,500',
+        timeline: '4-6 weeks',
         description: 'Feature-rich web application ready for production',
         features: [
           'Advanced features',
@@ -99,8 +99,8 @@ const PricingSection = () => {
       },
       enterprise: {
         name: 'Enterprise Web App',
-        price: '$75,000',
-        timeline: '24-32 weeks',
+        price: 'Starting from $15,000',
+        timeline: '10-12 weeks',
         description: 'Enterprise-grade web application with custom features',
         features: [
           'Custom architecture',
@@ -118,8 +118,8 @@ const PricingSection = () => {
     mobile: {
       starter: {
         name: 'Basic Mobile App',
-        price: '$15,000',
-        timeline: '8-10 weeks',
+        price: 'Starting from $5,000',
+        timeline: '4-5 weeks',
         description: 'Simple app for core functionality',
         features: [
           'iOS & Android',
@@ -134,8 +134,8 @@ const PricingSection = () => {
       },
       professional: {
         name: 'Advanced Mobile App',
-        price: '$35,000',
-        timeline: '12-16 weeks',
+        price: 'Starting from $10,000',
+        timeline: '6-8 weeks',
         description: 'Feature-rich app for business growth',
         features: [
           'Cross-platform development',
@@ -151,8 +151,8 @@ const PricingSection = () => {
       },
       enterprise: {
         name: 'Custom Mobile Solution',
-        price: '$75,000',
-        timeline: '20-24 weeks',
+        price: 'Starting from $15,000',
+        timeline: '10-12 weeks',
         description: 'Fully customized mobile experience',
         features: [
           'Native iOS & Android',
@@ -234,7 +234,8 @@ const PricingSection = () => {
                 </p>
                 <div className="space-y-2">
                   <div className="text-4xl font-heading text-primary">
-                    {plan?.price}
+                    <span className="text-lg font-normal text-text-secondary">Starting from</span><br />
+                    <span className="text-4xl font-heading text-primary">{plan?.price?.replace('Starting from ', '')}</span>
                   </div>
                   <div className="text-sm text-text-secondary">
                     Timeline: {plan?.timeline}

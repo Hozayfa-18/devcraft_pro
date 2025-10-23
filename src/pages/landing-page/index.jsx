@@ -11,6 +11,7 @@ import PricingSection from './components/PricingSection';
 import PortfolioSection from './components/PortfolioSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import FAQSection from './components/FAQSection';
+import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
 
@@ -31,36 +32,36 @@ const LandingPage = () => {
     }
 
     // Add structured data for SEO
-    const structuredData = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "QK Dev",
-      "description": "Professional development agency specializing in web and mobile applications",
-      "url": "https://qkdev.com",
-      "logo": "https://qkdev.com/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-555-123-4567",
-        "contactType": "customer service",
-        "email": "hello@qkdev.com"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "San Francisco",
-        "addressRegion": "CA",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://twitter.com/qkdev",
-        "https://linkedin.com/company/qkdev",
-        "https://github.com/qkdev"
-      ]
-    };
+    // const structuredData = {
+    //   "@context": "https://schema.org",
+    //   "@type": "Organization",
+    //   "name": "QK Dev",
+    //   "description": "Professional development agency specializing in web and mobile applications",
+    //   "url": "https://qk-dev.com",
+    //   "logo": "https://qk-dev.com/logo.png",
+    //   "contactPoint": {
+    //     "@type": "ContactPoint",
+    //     "telephone": "+1-555-123-4567",
+    //     "contactType": "customer service",
+    //     "email": "hello@qkdev.com"
+    //   },
+    //   "address": {
+    //     "@type": "PostalAddress",
+    //     "addressLocality": "San Francisco",
+    //     "addressRegion": "CA",
+    //     "addressCountry": "US"
+    //   },
+    //   "sameAs": [
+    //     "https://twitter.com/qkdev",
+    //     "https://linkedin.com/company/qkdev",
+    //     "https://github.com/qkdev"
+    //   ]
+    // };
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(structuredData);
-    document.getElementsByTagName('head')?.[0]?.appendChild(script);
+    // const script = document.createElement('script');
+    // script.type = 'application/ld+json';
+    // script.text = JSON.stringify(structuredData);
+    // document.getElementsByTagName('head')?.[0]?.appendChild(script);
 
     // Cleanup function
     return () => {
@@ -92,21 +93,24 @@ const LandingPage = () => {
         
         {/* Process Timeline */}
         <ProcessSection />
+
+        {/* Portfolio Showcase */}
+        {/* <PortfolioSection /> */}
+
+        {/* Pricing Section */}
+        <PricingSection />
         
         {/* Features & Benefits */}
         <FeaturesSection />
         
-        {/* Pricing Section */}
-        <PricingSection />
-        
-        {/* Portfolio Showcase */}
-        <PortfolioSection />
-        
         {/* Client Testimonials */}
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         
         {/* FAQ Section */}
         <FAQSection />
+        
+        {/* About Us */}
+        <AboutSection />
         
         {/* Contact & Lead Capture */}
         <ContactSection />

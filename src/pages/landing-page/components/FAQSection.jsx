@@ -10,7 +10,7 @@ const FAQSection = () => {
     {
       id: 0,
       question: "How long does a typical project take?",
-      answer: "Project timelines vary based on complexity:\n\n• Landing pages: 1-2 weeks\n• Websites: 4-8 weeks\n• Web applications: 8-16 weeks\n• Mobile apps: 8-16 weeks\n\nWe provide detailed timelines during consultation and stick to agreed deadlines with 98% on-time delivery rate.",
+      answer: "Project timelines vary based on complexity:\n\n• Landing pages: 1-2 weeks\n• Web applications: 8-20 weeks\n• Mobile apps: 8-24 weeks\n\nWe provide detailed timelines during consultation and stick to agreed deadlines with 98% on-time delivery rate.",
       category: "Timeline",
       hasVideo: true,
       videoTitle: "Project Timeline Breakdown"
@@ -18,7 +18,7 @@ const FAQSection = () => {
     {
       id: 1,
       question: "What\'s included in your pricing?",
-      answer: "Our transparent pricing includes:\n\n• Complete design and development\n• Mobile-responsive implementation\n• Quality assurance testing\n• Deployment and launch support\n• Post-launch support period\n• Source code and documentation\n\nNo hidden fees or surprise charges - everything is outlined upfront.",
+      answer: "Our transparent pricing includes:\n\n• Complete design and development\n• Mobile-responsive implementation\n• Quality assurance testing\n• Deployment and launch support\n• Post-launch support period\n• Source code and documentation\n\nPricing starts at $2,500 for landing pages, $15,000 for web applications and mobile apps. No hidden fees or surprise charges - everything is outlined upfront.",
       category: "Pricing",
       hasVideo: false
     },
@@ -55,7 +55,7 @@ const FAQSection = () => {
     {
       id: 6,
       question: "What technologies do you use?",
-      answer: "We use modern, proven technologies:\n\n• Frontend: React, Vue.js, Next.js\n• Backend: Node.js, Python, PHP\n• Mobile: React Native, Flutter\n• Databases: PostgreSQL, MongoDB\n• Cloud: AWS, Google Cloud, Azure\n\nTechnology choice depends on your specific needs and goals.",
+      answer: "We use modern, proven technologies:\n\n• Frontend: React, Vue.js, Next.js\n• Backend: Node.js, Python, PHP\n• Mobile: React Native, Flutter\n• Databases: PostgreSQL, MongoDB\n• Cloud: AWS, Google Cloud, Azure\n\nWe specialize in landing pages, web applications, and mobile apps. Technology choice depends on your specific needs and goals.",
       category: "Technology",
       hasVideo: true,
       videoTitle: "Technology Stack Overview"
@@ -86,7 +86,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-20 lg:py-32 bg-background">
+    <section id="faq" className="py-20 lg:py-32 bg-background">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

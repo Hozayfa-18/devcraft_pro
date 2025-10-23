@@ -9,10 +9,14 @@ const FloatingCTA = () => {
 
   const sectionMessages = {
     hero: 'Get Started',
+    problem: 'Get Quote',
     services: 'Get Quote',
     process: 'Start Project',
     portfolio: 'Hire Us',
     pricing: 'Choose Plan',
+    features: 'Work With Us',
+    // testimonials: 'Join Them',
+    faq: 'Get Quote',
     about: 'Work With Us',
     contact: 'Get Quote'
   };
@@ -26,7 +30,7 @@ const FloatingCTA = () => {
       setIsVisible(scrollY > windowHeight * 0.3);
       
       // Update CTA message based on current section
-      const sections = ['hero', 'services', 'process', 'portfolio', 'pricing', 'about', 'contact'];
+      const sections = ['hero', 'problem', 'services', 'process', 'portfolio', 'pricing', 'features', 'testimonials', 'faq', 'about', 'contact'];
       const currentSection = sections?.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -49,7 +53,9 @@ const FloatingCTA = () => {
   const handleCtaClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection?.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.log('Contact section not found');
     }
   };
 
@@ -59,7 +65,7 @@ const FloatingCTA = () => {
     <div className="fixed bottom-6 right-6 z-floating-cta animate-fade-in">
       <Button
         onClick={handleCtaClick}
-        className="cta-button shadow-cta-hover rounded-full px-6 py-3 flex items-center space-x-2 group"
+        className="cta-button shadow-cta-hover rounded-full px-6 py-3 flex items-center space-x-2 group relative z-10"
         size="lg"
       >
         <span className="font-cta">{ctaMessage}</span>
@@ -71,7 +77,7 @@ const FloatingCTA = () => {
       </Button>
       
       {/* Pulse animation for attention */}
-      <div className="absolute inset-0 rounded-full bg-accent opacity-20 animate-ping" />
+      <div className="absolute inset-0 rounded-full bg-accent opacity-20 animate-ping pointer-events-none" />
     </div>
   );
 };

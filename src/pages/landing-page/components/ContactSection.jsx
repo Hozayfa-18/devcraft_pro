@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 import Input from '../../../components/ui/Input';
@@ -17,19 +18,15 @@ const ContactSection = () => {
     phone: '',
     company: '',
     projectDescription: '',
-    features: [],
-    hasExistingMaterials: false,
-    file: null
+    features: []
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
   const projectTypes = [
-    { id: 'landing-page', label: 'Landing Page', icon: 'FileText', price: 'From $2,500' },
-    { id: 'website', label: 'Website', icon: 'Monitor', price: 'From $5,000' },
-    { id: 'mobile-app', label: 'Mobile App', icon: 'Smartphone', price: 'From $15,000' },
-    { id: 'web-app', label: 'Web Application', icon: 'Globe', price: 'From $15,000' },
-    { id: 'custom', label: 'Custom Solution', icon: 'Settings', price: 'Custom Quote' }
+    { id: 'landing-page', label: 'Landing Page', icon: 'FileText', price: 'From $500' },
+    { id: 'web-app', label: 'Web Application', icon: 'Globe', price: 'From $5,000' },
+    { id: 'mobile-app', label: 'Mobile App', icon: 'Smartphone', price: 'From $5,000' }
   ];
 
   const timelines = [
@@ -40,10 +37,10 @@ const ContactSection = () => {
   ];
 
   const budgetRanges = [
-    { id: 'under-5k', label: 'Under $5,000', range: '$2,500 - $5,000' },
+    { id: 'under-2k', label: 'Under $2,000', range: '$500 - $2,000' },
     { id: '5k-15k', label: '$5,000 - $15,000', range: '$5,000 - $15,000' },
-    { id: '15k-50k', label: '$15,000 - $50,000', range: '$15,000 - $50,000' },
-    { id: 'over-50k', label: '$50,000+', range: '$50,000+' },
+    { id: '15k-20k', label: '$15,000 - $20,000', range: '$15,000 - $20,000' },
+    { id: 'over-20k', label: '$20,000+', range: '$20,000+' },
     { id: 'discuss', label: 'Let\'s Discuss', range: 'Custom Budget' }
   ];
 
@@ -64,30 +61,19 @@ const ContactSection = () => {
     {
       icon: 'Phone',
       title: 'Call Us',
-      value: '+1 (555) 123-4567',
-      description: 'Mon-Fri 9AM-6PM EST',
-      action: () => window.open('tel:+15551234567')
+      value: '+49 17655298403',
+      value2: '+90 5393225378',
+      description: 'German & English speakers:',
+      description2: 'Arabic & Turkish speakers:',
+      action: () => window.open('tel:+4917655298403'),
+      action2: () => window.open('tel:+905393225378')
     },
     {
       icon: 'Mail',
       title: 'Email Us',
-      value: 'hello@qkdev.com',
+      value: 'info@qk-dev.com',
       description: 'We respond within 2 hours',
-      action: () => window.open('mailto:hello@qkdev.com')
-    },
-    {
-      icon: 'MessageCircle',
-      title: 'Live Chat',
-      value: 'Start Conversation',
-      description: 'Available 24/7',
-      action: () => alert('Live chat would open here')
-    },
-    {
-      icon: 'Calendar',
-      title: 'Schedule Call',
-      value: 'Book Meeting',
-      description: 'Free 30-min consultation',
-      action: () => alert('Calendar booking would open here')
+      action: () => window.open('mailto:info@qk-dev.com')
     }
   ];
 
@@ -107,15 +93,6 @@ const ContactSection = () => {
     }));
   };
 
-  const handleFileUpload = (e) => {
-    const file = e?.target?.files?.[0];
-    if (file) {
-      setFormData(prev => ({
-        ...prev,
-        file: file
-      }));
-    }
-  };
 
   const nextStep = () => {
     if (currentStep === 1 && formData?.projectType && formData?.timeline) {
@@ -133,8 +110,41 @@ const ContactSection = () => {
     e?.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Prepare template parameters for EmailJS (clean format)
+      const templateParams = {
+        name: formData.name || 'Anonymous',
+        message: `Contact Information:
+- Name: ${formData.name || 'Not provided'}
+- Email: ${formData.email || 'Not provided'}
+- Phone: ${formData.phone || 'Not provided'}
+- Company: ${formData.company || 'Not provided'}
+
+Project Details:
+- Project Type: ${formData.projectType || 'Not specified'}
+- Timeline: ${formData.timeline || 'Not specified'}
+- Budget: ${formData.budget || 'Not specified'}
+- Features Needed: ${formData.features?.join(', ') || 'None specified'}
+
+Project Description:
+${formData.projectDescription || 'No description provided'}
+
+Estimated Timeline: ${getEstimatedTimeline()}
+
+---
+This inquiry was submitted through the QK Dev website contact form.`
+      };
+
+      // Send email using EmailJS
+      console.log('Sending email with params:', templateParams);
+      const result = await emailjs.send(
+        'contact_form', // Replace with your EmailJS service ID
+        'template_l6ptts5', // Replace with your EmailJS template ID
+        templateParams,
+        'VeNoZTET9rUrqDydT' // Replace with your EmailJS public key
+      );
+
+      console.log('Email sent successfully:', result);
       setIsSubmitting(false);
       setShowSuccess(true);
       
@@ -151,21 +161,23 @@ const ContactSection = () => {
           phone: '',
           company: '',
           projectDescription: '',
-          features: [],
-          hasExistingMaterials: false,
-          file: null
+          features: []
         });
-      }, 3000);
-    }, 2000);
+      }, 5000);
+      
+    } catch (error) {
+      console.error('Error sending email:', error);
+      console.error('Error details:', error.text || error.message);
+      setIsSubmitting(false);
+      alert(`There was an error sending your message: ${error.text || error.message}. Please try again or contact us directly at info@qk-dev.com`);
+    }
   };
 
   const getEstimatedTimeline = () => {
     const timelineMap = {
       'landing-page': '1-2 weeks',
-      'website': '4-8 weeks',
-      'mobile-app': '8-16 weeks',
-      'web-app': '8-16 weeks',
-      'custom': 'To be determined'
+      'mobile-app': '8-24 weeks',
+      'web-app': '8-20 weeks'
     };
     return timelineMap?.[formData?.projectType] || 'To be determined';
   };
@@ -232,10 +244,9 @@ const ContactSection = () => {
               Get In Touch
             </h3>
             {contactMethods?.map((method, index) => (
-              <button
+              <div
                 key={index}
-                onClick={method?.action}
-                className="w-full bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 text-left group"
+                className="w-full bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
@@ -243,11 +254,41 @@ const ContactSection = () => {
                   </div>
                   <div className="flex-1">
                     <h4 className="font-semibold text-text-primary mb-1">{method?.title}</h4>
-                    <div className="text-primary font-medium mb-1">{method?.value}</div>
-                    <div className="text-sm text-text-secondary">{method?.description}</div>
+                    {method?.value2 ? (
+                      <div className="space-y-2">
+                          <div className="text-sm text-text-secondary">{method?.description}</div>
+                        <div>
+                          <button
+                            onClick={method?.action}
+                            className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                          >
+                            {method?.value}
+                          </button>
+                        </div>
+                        <div className="text-sm text-text-secondary">{method?.description2}</div>
+                        <div>
+                          <button
+                            onClick={method?.action2}
+                            className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                          >
+                            {method?.value2}
+                          </button>
+                        </div>
+                      </div>
+                    ) : (
+                      <div>
+                        <button
+                          onClick={method?.action}
+                          className="text-primary font-medium hover:text-primary/80 transition-colors"
+                        >
+                          {method?.value}
+                        </button>
+                        <div className="text-sm text-text-secondary mt-1">{method?.description}</div>
+                      </div>
+                    )}
                   </div>
                 </div>
-              </button>
+              </div>
             ))}
 
             {/* Trust Badges */}
@@ -480,56 +521,6 @@ const ContactSection = () => {
                       </div>
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-medium text-text-primary mb-4">
-                        Do you have existing materials? (Optional)
-                      </label>
-                      <div className="space-y-4">
-                        <div className="flex items-center space-x-4">
-                          <button
-                            type="button"
-                            onClick={() => handleInputChange('hasExistingMaterials', true)}
-                            className={`px-4 py-2 border rounded-lg ${
-                              formData?.hasExistingMaterials
-                                ? 'border-primary bg-primary/5 text-primary' :'border-border'
-                            }`}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => handleInputChange('hasExistingMaterials', false)}
-                            className={`px-4 py-2 border rounded-lg ${
-                              !formData?.hasExistingMaterials
-                                ? 'border-primary bg-primary/5 text-primary' :'border-border'
-                            }`}
-                          >
-                            No
-                          </button>
-                        </div>
-
-                        {formData?.hasExistingMaterials && (
-                          <div className="border-2 border-dashed border-border rounded-lg p-6 text-center">
-                            <input
-                              type="file"
-                              onChange={handleFileUpload}
-                              className="hidden"
-                              id="file-upload"
-                              accept=".pdf,.doc,.docx,.zip,.png,.jpg,.jpeg"
-                            />
-                            <label htmlFor="file-upload" className="cursor-pointer">
-                              <Icon name="Upload" size={24} className="text-text-secondary mx-auto mb-2" />
-                              <div className="text-sm text-text-secondary">
-                                {formData?.file ? formData?.file?.name : 'Click to upload files'}
-                              </div>
-                              <div className="text-xs text-text-secondary mt-1">
-                                PDF, DOC, ZIP, Images (Max 10MB)
-                              </div>
-                            </label>
-                          </div>
-                        )}
-                      </div>
-                    </div>
 
                     <Button
                       type="submit"

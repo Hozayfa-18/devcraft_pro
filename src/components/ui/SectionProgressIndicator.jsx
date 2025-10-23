@@ -6,10 +6,14 @@ const SectionProgressIndicator = () => {
 
   const sections = [
     { id: 'hero', label: 'Hero' },
+    { id: 'problem', label: 'Problem' },
     { id: 'services', label: 'Services' },
     { id: 'process', label: 'Process' },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'pricing', label: 'Pricing' },
+    { id: 'features', label: 'Features' },
+    // { id: 'testimonials', label: 'Testimonials' },
+    { id: 'faq', label: 'FAQ' },
     { id: 'about', label: 'About' },
     { id: 'contact', label: 'Contact' }
   ];
