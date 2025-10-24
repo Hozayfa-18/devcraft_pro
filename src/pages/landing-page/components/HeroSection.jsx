@@ -73,21 +73,21 @@ const HeroSection = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-heading text-text-primary leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-heading text-text-primary leading-tight">
                 {t('hero.title')}{' '}
                 <span className="text-primary">{t('hero.titleHighlight1')}</span>{' '}
                 <span className="text-accent">{t('hero.titleHighlight2')}</span>
               </h1>
-              <p className="text-lg lg:text-xl text-text-secondary leading-relaxed max-w-2xl">
+              <p className="text-base sm:text-lg lg:text-xl text-text-secondary leading-relaxed max-w-2xl">
                 {t('hero.subtitle')}
               </p>
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button
                 onClick={handleGetQuote}
-                className="cta-button text-lg px-8 py-4"
+                className="cta-button text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
                 size="lg"
                 iconName="ArrowRight"
                 iconPosition="right"
@@ -97,7 +97,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 onClick={handleViewWork}
-                className="border-primary text-primary hover:bg-primary hover:text-white text-lg px-8 py-4"
+                className="border-primary text-primary hover:bg-primary hover:text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
                 size="lg"
                 iconName="Eye"
                 iconPosition="left"
@@ -107,18 +107,18 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Metrics */}
-            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
+            <div className="grid grid-cols-2 gap-6 sm:gap-8 pt-6 sm:pt-8 border-t border-border">
               <div className="text-center sm:text-left">
-                <div className="text-3xl lg:text-4xl font-heading text-primary">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-heading text-primary">
                   {projectsCount}+
                 </div>
-                <div className="text-text-secondary font-medium">{t('hero.metrics.projects')}</div>
+                <div className="text-sm sm:text-base text-text-secondary font-medium">{t('hero.metrics.projects')}</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-3xl lg:text-4xl font-heading text-accent">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-heading text-accent">
                   {satisfactionRate}%
                 </div>
-                <div className="text-text-secondary font-medium">{t('hero.metrics.satisfaction')}</div>
+                <div className="text-sm sm:text-base text-text-secondary font-medium">{t('hero.metrics.satisfaction')}</div>
               </div>
             </div>
           </div>

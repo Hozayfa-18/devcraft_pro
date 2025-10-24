@@ -63,6 +63,37 @@ const Header = () => {
     };
   }, [isLanguageMenuOpen]);
 
+  // Handle body scroll lock when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      // Prevent body scroll
+      document.body.style.overflow = 'hidden';
+      // Store the current scroll position
+      const scrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+    } else {
+      // Restore body scroll
+      const scrollY = document.body.style.top;
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      }
+    }
+
+    // Cleanup function
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+    };
+  }, [isMobileMenuOpen]);
+
   const handleNavClick = (anchor) => {
     const element = document.querySelector(anchor);
     if (element) {
@@ -195,7 +226,7 @@ const Header = () => {
             className="fixed inset-0 bg-background/80 backdrop-blur-sm"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="fixed top-0 right-0 w-full max-w-sm h-full bg-background shadow-xl animate-slide-down">
+          <div className="fixed top-0 right-0 w-full max-w-sm h-full bg-background shadow-xl animate-slide-down overflow-y-auto">
             <div className="flex items-center justify-between p-6 border-b border-border">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
@@ -213,17 +244,17 @@ const Header = () => {
               </button>
             </div>
             
-            <nav className="px-6 py-4 space-y-2">
+            <nav className="px-6 py-4 space-y-1">
               {navigationItems?.map((item) => (
                 <button
                   key={item?.anchor}
                   onClick={() => handleNavClick(item?.anchor)}
-                  className={`w-full text-left px-4 py-3 rounded-lg transition-colors duration-250 ${
+                  className={`w-full text-left px-4 py-4 rounded-lg transition-colors duration-250 min-h-[56px] ${
                     activeSection === item?.anchor?.substring(1)
                       ? 'bg-primary/10 text-primary border-l-4 border-primary' :'text-text-secondary hover:text-primary hover:bg-muted'
                   }`}
                 >
-                  <div className="font-medium">{item?.label}</div>
+                  <div className="font-medium text-base">{item?.label}</div>
                   <div className="text-sm text-text-secondary mt-1">{item?.description}</div>
                 </button>
               ))}
@@ -232,20 +263,20 @@ const Header = () => {
             <div className="px-6 py-4 border-t border-border mt-4">
               {/* Mobile Language Switcher */}
               <div className="mb-4">
-                <div className="text-sm font-medium text-text-secondary mb-2">Language / اللغة</div>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="text-sm font-medium text-text-secondary mb-3">Language / اللغة</div>
+                <div className="grid grid-cols-2 gap-3">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
                       onClick={() => changeLanguage(lang.code)}
-                      className={`flex items-center space-x-2 px-3 py-2 rounded-lg border transition-colors ${
+                      className={`flex items-center space-x-2 px-4 py-3 rounded-lg border transition-colors min-h-[44px] ${
                         lang.code === i18n.language 
                           ? 'border-primary bg-primary/10 text-primary' 
                           : 'border-border hover:border-primary/50'
                       }`}
                     >
-                      <span className="text-sm">{lang.flag}</span>
-                      <span className="text-xs font-medium">{lang.name}</span>
+                      <span className="text-base">{lang.flag}</span>
+                      <span className="text-sm font-medium">{lang.name}</span>
                     </button>
                   ))}
                 </div>

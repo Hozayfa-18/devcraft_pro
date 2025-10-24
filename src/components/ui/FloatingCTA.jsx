@@ -62,17 +62,17 @@ const FloatingCTA = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-floating-cta animate-fade-in">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-floating-cta animate-fade-in">
       <Button
         onClick={handleCtaClick}
-        className="cta-button shadow-cta-hover rounded-full px-6 py-3 flex items-center space-x-2 group relative z-10"
+        className="cta-button shadow-cta-hover rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center space-x-2 group relative z-10 text-sm sm:text-base min-h-[44px]"
         size="lg"
       >
         <span className="font-cta">{ctaMessage}</span>
         <Icon 
           name="ArrowRight" 
-          size={18} 
-          className="transition-transform duration-250 group-hover:translate-x-1" 
+          size={16} 
+          className="transition-transform duration-250 group-hover:translate-x-1 sm:w-4 sm:h-4" 
         />
       </Button>
       

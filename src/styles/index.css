@@ -10,3 +10,36 @@ body {
   font-family: inherit;
   margin: unset;
 }
+
+/* Mobile text overflow fixes for German text */
+@media (max-width: 640px) {
+  .text-overflow-fix {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Ensure long German words break properly */
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Fix for long German text in buttons */
+  button {
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  /* Fix for long German text in cards */
+  .card-text {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Prevent horizontal overflow */
+  .container, .max-w-7xl, .max-w-6xl, .max-w-4xl, .max-w-3xl, .max-w-2xl {
+    overflow-x: hidden;
+  }
+}

@@ -73,11 +73,11 @@ const ProcessSection = () => {
     <section id="process" className="py-20 lg:py-32 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-heading text-text-primary mb-4 sm:mb-6">
             {t('process.title')} <span className="text-primary">{t('process.titleHighlight')}</span>
           </h2>
-          <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-text-secondary leading-relaxed">
             {t('process.subtitle')}
           </p>
         </div>
@@ -93,7 +93,7 @@ const ProcessSection = () => {
           </div>
 
           {/* Steps */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {processSteps?.map((step, index) => (
               <div
                 key={step?.id}
@@ -104,44 +104,44 @@ const ProcessSection = () => {
                 onClick={() => openModal(step)}
               >
                 {/* Step Card */}
-                <div className={`bg-background border-2 rounded-2xl p-6 shadow-lg transition-all duration-300 ${
+                <div className={`bg-background border-2 rounded-2xl p-4 sm:p-6 shadow-lg transition-all duration-300 ${
                   activeStep === index 
-                    ? 'border-primary shadow-xl scale-105' 
+                    ? 'border-primary shadow-xl sm:scale-105' 
                     : 'border-border hover:border-primary/50'
                 }`}>
                   {/* Step Number */}
-                  <div className="flex items-center justify-between mb-4">
-                    <div className={`w-12 h-12 rounded-full flex items-center justify-center ${
+                  <div className="flex items-center justify-between mb-3 sm:mb-4">
+                    <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center ${
                       activeStep >= index ? step?.bgColor : 'bg-muted'
                     }`}>
                       <Icon 
                         name={step?.icon} 
-                        size={24} 
-                        className={activeStep >= index ? step?.color : 'text-text-secondary'} 
+                        size={20} 
+                        className={`${activeStep >= index ? step?.color : 'text-text-secondary'} sm:w-6 sm:h-6`} 
                       />
                     </div>
-                    <div className="text-sm font-medium text-text-secondary">
+                    <div className="text-xs sm:text-sm font-medium text-text-secondary">
                       {step?.duration}
                     </div>
                   </div>
 
                   {/* Content */}
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-semibold text-text-primary">
+                  <div className="space-y-1 sm:space-y-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-text-primary">
                       {index + 1}. {step?.title}
                     </h3>
-                    <div className="text-sm font-medium text-primary">
+                    <div className="text-xs sm:text-sm font-medium text-primary">
                       {step?.subtitle}
                     </div>
-                    <p className="text-text-secondary text-sm leading-relaxed">
+                    <p className="text-text-secondary text-xs sm:text-sm leading-relaxed">
                       {step?.description}
                     </p>
                   </div>
 
                   {/* View Details Button */}
-                  <button className="mt-4 text-primary hover:text-primary/80 text-sm font-medium flex items-center space-x-1 transition-colors">
+                  <button className="mt-3 sm:mt-4 text-primary hover:text-primary/80 text-xs sm:text-sm font-medium flex items-center space-x-1 transition-colors min-h-[32px]">
                     <span>{t('common.viewDetails')}</span>
-                    <Icon name="ChevronRight" size={14} />
+                    <Icon name="ChevronRight" size={12} className="sm:w-3.5 sm:h-3.5" />
                   </button>
 
                   {/* Active Indicator */}
@@ -155,12 +155,12 @@ const ProcessSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-background border border-border rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold text-text-primary mb-4">
+        <div className="text-center mt-12 sm:mt-16">
+          <div className="bg-background border border-border rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-3 sm:mb-4">
               {t('process.cta.title')}
             </h3>
-            <p className="text-text-secondary mb-6">
+            <p className="text-sm sm:text-base text-text-secondary mb-4 sm:mb-6">
               {t('process.cta.subtitle')}
             </p>
             <button
@@ -170,57 +170,57 @@ const ProcessSection = () => {
                   contactSection?.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base min-h-[44px]"
             >
               <span>{t('process.cta.button')}</span>
-              <Icon name="Calendar" size={18} />
+              <Icon name="Calendar" size={16} className="sm:w-4 sm:h-4" />
             </button>
           </div>
         </div>
       </div>
       {/* Modal */}
       {showModal && modalContent && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-background/80 backdrop-blur-sm">
           <div className="bg-background border border-border rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
             {/* Modal Header */}
-            <div className="flex items-center justify-between p-6 border-b border-border">
+            <div className="flex items-center justify-between p-4 sm:p-6 border-b border-border">
               <div className="flex items-center space-x-3">
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${modalContent?.bgColor}`}>
-                  <Icon name={modalContent?.icon} size={20} className={modalContent?.color} />
+                <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${modalContent?.bgColor}`}>
+                  <Icon name={modalContent?.icon} size={18} className={`${modalContent?.color} sm:w-5 sm:h-5`} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-text-primary">
+                  <h3 className="text-lg sm:text-xl font-semibold text-text-primary">
                     {modalContent?.title} - {modalContent?.subtitle}
                   </h3>
-                  <div className="text-sm text-text-secondary">
+                  <div className="text-xs sm:text-sm text-text-secondary">
                     {t('process.modal.duration')}: {modalContent?.duration}
                   </div>
                 </div>
               </div>
               <button
                 onClick={closeModal}
-                className="p-2 hover:bg-muted rounded-lg transition-colors"
+                className="p-2 hover:bg-muted rounded-lg transition-colors min-h-[44px] min-w-[44px]"
               >
-                <Icon name="X" size={20} className="text-text-secondary" />
+                <Icon name="X" size={18} className="text-text-secondary sm:w-5 sm:h-5" />
               </button>
             </div>
 
             {/* Modal Content */}
-            <div className="p-6 space-y-6">
-              <p className="text-text-secondary leading-relaxed">
+            <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
                 {modalContent?.description}
               </p>
 
               {/* Deliverables */}
               <div>
-                <h4 className="text-lg font-semibold text-text-primary mb-3">
+                <h4 className="text-base sm:text-lg font-semibold text-text-primary mb-2 sm:mb-3">
                   {t('process.modal.deliverables')}:
                 </h4>
-                <div className="space-y-2">
+                <div className="space-y-1 sm:space-y-2">
                   {modalContent?.deliverables?.map((item, index) => (
                     <div key={index} className="flex items-center space-x-3">
-                      <Icon name="CheckCircle" size={16} className="text-success flex-shrink-0" />
-                      <span className="text-text-secondary">{item}</span>
+                      <Icon name="CheckCircle" size={14} className="text-success flex-shrink-0 sm:w-4 sm:h-4" />
+                      <span className="text-xs sm:text-sm text-text-secondary">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -228,14 +228,14 @@ const ProcessSection = () => {
 
               {/* Client Involvement */}
               <div>
-                <h4 className="text-lg font-semibold text-text-primary mb-3">
+                <h4 className="text-base sm:text-lg font-semibold text-text-primary mb-2 sm:mb-3">
                   {t('process.modal.involvement')}:
                 </h4>
-                <div className="space-y-2">
+                <div className="space-y-1 sm:space-y-2">
                   {modalContent?.clientInvolvement?.map((item, index) => (
                     <div key={index} className="flex items-center space-x-3">
-                      <Icon name="User" size={16} className="text-primary flex-shrink-0" />
-                      <span className="text-text-secondary">{item}</span>
+                      <Icon name="User" size={14} className="text-primary flex-shrink-0 sm:w-4 sm:h-4" />
+                      <span className="text-xs sm:text-sm text-text-secondary">{item}</span>
                     </div>
                   ))}
                 </div>

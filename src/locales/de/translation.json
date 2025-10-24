@@ -18,7 +18,7 @@
     "title": "Verwandeln Sie Ihre Ideen in",
     "titleHighlight1": "Mächtige digitale",
     "titleHighlight2": "Lösungen",
-    "subtitle": "Professionelle Entwicklung mit transparenten Preisen, garantierten Zeitplänen und kontinuierlicher Unterstützung. Eliminieren Sie das Risiko und die Unsicherheit von maßgeschneiderten Entwicklungsprojekten.",
+    "subtitle": "Professionelle Entwicklung mit transparenten Preisen und garantierten Zeitplänen. Eliminieren Sie das Risiko von Entwicklungsprojekten.",
     "cta": {
       "getQuote": "Kostenloses Angebot erhalten",
       "viewWork": "Unsere Arbeit ansehen"
@@ -32,7 +32,7 @@
   "problem": {
     "title": "Müde von Entwicklungs-",
     "titleHighlight": "Katastrophen?",
-    "subtitle": "Sie sind nicht allein. Die meisten Unternehmer haben Horrorgeschichten über gescheiterte Entwicklungsprojekte. Klicken Sie unten, um die wahren Kosten dieser häufigen Probleme zu sehen.",
+    "subtitle": "Sie sind nicht allein. Die meisten Unternehmer haben Horrorgeschichten über gescheiterte Entwicklungsprojekte.",
     "problems": {
       "budget": {
         "title": "Budgetüberschreitungen",
@@ -93,7 +93,7 @@
   "services": {
     "title": "Professionelle Entwicklungs-",
     "titleHighlight": "dienstleistungen",
-    "subtitle": "Von einfachen Landing Pages bis hin zu komplexen Webanwendungen und mobilen Apps liefern wir qualitativ hochwertige Lösungen mit transparenten Preisen und garantierten Zeitplänen.",
+    "subtitle": "Von Landing Pages bis hin zu Webanwendungen und mobilen Apps liefern wir qualitativ hochwertige Lösungen mit transparenten Preisen.",
     "items": {
       "landingPages": {
         "title": "Landing Pages",
@@ -145,7 +145,7 @@
   "process": {
     "title": "Unser bewährter",
     "titleHighlight": "Prozess",
-    "subtitle": "Von der ersten Beratung bis zum finalen Deployment folgen wir einem strukturierten Ansatz, der Qualität, Transparenz und pünktliche Lieferung gewährleistet.",
+    "subtitle": "Von der ersten Beratung bis zum finalen Deployment folgen wir einem strukturierten Ansatz für Qualität und pünktliche Lieferung.",
     "steps": {
       "consult": {
         "title": "Beratung",
@@ -238,7 +238,7 @@
   "pricing": {
     "title": "Transparente",
     "titleHighlight": "Preise",
-    "subtitle": "Keine versteckten Gebühren, keine Überraschungen. Wählen Sie das Paket, das zu Ihren Bedürfnissen und Ihrem Budget passt.",
+    "subtitle": "Keine versteckten Gebühren, keine Überraschungen. Wählen Sie das passende Paket.",
     "projectTypes": {
       "landingPage": "Landing Page",
       "webApp": "Web-Anwendung",
@@ -250,7 +250,7 @@
           "name": "Einfache Landing Page",
           "price": "Ab 500€",
           "timeline": "1-2 Wochen",
-          "description": "Einfache, hochkonvertierende Landing Page für Ihre Kampagnen",
+          "description": "Einfache, hochkonvertierende Landing Page",
           "features": [
             "Einseitiges Design",
             "Mobil responsive",
@@ -280,7 +280,7 @@
           "name": "Enterprise Landing Page",
           "price": "Ab 2000€",
           "timeline": "3-4 Wochen",
-          "description": "Umfassende Landing Page-Lösung mit erweiterten Funktionen",
+          "description": "Umfassende Landing Page-Lösung",
           "features": [
             "Multi-Variant-Testing",
             "CRM-Integration",
@@ -297,7 +297,7 @@
           "name": "Einfache Web-App",
           "price": "Ab 3000€",
           "timeline": "3-4 Wochen",
-          "description": "Einfache Web-Anwendung mit Kernfunktionalität",
+          "description": "Einfache Web-Anwendung",
           "features": [
             "Benutzerdefinierte Funktionalität",
             "Benutzerauthentifizierung",
@@ -312,7 +312,7 @@
           "name": "Erweiterte Web-App",
           "price": "Ab 5000€",
           "timeline": "4-6 Wochen",
-          "description": "Funktionsreiche Web-Anwendung, produktionsbereit",
+          "description": "Funktionsreiche Web-Anwendung",
           "features": [
             "Erweiterte Funktionen",
             "Multi-User-System",
@@ -328,7 +328,7 @@
           "name": "Enterprise Web-App",
           "price": "Ab 10000€",
           "timeline": "10-12 Wochen",
-          "description": "Enterprise-Web-Anwendung mit benutzerdefinierten Funktionen",
+          "description": "Enterprise-Web-Anwendung",
           "features": [
             "Benutzerdefinierte Architektur",
             "Erweiterte Sicherheit",
@@ -346,7 +346,7 @@
           "name": "Einfache Mobile App",
           "price": "Ab 5000€",
           "timeline": "4-5 Wochen",
-          "description": "Einfache App für Kernfunktionalität",
+          "description": "Einfache App",
           "features": [
             "iOS & Android",
             "Bis zu 5 Bildschirme",
@@ -361,7 +361,7 @@
           "name": "Erweiterte Mobile App",
           "price": "Ab 7500€",
           "timeline": "6-8 Wochen",
-          "description": "Funktionsreiche App für Geschäftswachstum",
+          "description": "Funktionsreiche App",
           "features": [
             "Plattformübergreifende Entwicklung",
             "Bis zu 15 Bildschirme",
@@ -377,7 +377,7 @@
           "name": "Benutzerdefinierte Mobile Lösung",
           "price": "Ab 10000€",
           "timeline": "10-12 Wochen",
-          "description": "Vollständig angepasste mobile Erfahrung",
+          "description": "Vollständig angepasste mobile App",
           "features": [
             "Native iOS & Android",
             "Unbegrenzte Bildschirme",
@@ -414,26 +414,26 @@
   "faq": {
     "title": "Häufig gestellte",
     "titleHighlight": "Fragen",
-    "subtitle": "Erhalten Sie Antworten auf häufige Fragen zu unserem Entwicklungsprozess, Preisen und Support.",
+    "subtitle": "Antworten auf häufige Fragen zu unserem Entwicklungsprozess, Preisen und Support.",
     "items": [
       {
         "question": "Wie lange dauert ein typisches Projekt?",
-        "answer": "Projektzeiten variieren je nach Komplexität:\n\n• Landing Pages: 1-2 Wochen\n• Web-Anwendungen: 8-20 Wochen\n• Mobile Apps: 8-24 Wochen\n\nWir bieten detaillierte Zeitpläne während der Beratung und halten uns an vereinbarte Termine mit 98% pünktlicher Lieferung.",
+        "answer": "Projektzeiten variieren je nach Komplexität:\n\n• Landing Pages: 1-2 Wochen\n• Web-Anwendungen: 8-20 Wochen\n• Mobile Apps: 8-24 Wochen\n\nWir halten uns an vereinbarte Termine mit 98% pünktlicher Lieferung.",
         "category": "Zeitplan"
       },
       {
         "question": "Was ist in Ihren Preisen enthalten?",
-        "answer": "Unsere transparenten Preise beinhalten:\n\n• Vollständiges Design und Entwicklung\n• Mobile-responsive Implementierung\n• Qualitätssicherungstests\n• Bereitstellung und Launch-Support\n• Post-Launch-Support-Zeitraum\n• Quellcode und Dokumentation\n\nPreise beginnen bei 2.500€ für Landing Pages, 15.000€ für Web-Anwendungen und Mobile Apps. Keine versteckten Gebühren oder Überraschungskosten - alles wird im Voraus dargelegt.",
+        "answer": "Unsere transparenten Preise beinhalten:\n\n• Vollständiges Design und Entwicklung\n• Mobile-responsive Implementierung\n• Qualitätssicherungstests\n• Bereitstellung und Launch-Support\n• Quellcode und Dokumentation\n\nPreise beginnen bei 2.500€ für Landing Pages, 15.000€ für Web-Anwendungen und Mobile Apps. Keine versteckten Gebühren.",
         "category": "Preise"
       },
       {
         "question": "Bieten Sie laufenden Support nach dem Launch?",
-        "answer": "Ja! Jedes Projekt beinhaltet:\n\n• 3-12 Monate kostenlosen Support (je nach Paket)\n• Fehlerbehebungen und kleinere Updates\n• Leistungsüberwachung\n• Sicherheitsupdates\n• Technische Unterstützung\n\nErweiterte Support-Pläne sind für langfristige Partnerschaften verfügbar.",
+        "answer": "Ja! Jedes Projekt beinhaltet:\n\n• 3-12 Monate kostenlosen Support\n• Fehlerbehebungen und Updates\n• Leistungsüberwachung\n• Sicherheitsupdates\n• Technische Unterstützung",
         "category": "Support"
       },
       {
         "question": "Wie stellen Sie die Projektqualität sicher?",
-        "answer": "Qualität ist in jeden Schritt integriert:\n\n• Code-Reviews und Tests bei jedem Meilenstein\n• Automatisierte Tests und Qualitätstoren\n• Leistungsoptimierung\n• Sicherheitsbest Practices\n• Cross-Browser- und Gerätetests\n• Benutzerakzeptanztests\n\nWir liefern produktionsreifen Code, der Unternehmensstandards erfüllt.",
+        "answer": "Qualität ist in jeden Schritt integriert:\n\n• Code-Reviews und Tests\n• Automatisierte Tests\n• Leistungsoptimierung\n• Sicherheitsbest Practices\n• Cross-Browser-Tests\n• Benutzerakzeptanztests\n\nWir liefern produktionsreifen Code.",
         "category": "Qualität"
       }
     ],
@@ -452,7 +452,7 @@
   "features": {
     "title": "Technische",
     "titleHighlight": "Features",
-    "subtitle": "Wir bieten fortschrittliche technische Lösungen, die für maximale Leistung und Zuverlässigkeit entwickelt wurden.",
+    "subtitle": "Wir bieten fortschrittliche technische Lösungen für maximale Leistung und Zuverlässigkeit.",
     "items": {
       "speed": {
         "title": "Blitzschnell",
@@ -549,15 +549,15 @@
   "about": {
     "title": "Über",
     "titleHighlight": "QK DEV",
-    "subtitle": "Wir sind ein Team leidenschaftlicher Entwickler und Designer, die Ihre Ideen in leistungsstarke digitale Lösungen verwandeln. Unsere Mission ist es, Unternehmen durch außergewöhnliche Web- und Mobile-Entwicklung zum Erfolg zu verhelfen.",
+    "subtitle": "Wir sind ein Team leidenschaftlicher Entwickler und Designer, die Ihre Ideen in leistungsstarke digitale Lösungen verwandeln.",
     "whatWeDo": {
       "title": "Was wir tun",
-      "subtitle": "Wir spezialisieren uns auf drei Kernservices, die Unternehmen helfen, ihre digitale Präsenz zu etablieren und zu erweitern",
+      "subtitle": "Wir spezialisieren uns auf drei Kernservices für Ihre digitale Präsenz",
       "services": [
         {
           "icon": "FileText",
           "title": "Landing Pages",
-          "description": "Hochkonvertierende Landing Pages, die Besucher in Kunden verwandeln. Perfekt für Marketingkampagnen, Produktlaunches und Lead-Generierung.",
+          "description": "Hochkonvertierende Landing Pages, die Besucher in Kunden verwandeln.",
           "features": [
             "Mobil responsive Design",
             "SEO optimiert",
@@ -567,7 +567,7 @@
         {
           "icon": "Globe",
           "title": "Web-Anwendungen",
-          "description": "Benutzerdefinierte Web-Anwendungen, die komplexe Geschäftsprobleme lösen. Von einfachen Dashboards bis hin zu Enterprise-Plattformen.",
+          "description": "Benutzerdefinierte Web-Anwendungen, die komplexe Geschäftsprobleme lösen.",
           "features": [
             "Benutzerdefinierte Funktionalität",
             "Benutzerauthentifizierung",
@@ -577,7 +577,7 @@
         {
           "icon": "Smartphone",
           "title": "Mobile Apps",
-          "description": "Native und plattformübergreifende mobile Anwendungen für iOS und Android. Erreichen Sie Ihre Kunden überall.",
+          "description": "Native und plattformübergreifende mobile Anwendungen für iOS und Android.",
           "features": [
             "iOS & Android",
             "App Store Optimierung",
@@ -678,7 +678,7 @@
   "contact": {
     "title": "Bereit, Ihr",
     "titleHighlight": "Projekt zu starten?",
-    "subtitle": "Erhalten Sie ein kostenloses Angebot und Zeitschätzung. Keine Verpflichtung erforderlich.",
+    "subtitle": "Erhalten Sie ein kostenloses Angebot und Zeitschätzung.",
     "getInTouch": {
       "title": "Kontakt aufnehmen"
     },
@@ -760,7 +760,7 @@
           "placeholder": "Erzählen Sie uns von Ihren Projektzielen, Zielgruppe und spezifischen Anforderungen..."
         },
         "features": {
-          "label": "Benötigte Funktionen (Alle zutreffenden auswählen)"
+          "label": "Benötigte Funktionen"
         }
       },
       "projectTypes": [
@@ -769,7 +769,7 @@
         { "id": "mobile-app", "label": "Mobile App", "icon": "Smartphone", "price": "Ab 5.000€" }
       ],
       "timelines": [
-        { "id": "asap", "label": "ASAP (Eilauftrag)", "icon": "Zap" },
+        { "id": "asap", "label": "ASAP", "icon": "Zap" },
         { "id": "1-month", "label": "Innerhalb 1 Monat", "icon": "Calendar" },
         { "id": "2-3-months", "label": "2-3 Monate", "icon": "Clock" },
         { "id": "flexible", "label": "Flexibler Zeitplan", "icon": "MoreHorizontal" }
@@ -779,7 +779,7 @@
         { "id": "5k-15k", "label": "5.000€ - 15.000€", "range": "5.000€ - 15.000€" },
         { "id": "15k-20k", "label": "15.000€ - 20.000€", "range": "15.000€ - 20.000€" },
         { "id": "over-20k", "label": "20.000€+", "range": "20.000€+" },
-        { "id": "discuss", "label": "Lassen Sie uns besprechen", "range": "Individuelles Budget" }
+        { "id": "discuss", "label": "Besprechen", "range": "Individuell" }
       ],
       "featureOptions": [
         "Benutzerauthentifizierung",
@@ -810,7 +810,7 @@
     "company": {
       "name": "QK DEV",
       "tagline": "Professionelle Entwicklung",
-      "description": "Verwandeln Sie Ihre Geschäftsideen in leistungsstarke digitale Lösungen. Wir liefern hochwertige Entwicklungsdienstleistungen mit transparenten Preisen und garantierten Zeitplänen."
+      "description": "Verwandeln Sie Ihre Geschäftsideen in leistungsstarke digitale Lösungen mit transparenten Preisen."
     },
     "contactInfo": [
       {

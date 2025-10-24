@@ -180,48 +180,48 @@ This inquiry was submitted through the QK DEV website contact form.`
     <section id="contact" className="py-20 lg:py-32 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-heading text-text-primary mb-4 sm:mb-6">
             {t('contact.title')} <span className="text-primary">{t('contact.titleHighlight')}</span>
           </h2>
-          <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-text-secondary leading-relaxed">
             {t('contact.subtitle')}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Contact Methods */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-text-primary mb-6">
+          <div className="space-y-4 sm:space-y-6">
+            <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4 sm:mb-6">
               {t('contact.getInTouch.title')}
             </h3>
             {contactMethods?.map((method, index) => (
               <div
                 key={index}
-                className="w-full bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 group"
+                className="w-full bg-background border border-border rounded-xl p-4 sm:p-6 hover:shadow-lg transition-all duration-300 group"
               >
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                    <Icon name={method?.icon} size={20} className="text-primary group-hover:text-white" />
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Icon name={method?.icon} size={18} className="text-primary group-hover:text-white sm:w-5 sm:h-5" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-text-primary mb-1">{method?.title}</h4>
+                    <h4 className="text-sm sm:text-base font-semibold text-text-primary mb-1">{method?.title}</h4>
                     {method?.value2 ? (
-                      <div className="space-y-2">
-                          <div className="text-sm text-text-secondary">{method?.description}</div>
+                      <div className="space-y-1 sm:space-y-2">
+                          <div className="text-xs sm:text-sm text-text-secondary">{method?.description}</div>
                         <div>
                           <a
                             href={method?.action}
-                            className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                            className="block text-primary font-medium hover:text-primary/80 transition-colors text-sm sm:text-base"
                           >
                             {method?.value}
                           </a>
                         </div>
-                        <div className="text-sm text-text-secondary">{method?.description2}</div>
+                        <div className="text-xs sm:text-sm text-text-secondary">{method?.description2}</div>
                         <div>
                           <a
                             href={method?.action2}
-                            className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                            className="block text-primary font-medium hover:text-primary/80 transition-colors text-sm sm:text-base"
                           >
                             {method?.value2}
                           </a>
@@ -231,11 +231,11 @@ This inquiry was submitted through the QK DEV website contact form.`
                       <div>
                         <a
                           href={method?.action}
-                          className="text-primary font-medium hover:text-primary/80 transition-colors"
+                          className="text-primary font-medium hover:text-primary/80 transition-colors text-sm sm:text-base"
                         >
                           {method?.value}
                         </a>
-                        <div className="text-sm text-text-secondary mt-1">{method?.description}</div>
+                        <div className="text-xs sm:text-sm text-text-secondary mt-1">{method?.description}</div>
                       </div>
                     )}
                   </div>
@@ -244,13 +244,13 @@ This inquiry was submitted through the QK DEV website contact form.`
             ))}
 
             {/* Trust Badges */}
-            <div className="bg-background border border-border rounded-xl p-6">
-              <h4 className="font-semibold text-text-primary mb-4">{t('contact.trustBadges.title')}</h4>
-              <div className="space-y-3">
+            <div className="bg-background border border-border rounded-xl p-4 sm:p-6">
+              <h4 className="text-sm sm:text-base font-semibold text-text-primary mb-3 sm:mb-4">{t('contact.trustBadges.title')}</h4>
+              <div className="space-y-2 sm:space-y-3">
                 {t('contact.trustBadges.items', { returnObjects: true })?.map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <Icon name={item.icon} size={16} className="text-success" />
-                    <span className="text-sm text-text-secondary">{item.text}</span>
+                    <Icon name={item.icon} size={14} className="text-success sm:w-4 sm:h-4" />
+                    <span className="text-xs sm:text-sm text-text-secondary">{item.text}</span>
                   </div>
                 ))}
               </div>
@@ -259,23 +259,23 @@ This inquiry was submitted through the QK DEV website contact form.`
 
           {/* Quote Form */}
           <div className="lg:col-span-2">
-            <div className="bg-background border border-border rounded-2xl p-8 shadow-lg">
+            <div className="bg-background border border-border rounded-2xl p-6 sm:p-8 shadow-lg">
               {/* Progress Indicator */}
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center space-x-4">
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
+              <div className="flex items-center justify-between mb-6 sm:mb-8">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-semibold ${
                     currentStep >= 1 ? 'bg-primary text-white' : 'bg-muted text-text-secondary'
                   }`}>
                     1
                   </div>
-                  <div className={`w-16 h-1 ${currentStep >= 2 ? 'bg-primary' : 'bg-muted'}`} />
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
+                  <div className={`w-12 sm:w-16 h-1 ${currentStep >= 2 ? 'bg-primary' : 'bg-muted'}`} />
+                  <div className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-semibold ${
                     currentStep >= 2 ? 'bg-primary text-white' : 'bg-muted text-text-secondary'
                   }`}>
                     2
                   </div>
                 </div>
-                <div className="text-sm text-text-secondary">
+                <div className="text-xs sm:text-sm text-text-secondary">
                   {t('contact.form.stepIndicator', { current: currentStep, total: 2 })}
                 </div>
               </div>
@@ -283,27 +283,27 @@ This inquiry was submitted through the QK DEV website contact form.`
               <form onSubmit={handleSubmit}>
                 {/* Step 1: Project Details */}
                 {currentStep === 1 && (
-                  <div className="space-y-8">
+                  <div className="space-y-6 sm:space-y-8">
                     <div>
-                      <h3 className="text-xl font-semibold text-text-primary mb-6">
+                      <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-4 sm:mb-6">
                         {t('contact.form.step1.projectType.title')}
                       </h3>
-                      <div className="grid md:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                         {projectTypes?.map((type) => (
                           <button
                             key={type?.id}
                             type="button"
                             onClick={() => handleInputChange('projectType', type?.id)}
-                            className={`p-4 border-2 rounded-xl text-left transition-all duration-300 ${
+                            className={`p-3 sm:p-4 border-2 rounded-xl text-left transition-all duration-300 min-h-[80px] ${
                               formData?.projectType === type?.id
                                 ? 'border-primary bg-primary/5' :'border-border hover:border-primary/50'
                             }`}
                           >
                             <div className="flex items-start space-x-3">
-                              <Icon name={type?.icon} size={20} className="text-primary mt-1" />
+                              <Icon name={type?.icon} size={18} className="text-primary mt-1 sm:w-5 sm:h-5" />
                               <div>
-                                <div className="font-semibold text-text-primary">{type?.label}</div>
-                                <div className="text-sm text-primary">{type?.price}</div>
+                                <div className="text-sm sm:text-base font-semibold text-text-primary">{type?.label}</div>
+                                <div className="text-xs sm:text-sm text-primary">{type?.price}</div>
                               </div>
                             </div>
                           </button>
@@ -312,23 +312,23 @@ This inquiry was submitted through the QK DEV website contact form.`
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-semibold text-text-primary mb-6">
+                      <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-4 sm:mb-6">
                         {t('contact.form.step1.timeline.title')}
                       </h3>
-                      <div className="grid md:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                         {timelines?.map((timeline) => (
                           <button
                             key={timeline?.id}
                             type="button"
                             onClick={() => handleInputChange('timeline', timeline?.id)}
-                            className={`p-4 border-2 rounded-xl text-left transition-all duration-300 ${
+                            className={`p-3 sm:p-4 border-2 rounded-xl text-left transition-all duration-300 min-h-[60px] ${
                               formData?.timeline === timeline?.id
                                 ? 'border-primary bg-primary/5' :'border-border hover:border-primary/50'
                             }`}
                           >
                             <div className="flex items-center space-x-3">
-                              <Icon name={timeline?.icon} size={20} className="text-primary" />
-                              <span className="font-medium text-text-primary">{timeline?.label}</span>
+                              <Icon name={timeline?.icon} size={18} className="text-primary sm:w-5 sm:h-5" />
+                              <span className="text-sm sm:text-base font-medium text-text-primary">{timeline?.label}</span>
                             </div>
                           </button>
                         ))}
@@ -336,23 +336,23 @@ This inquiry was submitted through the QK DEV website contact form.`
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-semibold text-text-primary mb-6">
+                      <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-4 sm:mb-6">
                         {t('contact.form.step1.budget.title')}
                       </h3>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3">
                         {budgetRanges?.map((budget) => (
                           <button
                             key={budget?.id}
                             type="button"
                             onClick={() => handleInputChange('budget', budget?.id)}
-                            className={`w-full p-4 border-2 rounded-xl text-left transition-all duration-300 ${
+                            className={`w-full p-3 sm:p-4 border-2 rounded-xl text-left transition-all duration-300 min-h-[60px] ${
                               formData?.budget === budget?.id
                                 ? 'border-primary bg-primary/5' :'border-border hover:border-primary/50'
                             }`}
                           >
                             <div className="flex items-center justify-between">
-                              <span className="font-medium text-text-primary">{budget?.label}</span>
-                              <span className="text-sm text-text-secondary">{budget?.range}</span>
+                              <span className="text-sm sm:text-base font-medium text-text-primary">{budget?.label}</span>
+                              <span className="text-xs sm:text-sm text-text-secondary">{budget?.range}</span>
                             </div>
                           </button>
                         ))}
@@ -364,7 +364,7 @@ This inquiry was submitted through the QK DEV website contact form.`
                         type="button"
                         onClick={nextStep}
                         disabled={!formData?.projectType || !formData?.timeline}
-                        className="cta-button"
+                        className="cta-button text-sm sm:text-base min-h-[44px]"
                         iconName="ArrowRight"
                         iconPosition="right"
                       >
@@ -376,22 +376,22 @@ This inquiry was submitted through the QK DEV website contact form.`
 
                 {/* Step 2: Contact Details */}
                 {currentStep === 2 && (
-                  <div className="space-y-6">
-                    <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-xl font-semibold text-text-primary">
+                  <div className="space-y-4 sm:space-y-6">
+                    <div className="flex items-center justify-between mb-4 sm:mb-6">
+                      <h3 className="text-lg sm:text-xl font-semibold text-text-primary">
                         {t('contact.form.step2.title')}
                       </h3>
                       <button
                         type="button"
                         onClick={prevStep}
-                        className="text-primary hover:text-primary/80 font-medium flex items-center space-x-1"
+                        className="text-primary hover:text-primary/80 font-medium flex items-center space-x-1 text-sm sm:text-base min-h-[32px]"
                       >
-                        <Icon name="ArrowLeft" size={16} />
+                        <Icon name="ArrowLeft" size={14} className="sm:w-4 sm:h-4" />
                         <span>{t('contact.form.back')}</span>
                       </button>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       <Input
                         label={t('contact.form.fields.name.label')}
                         type="text"
@@ -410,7 +410,7 @@ This inquiry was submitted through the QK DEV website contact form.`
                       />
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       <Input
                         label={t('contact.form.fields.phone.label')}
                         type="tel"
@@ -428,7 +428,7 @@ This inquiry was submitted through the QK DEV website contact form.`
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-text-primary mb-2">
+                      <label className="block text-xs sm:text-sm font-medium text-text-primary mb-2">
                         {t('contact.form.fields.description.label')}
                       </label>
                       <textarea
@@ -436,21 +436,21 @@ This inquiry was submitted through the QK DEV website contact form.`
                         value={formData?.projectDescription}
                         onChange={(e) => handleInputChange('projectDescription', e?.target?.value)}
                         rows={4}
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                        className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none text-sm sm:text-base"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-text-primary mb-4">
+                      <label className="block text-xs sm:text-sm font-medium text-text-primary mb-3 sm:mb-4">
                         {t('contact.form.fields.features.label')}
                       </label>
-                      <div className="grid md:grid-cols-2 gap-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                         {featureOptions?.map((feature) => (
                           <button
                             key={feature}
                             type="button"
                             onClick={() => handleFeatureToggle(feature)}
-                            className={`p-3 border rounded-lg text-left transition-colors ${
+                            className={`p-2.5 sm:p-3 border rounded-lg text-left transition-colors min-h-[44px] ${
                               formData?.features?.includes(feature)
                                 ? 'border-primary bg-primary/5 text-primary' :'border-border hover:border-primary/50'
                             }`}
@@ -458,9 +458,10 @@ This inquiry was submitted through the QK DEV website contact form.`
                             <div className="flex items-center space-x-2">
                               <Icon 
                                 name={formData?.features?.includes(feature) ? "CheckSquare" : "Square"} 
-                                size={16} 
+                                size={14} 
+                                className="sm:w-4 sm:h-4"
                               />
-                              <span className="text-sm">{feature}</span>
+                              <span className="text-xs sm:text-sm">{feature}</span>
                             </div>
                           </button>
                         ))}
@@ -472,14 +473,14 @@ This inquiry was submitted through the QK DEV website contact form.`
                       type="submit"
                       loading={isSubmitting}
                       fullWidth
-                      className="cta-button"
+                      className="cta-button text-sm sm:text-base min-h-[44px]"
                       iconName="Send"
                       iconPosition="right"
                     >
 {t('contact.form.submit', { isSubmitting })}
                     </Button>
 
-                    <div className="text-center text-sm text-text-secondary">
+                    <div className="text-center text-xs sm:text-sm text-text-secondary">
                       {t('contact.form.privacy')}
                     </div>
                   </div>

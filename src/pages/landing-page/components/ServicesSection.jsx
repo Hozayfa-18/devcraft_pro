@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Icon from '../../../components/AppIcon';
-import Image from '../../../components/AppImage';
+import Image from '../../../components/AppImage'; 
 
 const ServicesSection = () => {
   const { t } = useTranslation();
@@ -44,17 +44,17 @@ const ServicesSection = () => {
     <section id="services" className="py-20 lg:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-heading text-text-primary mb-4 sm:mb-6">
             {t('services.title')} <span className="text-primary">{t('services.titleHighlight')}</span>
           </h2>
-          <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-text-secondary leading-relaxed">
             {t('services.subtitle')}
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services?.map((service) => (
             <div
               key={service?.id}
@@ -63,7 +63,7 @@ const ServicesSection = () => {
               onMouseLeave={() => setHoveredService(null)}
             >
               {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 sm:h-48 overflow-hidden">
                 <Image
                   src={service?.image}
                   alt={service?.title}
@@ -72,34 +72,34 @@ const ServicesSection = () => {
                 <div className={`absolute inset-0 bg-gradient-to-br ${service?.gradient} opacity-80`} />
                 
                 {/* Icon */}
-                <div className="absolute top-4 left-4 p-3 bg-white/20 backdrop-blur-sm rounded-lg">
-                  <Icon name={service?.icon} size={24} color="white" />
+                <div className="absolute top-3 sm:top-4 left-3 sm:left-4 p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-lg">
+                  <Icon name={service?.icon} size={20} color="white" className="sm:w-6 sm:h-6" />
                 </div>
 
                 {/* Price Badge */}
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-white/90 backdrop-blur-sm text-text-primary px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                   {service?.startingPrice}
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-text-primary mb-2">
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-2">
                   {service?.title}
                 </h3>
-                <p className="text-text-secondary mb-4 text-sm leading-relaxed">
+                <p className="text-text-secondary mb-3 sm:mb-4 text-sm leading-relaxed">
                   {service?.description}
                 </p>
 
-                {/* Features - Show on Hover */}
+                {/* Features - Show on Hover/Touch */}
                 <div className={`transition-all duration-300 ${
                   hoveredService === service?.id 
                     ? 'max-h-96 opacity-100' :'max-h-0 opacity-0'
                 } overflow-hidden`}>
-                  <div className="space-y-2 mb-4">
+                  <div className="space-y-2 mb-3 sm:mb-4">
                     {service?.features?.map((feature, index) => (
-                      <div key={index} className="flex items-center space-x-2 text-sm">
-                        <Icon name="Check" size={14} className="text-success flex-shrink-0" />
+                      <div key={index} className="flex items-center space-x-2 text-xs sm:text-sm">
+                        <Icon name="Check" size={12} className="text-success flex-shrink-0 sm:w-3.5 sm:h-3.5" />
                         <span className="text-text-secondary">{feature}</span>
                       </div>
                     ))}
@@ -114,10 +114,10 @@ const ServicesSection = () => {
                       contactSection?.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="w-full bg-primary hover:bg-primary/90 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
+                  className="w-full bg-primary hover:bg-primary/90 text-white py-2.5 sm:py-2 px-3 sm:px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 text-sm sm:text-base min-h-[44px]"
                 >
                   <span>{t('services.cta')}</span>
-                  <Icon name="ArrowRight" size={16} />
+                  <Icon name="ArrowRight" size={14} className="sm:w-4 sm:h-4" />
                 </button>
               </div>
 
@@ -130,19 +130,19 @@ const ServicesSection = () => {
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-16 bg-muted/50 rounded-2xl p-8">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div className="mt-12 sm:mt-16 bg-muted/50 rounded-2xl p-6 sm:p-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
             <div>
-              <div className="text-3xl font-heading text-primary mb-2">500+</div>
-              <div className="text-text-secondary">{t('services.stats.projects')}</div>
+              <div className="text-2xl sm:text-3xl font-heading text-primary mb-1 sm:mb-2">500+</div>
+              <div className="text-sm sm:text-base text-text-secondary">{t('services.stats.projects')}</div>
             </div>
             <div>
-              <div className="text-3xl font-heading text-accent mb-2">98%</div>
-              <div className="text-text-secondary">{t('services.stats.delivery')}</div>
+              <div className="text-2xl sm:text-3xl font-heading text-accent mb-1 sm:mb-2">98%</div>
+              <div className="text-sm sm:text-base text-text-secondary">{t('services.stats.delivery')}</div>
             </div>
             <div>
-              <div className="text-3xl font-heading text-success mb-2">24/7</div>
-              <div className="text-text-secondary">{t('services.stats.support')}</div>
+              <div className="text-2xl sm:text-3xl font-heading text-success mb-1 sm:mb-2">24/7</div>
+              <div className="text-sm sm:text-base text-text-secondary">{t('services.stats.support')}</div>
             </div>
           </div>
         </div>
