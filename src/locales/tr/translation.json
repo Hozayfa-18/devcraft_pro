@@ -1,0 +1,917 @@
+{
+  "header": {
+    "nav": {
+      "services": "Hizmetler",
+      "process": "Süreç", 
+      "portfolio": "Portföy",
+      "pricing": "Fiyatlandırma",
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    },
+    "cta": {
+      "getQuote": "Teklif Al",
+      "startProject": "Proje Başlat"
+    }
+  },
+  "hero": {
+    "badge": "500+ İşletme Tarafından Güvenilir",
+    "title": "Fikirlerinizi Dönüştürün",
+    "titleHighlight1": "Güçlü Dijital",
+    "titleHighlight2": "Çözümler",
+    "subtitle": "Şeffaf fiyatlandırma, garanti edilmiş zaman çizelgeleri ve sürekli destek ile profesyonel geliştirme. Özel geliştirme projelerinin riskini ve belirsizliğini ortadan kaldırın.",
+    "cta": {
+      "getQuote": "Ücretsiz Teklifinizi Alın",
+      "viewWork": "Çalışmalarımızı Görün"
+    },
+    "metrics": {
+      "projects": "Teslim Edilen Projeler",
+      "satisfaction": "Müşteri Memnuniyeti"
+    },
+    "scrollIndicator": "Keşfetmek için kaydırın"
+  },
+  "problem": {
+    "title": "Geliştirme",
+    "titleHighlight": "Felaketlerinden Bıktınız mı?",
+    "subtitle": "Yalnız değilsiniz. Çoğu işletme sahibinin başarısız geliştirme projeleri hakkında korkunç hikayeleri var. Bu yaygın sorunların gerçek maliyetini görmek için aşağıya tıklayın.",
+    "problems": {
+      "budget": {
+        "title": "Bütçe Aşımları",
+        "description": "5.000$ ile başlayan projeler 15.000$'a mal oluyor",
+        "stats": "Projelerin %73'ü ilk bütçeyi aşıyor",
+        "consequences": [
+          "Beklenmeyen maliyetler iş kaynaklarını tüketiyor",
+          "Proje kapsamı net sınırlar olmadan genişliyor",
+          "Geliştirme ortasında gizli ücretler keşfediliyor",
+          "Şeffaf fiyatlandırma yapısı yok"
+        ]
+      },
+      "deadlines": {
+        "title": "Kaçırılan Son Tarihler",
+        "description": "Söz verilen 6 haftalık teslimat 6 aylık kabusa dönüşüyor",
+        "stats": "Projelerin %68'i geç teslim ediliyor",
+        "consequences": [
+          "Pazar fırsatları rakiplere kaybediliyor",
+          "Lansman tarihleri süresiz erteleniyor",
+          "Gecikmeler nedeniyle gelir hedefleri kaçırılıyor",
+          "Ekip verimliliği ciddi şekilde etkileniyor"
+        ]
+      },
+      "communication": {
+        "title": "Kötü İletişim",
+        "description": "Haftalarca sessizlik ardından hayal kırıklığı yaratan güncellemeler",
+        "stats": "%81 iletişim sorunları bildiriyor",
+        "consequences": [
+          "Proje ilerlemesinde görünürlük yok",
+          "Gereksinimler tekrar tekrar yanlış anlaşılıyor",
+          "Geri bildirimler göz ardı ediliyor veya yanlış uygulanıyor",
+          "Proje durumu hakkında sürekli endişe"
+        ]
+      },
+      "quality": {
+        "title": "Kalitesiz Ürün",
+        "description": "Teslim edilen ürün lansman gününde bozuluyor",
+        "stats": "%59 lansman sonrası acil düzeltme gerektiriyor",
+        "consequences": [
+          "Müşteriler önünde utandırıcı hatalar",
+          "Güvenlik açıkları işi riske atıyor",
+          "Performans sorunları kullanıcıları uzaklaştırıyor",
+          "Acil düzeltmeler için ek maliyetler"
+        ]
+      }
+    },
+    "impact": "Gerçek İş Etkisi:",
+    "solution": {
+      "title": "Bu riski tamamen ortadan kaldırıyoruz",
+      "description": "Kanıtlanmış sürecimiz ve şeffaf yaklaşımımız, bu sorunlarla asla karşılaşmamanızı sağlar."
+    },
+    "cta": {
+      "title": "Farklı Bir Deneyim İçin Hazır mısınız?",
+      "subtitle": "Güvenilirliği riske tercih eden 500+ işletme sahibine katılın.",
+      "button": "Çözümümüzü Görün"
+    }
+  },
+  "services": {
+    "title": "Profesyonel Geliştirme",
+    "titleHighlight": "Hizmetleri",
+    "subtitle": "Basit landing sayfalarından karmaşık web uygulamaları ve mobil uygulamalara kadar, şeffaf fiyatlandırma ve garanti edilmiş zaman çizelgeleri ile kaliteli çözümler sunuyoruz.",
+    "items": {
+      "landingPages": {
+        "title": "Landing Sayfaları",
+        "description": "Ziyaretçileri müşteriye dönüştüren yüksek dönüşüm oranlı sayfalar",
+        "price": "500$'dan başlayan",
+        "features": [
+          "Mobil uyumlu tasarım",
+          "SEO optimizasyonu",
+          "A/B test kurulumu",
+          "Analitik entegrasyonu",
+          "Lead yakalama formları",
+          "7 günlük teslimat"
+        ]
+      },
+      "websites": {
+        "title": "Web Siteleri",
+        "description": "Dijital varlığınızı kuran profesyonel web siteleri",
+        "price": "3.000$'dan başlayan",
+        "features": [
+          "Özel tasarım ve geliştirme",
+          "İçerik yönetim sistemi",
+          "E-ticaret entegrasyonu",
+          "Çok sayfalı mimari",
+          "Performans optimizasyonu",
+          "3-4 haftalık teslimat"
+        ]
+      },
+      "mobileApps": {
+        "title": "Mobil Uygulamalar",
+        "description": "iOS ve Android için yerli ve çapraz platform uygulamaları",
+        "price": "5.000$'dan başlayan",
+        "features": [
+          "iOS ve Android geliştirme",
+          "Çapraz platform uyumluluğu",
+          "Uygulama mağazası optimizasyonu",
+          "Push bildirimleri",
+          "Çevrimdışı işlevsellik",
+          "8-12 haftalık teslimat"
+        ]
+      }
+    },
+    "cta": "Teklif Al",
+    "stats": {
+      "projects": "Tamamlanan Projeler",
+      "delivery": "Zamanında Teslimat",
+      "support": "Destek Mevcut"
+    }
+  },
+  "process": {
+    "title": "Kanıtlanmış",
+    "titleHighlight": "Sürecimiz",
+    "subtitle": "İlk danışmanlıktan nihai dağıtıma kadar, kalite, şeffaflık ve zamanında teslimat sağlayan yapılandırılmış bir yaklaşım izliyoruz.",
+    "steps": {
+      "consult": {
+        "title": "Danışmanlık",
+        "subtitle": "Keşif ve Planlama",
+        "duration": "1-2 gün",
+        "description": "Detaylı danışmanlık yoluyla vizyonunuzu, hedeflerinizi ve gereksinimlerinizi anlıyoruz.",
+        "deliverables": [
+          "Proje gereksinimleri belgesi",
+          "Teknik özellikler",
+          "Zaman çizelgesi ve kilometre taşları",
+          "Bütçe dağılımı",
+          "Risk değerlendirmesi"
+        ],
+        "clientInvolvement": [
+          "İlk danışmanlık görüşmesi (2 saat)",
+          "Gereksinimler inceleme toplantısı",
+          "Proje kapsamının onaylanması",
+          "Sözleşme imzalama"
+        ]
+      },
+      "design": {
+        "title": "Tasarım",
+        "subtitle": "UI/UX ve Mimari",
+        "duration": "3-5 gün",
+        "description": "Markanız ve hedeflerinizle uyumlu çarpıcı tasarımlar ve sağlam mimari oluşturun.",
+        "deliverables": [
+          "Tel kafesler ve maketler",
+          "Etkileşimli prototipler",
+          "Tasarım sistemi",
+          "Teknik mimari",
+          "Veritabanı şeması"
+        ],
+        "clientInvolvement": [
+          "Tasarım inceleme oturumları",
+          "Geri bildirim ve onay",
+          "Marka uyumu kontrolü",
+          "Kullanıcı deneyimi doğrulama"
+        ]
+      },
+      "develop": {
+        "title": "Geliştirme",
+        "subtitle": "İnşa ve Test",
+        "duration": "2-8 hafta",
+        "description": "Tasarımları titiz testlerle tam işlevsel uygulamalara dönüştürün.",
+        "deliverables": [
+          "Tam işlevsel uygulama",
+          "Mobil duyarlı uygulama",
+          "Performans optimizasyonu",
+          "Güvenlik uygulaması",
+          "Kalite güvence testleri"
+        ],
+        "clientInvolvement": [
+          "Haftalık ilerleme güncellemeleri",
+          "Özellik gösterimleri",
+          "Geri bildirim entegrasyonu",
+          "Test katılımı"
+        ]
+      },
+      "deploy": {
+        "title": "Dağıtım",
+        "subtitle": "Lansman ve Destek",
+        "duration": "1-2 gün",
+        "description": "Uygulamanızı başlatın ve başarı için sürekli destek sağlayın.",
+        "deliverables": [
+          "Üretim dağıtımı",
+          "Performans izleme",
+          "Kullanıcı eğitimi",
+          "Dokümantasyon",
+          "Devam eden destek"
+        ],
+        "clientInvolvement": [
+          "Lansman koordinasyonu",
+          "Kullanıcı kabul testleri",
+          "Eğitim oturumları",
+          "Destek kurulumu"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Projenizi Başlatmaya Hazır mısınız?",
+      "subtitle": "Gereksinimlerinizi tartışalım ve projeniz için özel bir zaman çizelgesi oluşturalım.",
+      "button": "Projenizi Başlatın"
+    },
+    "modal": {
+      "duration": "Süre",
+      "deliverables": "Alacağınız",
+      "involvement": "Katılımınız"
+    }
+  },
+  "pricing": {
+    "title": "Şeffaf",
+    "titleHighlight": "Fiyatlandırma",
+    "subtitle": "Gizli ücret yok, sürpriz yok. İhtiyaçlarınıza ve bütçenize uygun paketi seçin.",
+    "projectTypes": {
+      "landingPage": "Landing Page",
+      "webApp": "Web Uygulaması",
+      "mobileApp": "Mobil Uygulamalar"
+    },
+    "packages": {
+      "landingPage": {
+        "basic": {
+          "name": "Temel Landing Page",
+          "price": "500$'dan başlayan",
+          "timeline": "1-2 hafta",
+          "description": "Kampanyalarınız için basit, yüksek dönüşüm oranlı landing page",
+          "features": [
+            "Tek sayfa tasarım",
+            "Mobil uyumlu",
+            "İletişim formu entegrasyonu",
+            "Temel SEO optimizasyonu",
+            "Sosyal medya bağlantıları",
+            "3 ay destek"
+          ],
+          "revisions": "3 tur"
+        },
+        "professional": {
+          "name": "Profesyonel Landing Page",
+          "price": "1,000$'dan başlayan",
+          "timeline": "2-3 hafta",
+          "description": "Dönüşüm optimizasyonu ile gelişmiş landing page",
+          "features": [
+            "Özel tasarım ve animasyonlar",
+            "A/B test kurulumu",
+            "Gelişmiş analitik",
+            "Potansiyel müşteri yakalama formları",
+            "E-posta entegrasyonu",
+            "6 ay destek"
+          ],
+          "revisions": "5 tur"
+        },
+        "enterprise": {
+          "name": "Kurumsal Landing Page",
+          "price": "2,000$'dan başlayan",
+          "timeline": "3-4 hafta",
+          "description": "Gelişmiş özelliklerle tam kapsamlı landing page çözümü",
+          "features": [
+            "Çok değişkenli test",
+            "CRM entegrasyonu",
+            "Gelişmiş takip",
+            "Özel işlevsellik",
+            "Performans optimizasyonu",
+            "12 ay destek"
+          ],
+          "revisions": "Sınırsız"
+        }
+      },
+      "webApp": {
+        "basic": {
+          "name": "Temel Web Uygulaması",
+          "price": "3,000$'dan başlayan",
+          "timeline": "3-4 hafta",
+          "description": "Temel işlevsellik ile basit web uygulaması",
+          "features": [
+            "Özel işlevsellik",
+            "Kullanıcı kimlik doğrulama",
+            "Temel kontrol paneli",
+            "Veritabanı entegrasyonu",
+            "Duyarlı tasarım",
+            "3 ay destek"
+          ],
+          "revisions": "3 tur"
+        },
+        "professional": {
+          "name": "Gelişmiş Web Uygulaması",
+          "price": "5,000$'dan başlayan",
+          "timeline": "4-6 hafta",
+          "description": "Üretime hazır özellik açısından zengin web uygulaması",
+          "features": [
+            "Gelişmiş özellikler",
+            "Çok kullanıcılı sistem",
+            "Yönetici kontrol paneli",
+            "API geliştirme",
+            "Üçüncü taraf entegrasyonları",
+            "Analitik ve raporlama",
+            "6 ay destek"
+          ],
+          "revisions": "5 tur"
+        },
+        "enterprise": {
+          "name": "Kurumsal Web Uygulaması",
+          "price": "10,000$'dan başlayan",
+          "timeline": "10-12 hafta",
+          "description": "Özel özelliklerle kurumsal düzeyde web uygulaması",
+          "features": [
+            "Özel mimari",
+            "Gelişmiş güvenlik",
+            "Ölçeklenebilir altyapı",
+            "Özel entegrasyonlar",
+            "Gelişmiş analitik",
+            "Öncelikli destek",
+            "12 ay destek"
+          ],
+          "revisions": "Sınırsız"
+        }
+      },
+      "mobileApp": {
+        "basic": {
+          "name": "Temel Mobil Uygulama",
+          "price": "5,000$'dan başlayan",
+          "timeline": "4-5 hafta",
+          "description": "Temel işlevsellik için basit uygulama",
+          "features": [
+            "iOS ve Android",
+            "5 ekrana kadar",
+            "Temel kullanıcı kimlik doğrulama",
+            "Push bildirimleri",
+            "App store gönderimi",
+            "3 ay destek"
+          ],
+          "revisions": "3 tur"
+        },
+        "professional": {
+          "name": "Gelişmiş Mobil Uygulama",
+          "price": "7,500$'dan başlayan",
+          "timeline": "6-8 hafta",
+          "description": "İş büyümesi için özellik açısından zengin uygulama",
+          "features": [
+            "Platformlar arası geliştirme",
+            "15 ekrana kadar",
+            "Gelişmiş kullanıcı yönetimi",
+            "Ödeme entegrasyonu",
+            "Çevrimdışı işlevsellik",
+            "Analitik entegrasyonu",
+            "6 ay destek"
+          ],
+          "revisions": "5 tur"
+        },
+        "enterprise": {
+          "name": "Özel Mobil Çözüm",
+          "price": "10,000$'dan başlayan",
+          "timeline": "10-12 hafta",
+          "description": "Tamamen özelleştirilmiş mobil deneyim",
+          "features": [
+            "Native iOS ve Android",
+            "Sınırsız ekran",
+            "Özel backend",
+            "Üçüncü taraf entegrasyonları",
+            "Gelişmiş güvenlik",
+            "Performans optimizasyonu",
+            "12 ay destek"
+          ],
+          "revisions": "Sınırsız"
+        }
+      }
+    },
+    "popular": "En Popüler",
+    "startingFrom": "Başlayan",
+    "timeline": "Zaman Çizelgesi",
+    "revisions": "Tasarım Revizyonları",
+    "getStarted": "Başla",
+    "included": {
+      "title": "Her Pakette Neler Dahil",
+      "items": [
+        { "icon": "Shield", "title": "Kalite Garantisi", "desc": "%100 memnuniyet veya para iadesi" },
+        { "icon": "Clock", "title": "Zamanında Teslimat", "desc": "Garantili zaman çizelgesi uyumu" },
+        { "icon": "Headphones", "title": "Özel Destek", "desc": "Ekibinize doğrudan erişim" },
+        { "icon": "Repeat", "title": "Ücretsiz Revizyonlar", "desc": "Her pakette dahil" }
+      ]
+    },
+    "custom": {
+      "title": "Özel Bir Şey mi Gerekiyor?",
+      "subtitle": "Her işletme benzersizdir. Spesifik gereksinimlerinizi tartışalım ve özel bir çözüm oluşturalım.",
+      "button": "Özel Teklif İste"
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan",
+    "titleHighlight": "Sorular",
+    "subtitle": "Geliştirme sürecimiz, fiyatlandırma ve destek hakkında yaygın sorulara yanıtlar alın.",
+    "items": [
+      {
+        "question": "Tipik bir proje ne kadar sürer?",
+        "answer": "Proje süreleri karmaşıklığa göre değişir:\n\n• Landing sayfaları: 1-2 hafta\n• Web uygulamaları: 8-20 hafta\n• Mobil uygulamalar: 8-24 hafta\n\nDanışmanlık sırasında detaylı zaman çizelgeleri sunuyoruz ve %98 zamanında teslimat oranıyla anlaşılan tarihlere uyuyoruz.",
+        "category": "Zaman Çizelgesi"
+      },
+      {
+        "question": "Fiyatlarınızda neler dahil?",
+        "answer": "Şeffaf fiyatlarımız şunları içerir:\n\n• Tam tasarım ve geliştirme\n• Mobil uyumlu uygulama\n• Kalite güvencesi testleri\n• Dağıtım ve lansman desteği\n• Lansman sonrası destek dönemi\n• Kaynak kodu ve dokümantasyon\n\nFiyatlar landing sayfaları için 2.500$'dan, web uygulamaları ve mobil uygulamalar için 15.000$'dan başlar. Gizli ücret veya sürpriz ücret yok - her şey önceden belirtilir.",
+        "category": "Fiyatlandırma"
+      },
+      {
+        "question": "Lansman sonrası devam eden destek sağlıyor musunuz?",
+        "answer": "Evet! Her proje şunları içerir:\n\n• 3-12 ay ücretsiz destek (pakete göre değişir)\n• Hata düzeltmeleri ve küçük güncellemeler\n• Performans izleme\n• Güvenlik güncellemeleri\n• Teknik yardım\n\nUzun vadeli ortaklıklar için genişletilmiş destek planları mevcuttur.",
+        "category": "Destek"
+      },
+      {
+        "question": "Proje kalitesini nasıl garanti ediyorsunuz?",
+        "answer": "Kalite her adımda entegre edilmiştir:\n\n• Her kilometre taşında kod incelemeleri ve testler\n• Otomatik testler ve kalite kapıları\n• Performans optimizasyonu\n• Güvenlik en iyi uygulamaları\n• Çapraz tarayıcı ve cihaz testleri\n• Kullanıcı kabul testleri\n\nKurumsal standartları karşılayan üretim hazır kod teslim ediyoruz.",
+        "category": "Kalite"
+      }
+    ],
+    "cta": {
+      "title": "Hala Sorularınız Var mı?",
+      "subtitle": "Ekibimizden kişiselleştirilmiş yanıtlar alın. Projenizi tartışmak için ücretsiz bir danışmanlık rezervasyonu yapın.",
+      "button": "Ücretsiz Danışmanlık Rezervasyonu"
+    },
+    "videoAvailable": "Video Mevcut",
+    "watchVideo": "Videoyu İzle",
+    "modal": {
+      "videoTitle": "Video",
+      "videoContent": "Video içeriği buraya gömülecek"
+    }
+  },
+  "features": {
+    "title": "Teknik",
+    "titleHighlight": "Özellikler",
+    "subtitle": "Maksimum performans ve güvenilirlik için tasarlanmış gelişmiş teknik çözümler sunuyoruz.",
+    "items": {
+      "speed": {
+        "title": "Şimşek Hızında",
+        "description": "Hızlı yükleme süreleri ile performans optimizasyonlu uygulamalar",
+        "metric": "<2s",
+        "metricLabel": "Yükleme Süresi",
+        "examples": [
+          "Core Web Vitals optimizasyonu",
+          "CDN dağıtımı",
+          "Görsel optimizasyonu"
+        ]
+      },
+      "reliability": {
+        "title": "%99.9 Güvenilirlik",
+        "description": "Uptime garantisi ile sağlam altyapı",
+        "metric": "%99.9",
+        "metricLabel": "Uptime",
+        "examples": [
+          "Çoklu sunucular",
+          "Otomatik yedeklemeler",
+          "7/24 izleme"
+        ]
+      },
+      "scalability": {
+        "title": "Ölçeklenebilir",
+        "description": "İşletmenizle birlikte büyüyen çözümler",
+        "metric": "10x",
+        "metricLabel": "Kapasite Artışı",
+        "examples": [
+          "Bulut işleme",
+          "Ölçeklenebilir veritabanları",
+          "Yük dengeleme"
+        ]
+      },
+      "support": {
+        "title": "7/24 Destek",
+        "description": "Her zaman mevcut özel destek ekibi",
+        "metric": "7/24",
+        "metricLabel": "Destek Mevcut",
+        "examples": [
+          "Anında yanıt",
+          "Çok dilli destek",
+          "Hızlı çözümler"
+        ]
+      },
+      "security": {
+        "title": "Gelişmiş Güvenlik",
+        "description": "Verileriniz ve uygulamalarınız için kapsamlı koruma",
+        "metric": "%100",
+        "metricLabel": "Veri Koruması",
+        "examples": [
+          "SSL şifreleme",
+          "Düzenli güvenlik denetimleri",
+          "GDPR uyumluluğu"
+        ]
+      },
+      "performance": {
+        "title": "Şimşek Hızında",
+        "description": "Core Web Vitals uyumluluğu ile hız optimizasyonlu",
+        "metric": "<2s",
+        "metricLabel": "Yükleme Süresi",
+        "examples": [
+          "Core Web Vitals optimizasyonu",
+          "CDN dağıtımı",
+          "Görsel optimizasyonu"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Gerçek Müşterilerden Gerçek Sonuçlar",
+      "subtitle": "Teknik güçlü yanlarımızın nasıl iş başarısına dönüştüğünü görün",
+      "stats": [
+        {
+          "value": "%150",
+          "label": "Trafik Artışı",
+          "quote": "Yeni web sitemiz 3 kat daha hızlı yükleniyor ve çok daha iyi dönüştürüyor",
+          "color": "text-primary"
+        },
+        {
+          "value": "2,5M$",
+          "label": "Üretilen Gelir",
+          "quote": "Mobil uygulama küresel olarak yeni pazarlara ulaşmamıza yardımcı oldu",
+          "color": "text-success"
+        },
+        {
+          "value": "%90",
+          "label": "Zaman Tasarrufu",
+          "quote": "Otomasyon özellikleri manuel süreçleri ortadan kaldırdı",
+          "color": "text-accent"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "titleHighlight": "QK DEV",
+    "subtitle": "Fikirlerinizi güçlü dijital çözümlere dönüştüren tutkulu geliştiriciler ve tasarımcılardan oluşan bir ekibiz. Misyonumuz, olağanüstü web ve mobil geliştirme ile işletmelerin başarılı olmasına yardımcı olmaktır.",
+    "whatWeDo": {
+      "title": "Ne Yapıyoruz",
+      "subtitle": "İşletmelerin dijital varlığını kurmasına ve büyütmesine yardımcı olan üç temel hizmette uzmanlaşıyoruz",
+      "services": [
+        {
+          "icon": "FileText",
+          "title": "Landing Sayfaları",
+          "description": "Ziyaretçileri müşteriye dönüştüren yüksek dönüşüm oranlı landing sayfaları. Pazarlama kampanyaları, ürün lansmanları ve potansiyel müşteri çekme için mükemmel.",
+          "features": [
+            "Mobil uyumlu tasarım",
+            "SEO optimize",
+            "Hızlı yükleme süreleri"
+          ]
+        },
+        {
+          "icon": "Globe",
+          "title": "Web Uygulamaları",
+          "description": "Karmaşık iş sorunlarını çözen özel web uygulamaları. Basit kontrol panellerinden kurumsal düzeyde platformlara kadar.",
+          "features": [
+            "Özel işlevsellik",
+            "Kullanıcı kimlik doğrulama",
+            "Veritabanı entegrasyonu"
+          ]
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Mobil Uygulamalar",
+          "description": "iOS ve Android için native ve platformlar arası mobil uygulamalar. Müşterilerinize nerede olurlarsa olsunlar ulaşın.",
+          "features": [
+            "iOS & Android",
+            "App store optimizasyonu",
+            "Push bildirimleri"
+          ]
+        }
+      ]
+    },
+    "trackRecord": {
+      "title": "Başarı Geçmişimiz",
+      "subtitle": "Mükemmellik ve müşteri başarısına olan bağlılığımızı gösteren rakamlar",
+      "stats": [
+        {
+          "icon": "Users",
+          "number": "500+",
+          "label": "Mutlu Müşteriler",
+          "description": "Büyümesine yardım ettiğimiz işletmeler"
+        },
+        {
+          "icon": "CheckCircle",
+          "number": "%98",
+          "label": "Zamanında Teslimat",
+          "description": "Zamanında teslim edilen projeler"
+        },
+        {
+          "icon": "Star",
+          "number": "4,9/5",
+          "label": "Müşteri Değerlendirmesi",
+          "description": "Ortalama memnuniyet puanı"
+        },
+        {
+          "icon": "TrendingUp",
+          "number": "%150",
+          "label": "ROI Artışı",
+          "description": "Ortalama müşteri büyümesi"
+        }
+      ]
+    },
+    "team": {
+      "title": "Ekibimizle Tanışın",
+      "subtitle": "Vizyonunuzu hayata geçirmeye adanmış deneyimli profesyoneller",
+      "members": [
+        {
+          "name": "Alex Johnson",
+          "role": "Lead Geliştirici",
+          "expertise": "Full-Stack Geliştirme",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+          "description": "Ölçeklenebilir web ve mobil uygulamalar oluşturmada 10+ yıl deneyim"
+        },
+        {
+          "name": "Sarah Chen",
+          "role": "UI/UX Tasarımcısı",
+          "expertise": "Tasarım & Kullanıcı Deneyimi",
+          "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face",
+          "description": "Dönüştüren güzel, kullanıcı dostu arayüzler oluşturma"
+        },
+        {
+          "name": "Mike Rodriguez",
+          "role": "Proje Yöneticisi",
+          "expertise": "Proje Koordinasyonu",
+          "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+          "description": "Sorunsuz proje teslimi ve net iletişim sağlama"
+        }
+      ]
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "subtitle": "Yaptığımız her şeyi yönlendiren ilkeler",
+      "items": [
+        {
+          "icon": "Shield",
+          "title": "Kalite Öncelikli",
+          "description": "Kaliteden asla ödün vermeyiz. Her kod satırı özen ve detaylara dikkat edilerek yazılır."
+        },
+        {
+          "icon": "Clock",
+          "title": "Zamanında Teslimat",
+          "description": "Zaman çizelgenizi saygı duyarız ve her seferinde söz verdiğimizde projeleri teslim ederiz."
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "Şeffaf İletişim",
+          "description": "Düzenli güncellemeler ve net iletişimle projenizin tam olarak nerede olduğunu her zaman bileceksiniz."
+        },
+        {
+          "icon": "Users",
+          "title": "Müşteri Odaklı",
+          "description": "Başarınız bizim başarımızdır. İşletmenizin büyümesine ve gelişmesine yardımcı olmaya yatırım yapıyoruz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bizimle Çalışmaya Hazır mısınız?",
+      "subtitle": "Projenizi tartışalım ve fikirlerinizi hayata geçirmenize nasıl yardımcı olabileceğimizi görelim.",
+      "button": "Projenizi Başlatın"
+    }
+  },
+  "contact": {
+    "title": "Projenizi Başlatmaya",
+    "titleHighlight": "Hazır mısınız?",
+    "subtitle": "Ücretsiz fiyat teklifi ve zaman çizelgesi tahmini alın. Herhangi bir taahhüt gerekmez.",
+    "getInTouch": {
+      "title": "İletişime Geçin"
+    },
+    "methods": [
+      {
+        "icon": "Phone",
+        "title": "Bizi Arayın",
+        "value": "+49 17655298403",
+        "value2": "+90 5393225378",
+        "description": "Almanca & İngilizce konuşanlar:",
+        "description2": "Arapça & Türkçe konuşanlar:",
+        "action": "tel:+4917655298403",
+        "action2": "tel:+905393225378"
+      },
+      {
+        "icon": "Mail",
+        "title": "E-posta Gönderin",
+        "value": "info@qk-dev.com",
+        "description": "2 saat içinde yanıt veriyoruz",
+        "action": "mailto:info@qk-dev.com"
+      }
+    ],
+    "trustBadges": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "items": [
+        {
+          "icon": "Shield",
+          "text": "%100 Memnuniyet Garantisi"
+        },
+        {
+          "icon": "Clock",
+          "text": "Zamanında Teslimat Sözü"
+        },
+        {
+          "icon": "Award",
+          "text": "500+ Başarılı Proje"
+        }
+      ]
+    },
+    "form": {
+      "stepIndicator": "{{total}} adımdan {{current}}. adım",
+      "continue": "Devam Et",
+      "back": "Geri",
+      "submit": "{{isSubmitting, select, true {İstek Gönderiliyor...} other {Ücretsiz Teklif Al}}}",
+      "privacy": "Bu formu göndererek QK DEV'den iletişim almayı kabul ediyorsunuz. Gizliliğinize saygı duyuyoruz ve bilgilerinizi asla paylaşmıyoruz.",
+      "step1": {
+        "projectType": {
+          "title": "Hangi tür projeye ihtiyacınız var?"
+        },
+        "timeline": {
+          "title": "Ne zaman tamamlanması gerekiyor?"
+        },
+        "budget": {
+          "title": "Bütçe aralığınız nedir?"
+        }
+      },
+      "step2": {
+        "title": "Bize kendinizden bahsedin"
+      },
+      "fields": {
+        "name": {
+          "label": "Ad Soyad",
+          "placeholder": "Ahmet Yılmaz"
+        },
+        "email": {
+          "label": "E-posta Adresi",
+          "placeholder": "ahmet@sirket.com"
+        },
+        "phone": {
+          "label": "Telefon Numarası",
+          "placeholder": "+90 532 123 45 67"
+        },
+        "company": {
+          "label": "Şirket Adı",
+          "placeholder": "Şirketiniz"
+        },
+        "description": {
+          "label": "Proje Açıklaması",
+          "placeholder": "Proje hedefleriniz, hedef kitle ve özel gereksinimler hakkında bize bilgi verin..."
+        },
+        "features": {
+          "label": "Gerekli Özellikler (Uygulanan tümünü seçin)"
+        }
+      },
+      "projectTypes": [
+        { "id": "landing-page", "label": "Landing Sayfası", "icon": "FileText", "price": "500$'dan başlayarak" },
+        { "id": "web-app", "label": "Web Uygulaması", "icon": "Globe", "price": "5.000$'dan başlayarak" },
+        { "id": "mobile-app", "label": "Mobil Uygulama", "icon": "Smartphone", "price": "5.000$'dan başlayarak" }
+      ],
+      "timelines": [
+        { "id": "asap", "label": "ASAP (Acil İş)", "icon": "Zap" },
+        { "id": "1-month", "label": "1 Ay İçinde", "icon": "Calendar" },
+        { "id": "2-3-months", "label": "2-3 Ay", "icon": "Clock" },
+        { "id": "flexible", "label": "Esnek Zaman Çizelgesi", "icon": "MoreHorizontal" }
+      ],
+      "budgetRanges": [
+        { "id": "under-2k", "label": "2.000$'ın Altında", "range": "500$ - 2.000$" },
+        { "id": "5k-15k", "label": "5.000$ - 15.000$", "range": "5.000$ - 15.000$" },
+        { "id": "15k-20k", "label": "15.000$ - 20.000$", "range": "15.000$ - 20.000$" },
+        { "id": "over-20k", "label": "20.000$+", "range": "20.000$+" },
+        { "id": "discuss", "label": "Tartışalım", "range": "Özel Bütçe" }
+      ],
+      "featureOptions": [
+        "Kullanıcı Kimlik Doğrulama",
+        "Ödeme İşleme",
+        "Admin Paneli",
+        "API Entegrasyonu",
+        "Gerçek Zamanlı Özellikler",
+        "Mobil Uygulama",
+        "E-ticaret",
+        "Analitik",
+        "Çok Dilli",
+        "Üçüncü Taraf Entegrasyonları"
+      ]
+    },
+    "success": {
+      "title": "İsteğiniz İçin Teşekkürler!",
+      "subtitle": "Proje detaylarınızı aldık ve 2 saat içinde şunlarla size geri döneceğiz:",
+      "items": [
+        "Detaylı proje zaman çizelgesi",
+        "Doğru maliyet tahmini",
+        "Sonraki adımlar ve süreç genel bakışı"
+      ],
+      "estimatedTimeline": "Tahmini Zaman Çizelgesi",
+      "footer": "Ücretsiz danışmanlığınızı planlamak için e-postanızı kontrol edin ve onay ve takvim bağlantısı için e-postanızı kontrol edin."
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "QK DEV",
+      "tagline": "Profesyonel Geliştirme",
+      "description": "İş fikirlerinizi güçlü dijital çözümlere dönüştürün. Şeffaf fiyatlandırma ve garanti edilen zaman çizelgeleri ile kaliteli geliştirme hizmetleri sunuyoruz."
+    },
+    "contactInfo": [
+      {
+        "icon": "Phone",
+        "value": "+49 17655298403",
+        "description": "Almanca & İngilizce konuşanlar"
+      },
+      {
+        "icon": "Phone",
+        "value": "+90 5393225378",
+        "description": "Arapça & Türkçe konuşanlar"
+      },
+      {
+        "icon": "Mail",
+        "value": "info@qk-dev.com"
+      },
+      {
+        "icon": "MapPin",
+        "value": "Königstraße 73, 47178 Duisburg, Germany"
+      }
+    ],
+    "socialLinks": [
+      { "name": "X", "icon": "X", "href": "https://x.com/qk_dev" },
+      { "name": "LinkedIn", "icon": "Linkedin", "href": "https://linkedin.com/company/qk_dev" },
+      { "name": "Instagram", "icon": "Instagram", "href": "https://instagram.com/qk_dev" },
+      { "name": "Facebook", "icon": "Facebook", "href": "https://facebook.com/qk_dev" },
+      { "name": "TikTok", "icon": "Video", "href": "https://tiktok.com/@qk_dev" }
+    ],
+    "sections": {
+      "services": "Hizmetler",
+      "company": "Şirket",
+      "support": "Destek"
+    },
+    "links": {
+      "services": [
+        { "label": "Landing Sayfaları", "href": "#services" },
+        { "label": "Web Sitesi Geliştirme", "href": "#services" },
+        { "label": "Mobil Uygulamalar", "href": "#services" }
+      ],
+      "company": [
+        { "label": "Hakkımızda", "href": "#about" },
+        { "label": "Sürecimiz", "href": "#process" },
+        { "label": "Portföy", "href": "#portfolio" },
+        { "label": "Kariyer", "href": "#contact" }
+      ],
+      "support": [
+        { "label": "SSS", "href": "#faq" },
+        { "label": "Destek İletişim", "href": "#contact" }
+      ],
+      "legal": [
+        { "label": "Gizlilik Politikası", "href": "/privacy" },
+        { "label": "Hizmet Şartları", "href": "/terms" },
+        { "label": "Çerez Politikası", "href": "/cookies" },
+        { "label": "GDPR Uyumluluğu", "href": "/gdpr" },
+        { "label": "Güvenlik", "href": "/security" }
+      ]
+    },
+    "certifications": {
+      "title": "Güvenilir & Sertifikalı",
+      "items": [
+        { "name": "ISO 27001", "description": "Bilgi Güvenliği" },
+        { "name": "SOC 2 Type II", "description": "Güvenlik & Erişilebilirlik" },
+        { "name": "GDPR Uyumlu", "description": "Veri Koruması" },
+        { "name": "AWS Partneri", "description": "Bulut Mükemmelliği" }
+      ]
+    },
+    "copyright": "© {{year}} QK DEV. Tüm hakları saklıdır.",
+    "status": "Tüm sistemler çalışıyor",
+    "modal": {
+      "close": "Kapat"
+    },
+    "legalContent": {
+      "privacy": {
+        "title": "Gizlilik Politikası",
+        "content": "<h3>Topladığımız Bilgiler</h3><p>Hesap oluştururken, satın alırken veya destek için bizimle iletişime geçerken olduğu gibi, doğrudan bize sağladığınız bilgileri topluyoruz.</p><h3>Bilgilerinizi Nasıl Kullanıyoruz</h3><p>Topladığımız bilgileri hizmetlerimizi sunmak, sürdürmek ve geliştirmek, işlemleri işlemek ve sizinle iletişim kurmak için kullanıyoruz.</p><h3>Bilgi Paylaşımı</h3><p>Bu politikada açıklandığı gibi, rızanız olmadan kişisel bilgilerinizi üçüncü taraflara satmaz, takas etmez veya başka şekilde aktarmayız.</p><h3>Veri Güvenliği</h3><p>Kişisel bilgilerinizi yetkisiz erişim, değişiklik, ifşa veya yıkıma karşı korumak için uygun güvenlik önlemleri uygularız.</p><h3>Haklarınız</h3><p>Kişisel bilgilerinize erişme, güncelleme veya silme hakkınız vardır. Ayrıca bizden belirli iletişimlerden çıkabilirsiniz.</p><p><strong>Son güncelleme:</strong> {{date}}</p>"
+      },
+      "terms": {
+        "title": "Hizmet Şartları",
+        "content": "<h3>Şartların Kabulü</h3><p>Hizmetlerimize erişerek ve kullanarak, bu anlaşmanın şartları ve hükümleriyle bağlı olmayı kabul ediyorsunuz.</p><h3>Kullanım Lisansı</h3><p>Web sitemizdeki materyallerin bir kopyasını kişisel, ticari olmayan geçici görüntüleme amacıyla geçici olarak indirmek için izin verilir.</p><h3>Hizmet Kullanılabilirliği</h3><p>Yüksek hizmet kullanılabilirliğini sürdürmeye çalışıyoruz ancı hizmetlerimize kesintisiz erişimi garanti etmiyoruz.</p><h3>Kullanıcı Sorumlulukları</h3><p>Kullanıcılar, hesap bilgilerinin gizliliğini korumaktan ve hesapları altında gerçekleşen tüm faaliyetlerden sorumludur.</p><h3>Sorumluluk Sınırlaması</h3><p>Hiçbir durumda QK DEV veya tedarikçileri, hizmetlerimizi kullanma veya kullanamama nedeniyle ortaya çıkan herhangi bir zarardan sorumlu olmayacaktır.</p><p><strong>Son güncelleme:</strong> {{date}}</p>"
+      },
+      "cookies": {
+        "title": "Çerez Politikası",
+        "content": "<h3>Çerezler Nedir</h3><p>Çerezler, web sitemizi ziyaret ettiğinizde bilgisayarınıza veya mobil cihazınıza yerleştirilen küçük metin dosyalarıdır.</p><h3>Çerezleri Nasıl Kullanıyoruz</h3><p>Çerezleri tarama deneyiminizi geliştirmek, site trafiğini analiz etmek ve içerik ve reklamları kişiselleştirmek için kullanıyoruz.</p><h3>Çerez Türleri</h3><ul><li><strong>Gerekli Çerezler:</strong> Web sitesinin düzgün çalışması için gerekli</li><li><strong>Analitik Çerezler:</strong> Ziyaretçilerin web sitemizle nasıl etkileşime girdiğini anlamamıza yardımcı olur</li><li><strong>Pazarlama Çerezleri:</strong> Reklam amaçları için ziyaretçileri web siteleri arasında takip etmek için kullanılır</li></ul><h3>Çerez Yönetimi</h3><p>Çerezleri istediğiniz gibi kontrol edebilir ve/veya silebilirsiniz. Bilgisayarınızda zaten bulunan tüm çerezleri silebilir ve çoğu tarayıcıyı bunların yerleştirilmesini önleyecek şekilde ayarlayabilirsiniz.</p><p><strong>Son güncelleme:</strong> {{date}}</p>"
+      },
+      "gdpr": {
+        "title": "GDPR Uyumluluğu",
+        "content": "<h3>Veri Sorumlusu</h3><p>QK DEV, topladığımız ve işlediğimiz kişisel verilerin veri sorumlusudur.</p><h3>İşleme İçin Yasal Dayanak</h3><p>Kişisel verileri meşru çıkarlar, sözleşmesel gereklilik ve uygulanabilir olduğunda rıza temelinde işliyoruz.</p><h3>GDPR Altındaki Haklarınız</h3><ul><li>Kişisel verilerinize erişim hakkı</li><li>Yanlış verilerin düzeltilmesi hakkı</li><li>Silme hakkı (\"unutulma hakkı\")</li><li>İşlemeyi kısıtlama hakkı</li><li>Veri taşınabilirliği hakkı</li><li>İşlemeye itiraz etme hakkı</li></ul><h3>Veri Saklama</h3><p>Kişisel verileri yalnızca toplandığı amaçları yerine getirmek için gerekli olduğu süre kadar saklıyoruz.</p><h3>Veri Transferleri</h3><p>Verileri AEA dışına transfer ettiğimizde, uygun güvencelerin mevcut olduğundan emin oluyoruz.</p><p><strong>Son güncelleme:</strong> {{date}}</p>"
+      },
+      "security": {
+        "title": "Güvenlik",
+        "content": "<h3>Güvenlik Önlemleri</h3><p>Verilerinizi ve sistemlerimizi korumak için kapsamlı güvenlik önlemleri uyguluyoruz.</p><h3>Veri Şifreleme</h3><p>Tüm veriler, endüstri standardı şifreleme protokolleri kullanılarak aktarım sırasında ve beklerken şifrelenir.</p><h3>Erişim Kontrolleri</h3><p>Yalnızca yetkili personelin hassas verilere erişebilmesini sağlamak için katı erişim kontrolleri uygular ve izinleri düzenli olarak gözden geçiririz.</p><h3>Güvenlik İzleme</h3><p>Sistemlerimizi güvenlik tehditleri ve güvenlik açıkları için sürekli izliyoruz.</p><h3>Olay Müdahalesi</h3><p>Bir güvenlik olayı durumunda, hızlı yanıt vermek ve etkilenen kullanıcıları bilgilendirmek için prosedürlerimiz var.</p><h3>Üçüncü Taraf Güvenliği</h3><p>Tüm üçüncü taraf hizmetleri dikkatli bir şekilde inceler ve güvenlik standartlarımızı karşıladıklarından emin oluruz.</p><p><strong>Son güncelleme:</strong> {{date}}</p>"
+      }
+    }
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "close": "Kapat",
+    "next": "İleri",
+    "previous": "Geri",
+    "viewDetails": "Detayları Görüntüle"
+  }
+}

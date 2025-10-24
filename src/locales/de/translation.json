@@ -1,0 +1,917 @@
+{
+  "header": {
+    "nav": {
+      "services": "Dienstleistungen",
+      "process": "Prozess", 
+      "portfolio": "Portfolio",
+      "pricing": "Preise",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "cta": {
+      "getQuote": "Angebot anfordern",
+      "startProject": "Projekt starten"
+    }
+  },
+  "hero": {
+    "badge": "Vertraut von 500+ Unternehmen",
+    "title": "Verwandeln Sie Ihre Ideen in",
+    "titleHighlight1": "Mächtige digitale",
+    "titleHighlight2": "Lösungen",
+    "subtitle": "Professionelle Entwicklung mit transparenten Preisen, garantierten Zeitplänen und kontinuierlicher Unterstützung. Eliminieren Sie das Risiko und die Unsicherheit von maßgeschneiderten Entwicklungsprojekten.",
+    "cta": {
+      "getQuote": "Kostenloses Angebot erhalten",
+      "viewWork": "Unsere Arbeit ansehen"
+    },
+    "metrics": {
+      "projects": "Projekte geliefert",
+      "satisfaction": "Kundenzufriedenheit"
+    },
+    "scrollIndicator": "Scrollen zum Erkunden"
+  },
+  "problem": {
+    "title": "Müde von Entwicklungs-",
+    "titleHighlight": "Katastrophen?",
+    "subtitle": "Sie sind nicht allein. Die meisten Unternehmer haben Horrorgeschichten über gescheiterte Entwicklungsprojekte. Klicken Sie unten, um die wahren Kosten dieser häufigen Probleme zu sehen.",
+    "problems": {
+      "budget": {
+        "title": "Budgetüberschreitungen",
+        "description": "Projekte, die bei 5.000$ beginnen, kosten am Ende 15.000$",
+        "stats": "73% der Projekte überschreiten das ursprüngliche Budget",
+        "consequences": [
+          "Unerwartete Kosten erschöpfen Geschäftsressourcen",
+          "Projektumfang wächst ohne klare Grenzen",
+          "Versteckte Gebühren mitten in der Entwicklung entdeckt",
+          "Keine transparente Preisstruktur"
+        ]
+      },
+      "deadlines": {
+        "title": "Verpasste Termine",
+        "description": "Versprochene 6-Wochen-Lieferung wird zum 6-Monats-Alptraum",
+        "stats": "68% der Projekte werden verspätet geliefert",
+        "consequences": [
+          "Marktchancen an Konkurrenten verloren",
+          "Starttermine auf unbestimmte Zeit verschoben",
+          "Umsatzziele aufgrund von Verzögerungen verpasst",
+          "Teamproduktivität stark beeinträchtigt"
+        ]
+      },
+      "communication": {
+        "title": "Schlechte Kommunikation",
+        "description": "Wochen der Stille gefolgt von enttäuschenden Updates",
+        "stats": "81% berichten über Kommunikationsprobleme",
+        "consequences": [
+          "Keine Sichtbarkeit in den Projektfortschritt",
+          "Anforderungen wiederholt missverstanden",
+          "Feedback ignoriert oder falsch umgesetzt",
+          "Konstante Angst über den Projektstatus"
+        ]
+      },
+      "quality": {
+        "title": "Minderwertige Qualität",
+        "description": "Geliefertes Produkt bricht am Starttag zusammen",
+        "stats": "59% benötigen sofortige Reparaturen nach dem Start",
+        "consequences": [
+          "Peinliche Fehler vor Kunden",
+          "Sicherheitslücken setzen das Geschäft aus",
+          "Leistungsprobleme vertreiben Benutzer",
+          "Zusätzliche Kosten für Notfallreparaturen"
+        ]
+      }
+    },
+    "impact": "Echte Geschäftsauswirkungen:",
+    "solution": {
+      "title": "Wir eliminieren dieses Risiko vollständig",
+      "description": "Unser bewährter Prozess und transparenter Ansatz stellt sicher, dass Sie nie mit diesen Problemen konfrontiert werden."
+    },
+    "cta": {
+      "title": "Bereit für eine andere Erfahrung?",
+      "subtitle": "Schließen Sie sich 500+ Unternehmern an, die Zuverlässigkeit über Risiko gewählt haben.",
+      "button": "Unsere Lösung ansehen"
+    }
+  },
+  "services": {
+    "title": "Professionelle Entwicklungs-",
+    "titleHighlight": "dienstleistungen",
+    "subtitle": "Von einfachen Landing Pages bis hin zu komplexen Webanwendungen und mobilen Apps liefern wir qualitativ hochwertige Lösungen mit transparenten Preisen und garantierten Zeitplänen.",
+    "items": {
+      "landingPages": {
+        "title": "Landing Pages",
+        "description": "Hochkonvertierende Seiten, die Besucher in Kunden verwandeln",
+        "price": "Ab 500$",
+        "features": [
+          "Mobile-responsive Design",
+          "SEO-Optimierung",
+          "A/B-Testing-Setup",
+          "Analytics-Integration",
+          "Lead-Capture-Formulare",
+          "7-Tage-Lieferung"
+        ]
+      },
+      "websites": {
+        "title": "Websites",
+        "description": "Professionelle Websites, die Ihre digitale Präsenz etablieren",
+        "price": "Ab 3.000$",
+        "features": [
+          "Maßgeschneidertes Design & Entwicklung",
+          "Content-Management-System",
+          "E-Commerce-Integration",
+          "Mehrseitige Architektur",
+          "Leistungsoptimierung",
+          "3-4 Wochen Lieferung"
+        ]
+      },
+      "mobileApps": {
+        "title": "Mobile Apps",
+        "description": "Native und plattformübergreifende Apps für iOS und Android",
+        "price": "Ab 5.000$",
+        "features": [
+          "iOS & Android Entwicklung",
+          "Plattformübergreifende Kompatibilität",
+          "App Store Optimierung",
+          "Push-Benachrichtigungen",
+          "Offline-Funktionalität",
+          "8-12 Wochen Lieferung"
+        ]
+      }
+    },
+    "cta": "Angebot anfordern",
+    "stats": {
+      "projects": "Projekte abgeschlossen",
+      "delivery": "Pünktliche Lieferung",
+      "support": "Support verfügbar"
+    }
+  },
+  "process": {
+    "title": "Unser bewährter",
+    "titleHighlight": "Prozess",
+    "subtitle": "Von der ersten Beratung bis zum finalen Deployment folgen wir einem strukturierten Ansatz, der Qualität, Transparenz und pünktliche Lieferung gewährleistet.",
+    "steps": {
+      "consult": {
+        "title": "Beratung",
+        "subtitle": "Entdeckung & Planung",
+        "duration": "1-2 Tage",
+        "description": "Wir verstehen Ihre Vision, Ziele und Anforderungen durch detaillierte Beratung.",
+        "deliverables": [
+          "Projektanforderungsdokument",
+          "Technische Spezifikation",
+          "Zeitplan und Meilensteine",
+          "Budgetaufschlüsselung",
+          "Risikobewertung"
+        ],
+        "clientInvolvement": [
+          "Erstberatungsgespräch (2 Stunden)",
+          "Anforderungsprüfungssitzung",
+          "Genehmigung des Projektumfangs",
+          "Vertragsunterzeichnung"
+        ]
+      },
+      "design": {
+        "title": "Design",
+        "subtitle": "UI/UX & Architektur",
+        "duration": "3-5 Tage",
+        "description": "Erstellen Sie beeindruckende Designs und robuste Architektur, die zu Ihrer Marke und Ihren Zielen passen.",
+        "deliverables": [
+          "Wireframes und Mockups",
+          "Interaktive Prototypen",
+          "Design-System",
+          "Technische Architektur",
+          "Datenbankschema"
+        ],
+        "clientInvolvement": [
+          "Design-Überprüfungssitzungen",
+          "Feedback und Genehmigung",
+          "Markenausrichtung prüfen",
+          "Benutzererfahrungsvalidierung"
+        ]
+      },
+      "develop": {
+        "title": "Entwickeln",
+        "subtitle": "Bauen & Testen",
+        "duration": "2-8 Wochen",
+        "description": "Verwandeln Sie Designs in voll funktionsfähige Anwendungen mit rigorosen Tests.",
+        "deliverables": [
+          "Voll funktionsfähige Anwendung",
+          "Mobile-responsive Implementierung",
+          "Leistungsoptimierung",
+          "Sicherheitsimplementierung",
+          "Qualitätssicherungstests"
+        ],
+        "clientInvolvement": [
+          "Wöchentliche Fortschrittsupdates",
+          "Feature-Demonstrationen",
+          "Feedback-Einbindung",
+          "Testteilnahme"
+        ]
+      },
+      "deploy": {
+        "title": "Bereitstellen",
+        "subtitle": "Start & Support",
+        "duration": "1-2 Tage",
+        "description": "Starten Sie Ihre Anwendung und bieten Sie kontinuierlichen Support für den Erfolg.",
+        "deliverables": [
+          "Produktionsbereitstellung",
+          "Leistungsüberwachung",
+          "Benutzerschulung",
+          "Dokumentation",
+          "Laufender Support"
+        ],
+        "clientInvolvement": [
+          "Start-Koordination",
+          "Benutzerakzeptanztests",
+          "Schulungssitzungen",
+          "Support-Einrichtung"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr Projekt zu starten?",
+      "subtitle": "Lassen Sie uns Ihre Anforderungen besprechen und einen maßgeschneiderten Zeitplan für Ihr Projekt erstellen.",
+      "button": "Ihr Projekt starten"
+    },
+    "modal": {
+      "duration": "Dauer",
+      "deliverables": "Was Sie erhalten",
+      "involvement": "Ihre Beteiligung"
+    }
+  },
+  "pricing": {
+    "title": "Transparente",
+    "titleHighlight": "Preise",
+    "subtitle": "Keine versteckten Gebühren, keine Überraschungen. Wählen Sie das Paket, das zu Ihren Bedürfnissen und Ihrem Budget passt.",
+    "projectTypes": {
+      "landingPage": "Landing Page",
+      "webApp": "Web-Anwendung",
+      "mobileApp": "Mobile Apps"
+    },
+    "packages": {
+      "landingPage": {
+        "basic": {
+          "name": "Einfache Landing Page",
+          "price": "Ab 500€",
+          "timeline": "1-2 Wochen",
+          "description": "Einfache, hochkonvertierende Landing Page für Ihre Kampagnen",
+          "features": [
+            "Einseitiges Design",
+            "Mobil responsive",
+            "Kontaktformular-Integration",
+            "Grundlegende SEO-Optimierung",
+            "Social Media Links",
+            "3 Monate Support"
+          ],
+          "revisions": "3 Runden"
+        },
+        "professional": {
+          "name": "Professionelle Landing Page",
+          "price": "Ab 1000€",
+          "timeline": "2-3 Wochen",
+          "description": "Erweiterte Landing Page mit Conversion-Optimierung",
+          "features": [
+            "Benutzerdefiniertes Design & Animationen",
+            "A/B-Testing Setup",
+            "Erweiterte Analysen",
+            "Lead-Capture-Formulare",
+            "E-Mail-Integration",
+            "6 Monate Support"
+          ],
+          "revisions": "5 Runden"
+        },
+        "enterprise": {
+          "name": "Enterprise Landing Page",
+          "price": "Ab 2000€",
+          "timeline": "3-4 Wochen",
+          "description": "Umfassende Landing Page-Lösung mit erweiterten Funktionen",
+          "features": [
+            "Multi-Variant-Testing",
+            "CRM-Integration",
+            "Erweiterte Verfolgung",
+            "Benutzerdefinierte Funktionalität",
+            "Leistungsoptimierung",
+            "12 Monate Support"
+          ],
+          "revisions": "Unbegrenzt"
+        }
+      },
+      "webApp": {
+        "basic": {
+          "name": "Einfache Web-App",
+          "price": "Ab 3000€",
+          "timeline": "3-4 Wochen",
+          "description": "Einfache Web-Anwendung mit Kernfunktionalität",
+          "features": [
+            "Benutzerdefinierte Funktionalität",
+            "Benutzerauthentifizierung",
+            "Grundlegendes Dashboard",
+            "Datenbank-Integration",
+            "Responsive Design",
+            "3 Monate Support"
+          ],
+          "revisions": "3 Runden"
+        },
+        "professional": {
+          "name": "Erweiterte Web-App",
+          "price": "Ab 5000€",
+          "timeline": "4-6 Wochen",
+          "description": "Funktionsreiche Web-Anwendung, produktionsbereit",
+          "features": [
+            "Erweiterte Funktionen",
+            "Multi-User-System",
+            "Admin-Dashboard",
+            "API-Entwicklung",
+            "Drittanbieter-Integrationen",
+            "Analysen & Berichte",
+            "6 Monate Support"
+          ],
+          "revisions": "5 Runden"
+        },
+        "enterprise": {
+          "name": "Enterprise Web-App",
+          "price": "Ab 10000€",
+          "timeline": "10-12 Wochen",
+          "description": "Enterprise-Web-Anwendung mit benutzerdefinierten Funktionen",
+          "features": [
+            "Benutzerdefinierte Architektur",
+            "Erweiterte Sicherheit",
+            "Skalierbare Infrastruktur",
+            "Benutzerdefinierte Integrationen",
+            "Erweiterte Analysen",
+            "Prioritäts-Support",
+            "12 Monate Support"
+          ],
+          "revisions": "Unbegrenzt"
+        }
+      },
+      "mobileApp": {
+        "basic": {
+          "name": "Einfache Mobile App",
+          "price": "Ab 5000€",
+          "timeline": "4-5 Wochen",
+          "description": "Einfache App für Kernfunktionalität",
+          "features": [
+            "iOS & Android",
+            "Bis zu 5 Bildschirme",
+            "Grundlegende Benutzerauthentifizierung",
+            "Push-Benachrichtigungen",
+            "App Store-Einreichung",
+            "3 Monate Support"
+          ],
+          "revisions": "3 Runden"
+        },
+        "professional": {
+          "name": "Erweiterte Mobile App",
+          "price": "Ab 7500€",
+          "timeline": "6-8 Wochen",
+          "description": "Funktionsreiche App für Geschäftswachstum",
+          "features": [
+            "Plattformübergreifende Entwicklung",
+            "Bis zu 15 Bildschirme",
+            "Erweiterte Benutzerverwaltung",
+            "Zahlungsintegration",
+            "Offline-Funktionalität",
+            "Analytics-Integration",
+            "6 Monate Support"
+          ],
+          "revisions": "5 Runden"
+        },
+        "enterprise": {
+          "name": "Benutzerdefinierte Mobile Lösung",
+          "price": "Ab 10000€",
+          "timeline": "10-12 Wochen",
+          "description": "Vollständig angepasste mobile Erfahrung",
+          "features": [
+            "Native iOS & Android",
+            "Unbegrenzte Bildschirme",
+            "Benutzerdefinierter Backend",
+            "Drittanbieter-Integrationen",
+            "Erweiterte Sicherheit",
+            "Leistungsoptimierung",
+            "12 Monate Support"
+          ],
+          "revisions": "Unbegrenzt"
+        }
+      }
+    },
+    "popular": "Am beliebtesten",
+    "startingFrom": "Ab",
+    "timeline": "Zeitplan",
+    "revisions": "Design-Überarbeitungen",
+    "getStarted": "Loslegen",
+    "included": {
+      "title": "Was in jedem Paket enthalten ist",
+      "items": [
+        { "icon": "Shield", "title": "Qualitätsgarantie", "desc": "100% Zufriedenheit oder Geld zurück" },
+        { "icon": "Clock", "title": "Pünktliche Lieferung", "desc": "Garantierte Einhaltung des Zeitplans" },
+        { "icon": "Headphones", "title": "Dedizierter Support", "desc": "Direkter Zugang zu Ihrem Team" },
+        { "icon": "Repeat", "title": "Kostenlose Überarbeitungen", "desc": "In jedem Paket enthalten" }
+      ]
+    },
+    "custom": {
+      "title": "Brauchen Sie etwas Benutzerdefiniertes?",
+      "subtitle": "Jedes Unternehmen ist einzigartig. Lassen Sie uns Ihre spezifischen Anforderungen besprechen und eine benutzerdefinierte Lösung erstellen.",
+      "button": "Benutzerdefiniertes Angebot anfordern"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte",
+    "titleHighlight": "Fragen",
+    "subtitle": "Erhalten Sie Antworten auf häufige Fragen zu unserem Entwicklungsprozess, Preisen und Support.",
+    "items": [
+      {
+        "question": "Wie lange dauert ein typisches Projekt?",
+        "answer": "Projektzeiten variieren je nach Komplexität:\n\n• Landing Pages: 1-2 Wochen\n• Web-Anwendungen: 8-20 Wochen\n• Mobile Apps: 8-24 Wochen\n\nWir bieten detaillierte Zeitpläne während der Beratung und halten uns an vereinbarte Termine mit 98% pünktlicher Lieferung.",
+        "category": "Zeitplan"
+      },
+      {
+        "question": "Was ist in Ihren Preisen enthalten?",
+        "answer": "Unsere transparenten Preise beinhalten:\n\n• Vollständiges Design und Entwicklung\n• Mobile-responsive Implementierung\n• Qualitätssicherungstests\n• Bereitstellung und Launch-Support\n• Post-Launch-Support-Zeitraum\n• Quellcode und Dokumentation\n\nPreise beginnen bei 2.500€ für Landing Pages, 15.000€ für Web-Anwendungen und Mobile Apps. Keine versteckten Gebühren oder Überraschungskosten - alles wird im Voraus dargelegt.",
+        "category": "Preise"
+      },
+      {
+        "question": "Bieten Sie laufenden Support nach dem Launch?",
+        "answer": "Ja! Jedes Projekt beinhaltet:\n\n• 3-12 Monate kostenlosen Support (je nach Paket)\n• Fehlerbehebungen und kleinere Updates\n• Leistungsüberwachung\n• Sicherheitsupdates\n• Technische Unterstützung\n\nErweiterte Support-Pläne sind für langfristige Partnerschaften verfügbar.",
+        "category": "Support"
+      },
+      {
+        "question": "Wie stellen Sie die Projektqualität sicher?",
+        "answer": "Qualität ist in jeden Schritt integriert:\n\n• Code-Reviews und Tests bei jedem Meilenstein\n• Automatisierte Tests und Qualitätstoren\n• Leistungsoptimierung\n• Sicherheitsbest Practices\n• Cross-Browser- und Gerätetests\n• Benutzerakzeptanztests\n\nWir liefern produktionsreifen Code, der Unternehmensstandards erfüllt.",
+        "category": "Qualität"
+      }
+    ],
+    "cta": {
+      "title": "Haben Sie noch Fragen?",
+      "subtitle": "Erhalten Sie personalisierte Antworten von unserem Team. Buchen Sie eine kostenlose Beratung, um Ihr Projekt zu besprechen.",
+      "button": "Kostenlose Beratung buchen"
+    },
+    "videoAvailable": "Video verfügbar",
+    "watchVideo": "Video ansehen",
+    "modal": {
+      "videoTitle": "Video",
+      "videoContent": "Videoinhalt würde hier eingebettet werden"
+    }
+  },
+  "features": {
+    "title": "Technische",
+    "titleHighlight": "Features",
+    "subtitle": "Wir bieten fortschrittliche technische Lösungen, die für maximale Leistung und Zuverlässigkeit entwickelt wurden.",
+    "items": {
+      "speed": {
+        "title": "Blitzschnell",
+        "description": "Leistungsoptimierte Anwendungen mit schnellen Ladezeiten",
+        "metric": "<2s",
+        "metricLabel": "Ladezeit",
+        "examples": [
+          "Core Web Vitals Optimierung",
+          "CDN-Verteilung",
+          "Bildoptimierung"
+        ]
+      },
+      "reliability": {
+        "title": "99.9% Zuverlässigkeit",
+        "description": "Robuste Infrastruktur mit Uptime-Garantie",
+        "metric": "99.9%",
+        "metricLabel": "Uptime",
+        "examples": [
+          "Mehrere Server",
+          "Automatische Backups",
+          "24/7 Überwachung"
+        ]
+      },
+      "scalability": {
+        "title": "Skalierbar",
+        "description": "Lösungen, die mit Ihrem Unternehmen wachsen",
+        "metric": "10x",
+        "metricLabel": "Kapazitätssteigerung",
+        "examples": [
+          "Cloud-Verarbeitung",
+          "Skalierbare Datenbanken",
+          "Lastverteilung"
+        ]
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Dediziertes Support-Team immer verfügbar",
+        "metric": "24/7",
+        "metricLabel": "Support verfügbar",
+        "examples": [
+          "Sofortige Antwort",
+          "Mehrsprachiger Support",
+          "Schnelle Lösungen"
+        ]
+      },
+      "security": {
+        "title": "Erweiterte Sicherheit",
+        "description": "Umfassender Schutz für Ihre Daten und Anwendungen",
+        "metric": "100%",
+        "metricLabel": "Datenschutz",
+        "examples": [
+          "SSL-Verschlüsselung",
+          "Regelmäßige Sicherheitsaudits",
+          "DSGVO-Konformität"
+        ]
+      },
+      "performance": {
+        "title": "Blitzschnell",
+        "description": "Geschwindigkeitsoptimiert mit Core Web Vitals Compliance",
+        "metric": "<2s",
+        "metricLabel": "Ladezeit",
+        "examples": [
+          "Core Web Vitals Optimierung",
+          "CDN-Verteilung",
+          "Bildoptimierung"
+        ]
+      }
+    },
+    "successStories": {
+      "title": "Echte Ergebnisse von echten Kunden",
+      "subtitle": "Sehen Sie, wie sich unsere technischen Stärken in Geschäftserfolg übersetzen",
+      "stats": [
+        {
+          "value": "150%",
+          "label": "Traffic-Steigerung",
+          "quote": "Unsere neue Website lädt 3x schneller und konvertiert viel besser",
+          "color": "text-primary"
+        },
+        {
+          "value": "2,5M€",
+          "label": "Generierte Einnahmen",
+          "quote": "Die mobile App half uns, neue Märkte global zu erreichen",
+          "color": "text-success"
+        },
+        {
+          "value": "90%",
+          "label": "Zeit gespart",
+          "quote": "Automatisierungsfunktionen eliminierten manuelle Prozesse",
+          "color": "text-accent"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "Über",
+    "titleHighlight": "QK DEV",
+    "subtitle": "Wir sind ein Team leidenschaftlicher Entwickler und Designer, die Ihre Ideen in leistungsstarke digitale Lösungen verwandeln. Unsere Mission ist es, Unternehmen durch außergewöhnliche Web- und Mobile-Entwicklung zum Erfolg zu verhelfen.",
+    "whatWeDo": {
+      "title": "Was wir tun",
+      "subtitle": "Wir spezialisieren uns auf drei Kernservices, die Unternehmen helfen, ihre digitale Präsenz zu etablieren und zu erweitern",
+      "services": [
+        {
+          "icon": "FileText",
+          "title": "Landing Pages",
+          "description": "Hochkonvertierende Landing Pages, die Besucher in Kunden verwandeln. Perfekt für Marketingkampagnen, Produktlaunches und Lead-Generierung.",
+          "features": [
+            "Mobil responsive Design",
+            "SEO optimiert",
+            "Schnelle Ladezeiten"
+          ]
+        },
+        {
+          "icon": "Globe",
+          "title": "Web-Anwendungen",
+          "description": "Benutzerdefinierte Web-Anwendungen, die komplexe Geschäftsprobleme lösen. Von einfachen Dashboards bis hin zu Enterprise-Plattformen.",
+          "features": [
+            "Benutzerdefinierte Funktionalität",
+            "Benutzerauthentifizierung",
+            "Datenbank-Integration"
+          ]
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Mobile Apps",
+          "description": "Native und plattformübergreifende mobile Anwendungen für iOS und Android. Erreichen Sie Ihre Kunden überall.",
+          "features": [
+            "iOS & Android",
+            "App Store Optimierung",
+            "Push-Benachrichtigungen"
+          ]
+        }
+      ]
+    },
+    "trackRecord": {
+      "title": "Unsere Erfolgsbilanz",
+      "subtitle": "Zahlen, die für unser Engagement für Exzellenz und Kundenerfolg sprechen",
+      "stats": [
+        {
+          "icon": "Users",
+          "number": "500+",
+          "label": "Zufriedene Kunden",
+          "description": "Unternehmen, die wir beim Wachstum geholfen haben"
+        },
+        {
+          "icon": "CheckCircle",
+          "number": "98%",
+          "label": "Pünktliche Lieferung",
+          "description": "Projekte termingerecht geliefert"
+        },
+        {
+          "icon": "Star",
+          "number": "4,9/5",
+          "label": "Kundenbewertung",
+          "description": "Durchschnittliche Zufriedenheitspunktzahl"
+        },
+        {
+          "icon": "TrendingUp",
+          "number": "150%",
+          "label": "ROI-Steigerung",
+          "description": "Durchschnittliches Kundenwachstum"
+        }
+      ]
+    },
+    "team": {
+      "title": "Lernen Sie unser Team kennen",
+      "subtitle": "Erfahrene Fachkräfte, die sich der Verwirklichung Ihrer Vision verschrieben haben",
+      "members": [
+        {
+          "name": "Alex Johnson",
+          "role": "Lead-Entwickler",
+          "expertise": "Full-Stack-Entwicklung",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+          "description": "10+ Jahre Erfahrung im Aufbau skalierbarer Web- und Mobile-Anwendungen"
+        },
+        {
+          "name": "Sarah Chen",
+          "role": "UI/UX-Designerin",
+          "expertise": "Design & Benutzererfahrung",
+          "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face",
+          "description": "Erstellung schöner, benutzerfreundlicher Schnittstellen, die konvertieren"
+        },
+        {
+          "name": "Mike Rodriguez",
+          "role": "Projektmanager",
+          "expertise": "Projektkoordination",
+          "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+          "description": "Sicherstellung reibungsloser Projektlieferung und klarer Kommunikation"
+        }
+      ]
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "subtitle": "Die Prinzipien, die alles leiten, was wir tun",
+      "items": [
+        {
+          "icon": "Shield",
+          "title": "Qualität zuerst",
+          "description": "Wir kompromittieren niemals bei der Qualität. Jede Codezeile wird mit Sorgfalt und Aufmerksamkeit für Details geschrieben."
+        },
+        {
+          "icon": "Clock",
+          "title": "Pünktliche Lieferung",
+          "description": "Wir respektieren Ihren Zeitplan und liefern Projekte wie versprochen, jedes Mal."
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "Transparente Kommunikation",
+          "description": "Sie werden immer genau wissen, wo Ihr Projekt steht, mit regelmäßigen Updates und klarer Kommunikation."
+        },
+        {
+          "icon": "Users",
+          "title": "Kundenorientiert",
+          "description": "Ihr Erfolg ist unser Erfolg. Wir sind daran interessiert, Ihrem Unternehmen beim Wachstum und Gedeihen zu helfen."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, mit uns zu arbeiten?",
+      "subtitle": "Lassen Sie uns Ihr Projekt besprechen und sehen, wie wir Ihnen helfen können, Ihre Ideen zum Leben zu erwecken.",
+      "button": "Starten Sie Ihr Projekt"
+    }
+  },
+  "contact": {
+    "title": "Bereit, Ihr",
+    "titleHighlight": "Projekt zu starten?",
+    "subtitle": "Erhalten Sie ein kostenloses Angebot und Zeitschätzung. Keine Verpflichtung erforderlich.",
+    "getInTouch": {
+      "title": "Kontakt aufnehmen"
+    },
+    "methods": [
+      {
+        "icon": "Phone",
+        "title": "Rufen Sie uns an",
+        "value": "+49 17655298403",
+        "value2": "+90 5393225378",
+        "description": "Deutsche & englische Sprecher:",
+        "description2": "Arabische & türkische Sprecher:",
+        "action": "tel:+4917655298403",
+        "action2": "tel:+905393225378"
+      },
+      {
+        "icon": "Mail",
+        "title": "E-Mail senden",
+        "value": "info@qk-dev.com",
+        "description": "Wir antworten innerhalb von 2 Stunden",
+        "action": "mailto:info@qk-dev.com"
+      }
+    ],
+    "trustBadges": {
+      "title": "Warum uns wählen?",
+      "items": [
+        {
+          "icon": "Shield",
+          "text": "100% Zufriedenheitsgarantie"
+        },
+        {
+          "icon": "Clock",
+          "text": "Pünktliche Lieferung versprochen"
+        },
+        {
+          "icon": "Award",
+          "text": "500+ erfolgreiche Projekte"
+        }
+      ]
+    },
+    "form": {
+      "stepIndicator": "Schritt {{current}} von {{total}}",
+      "continue": "Weiter",
+      "back": "Zurück",
+      "submit": "{{isSubmitting, select, true {Anfrage wird gesendet...} other {Kostenloses Angebot erhalten}}}",
+      "privacy": "Durch das Absenden dieses Formulars stimmen Sie zu, Kommunikation von QK DEV zu erhalten. Wir respektieren Ihre Privatsphäre und teilen Ihre Informationen niemals.",
+      "step1": {
+        "projectType": {
+          "title": "Welche Art von Projekt benötigen Sie?"
+        },
+        "timeline": {
+          "title": "Wann muss es fertig sein?"
+        },
+        "budget": {
+          "title": "Wie hoch ist Ihr Budget?"
+        }
+      },
+      "step2": {
+        "title": "Erzählen Sie uns von sich"
+      },
+      "fields": {
+        "name": {
+          "label": "Vollständiger Name",
+          "placeholder": "Max Mustermann"
+        },
+        "email": {
+          "label": "E-Mail-Adresse",
+          "placeholder": "max@unternehmen.com"
+        },
+        "phone": {
+          "label": "Telefonnummer",
+          "placeholder": "+49 176 12345678"
+        },
+        "company": {
+          "label": "Firmenname",
+          "placeholder": "Ihr Unternehmen"
+        },
+        "description": {
+          "label": "Projektbeschreibung",
+          "placeholder": "Erzählen Sie uns von Ihren Projektzielen, Zielgruppe und spezifischen Anforderungen..."
+        },
+        "features": {
+          "label": "Benötigte Funktionen (Alle zutreffenden auswählen)"
+        }
+      },
+      "projectTypes": [
+        { "id": "landing-page", "label": "Landing Page", "icon": "FileText", "price": "Ab 500€" },
+        { "id": "web-app", "label": "Web-Anwendung", "icon": "Globe", "price": "Ab 5.000€" },
+        { "id": "mobile-app", "label": "Mobile App", "icon": "Smartphone", "price": "Ab 5.000€" }
+      ],
+      "timelines": [
+        { "id": "asap", "label": "ASAP (Eilauftrag)", "icon": "Zap" },
+        { "id": "1-month", "label": "Innerhalb 1 Monat", "icon": "Calendar" },
+        { "id": "2-3-months", "label": "2-3 Monate", "icon": "Clock" },
+        { "id": "flexible", "label": "Flexibler Zeitplan", "icon": "MoreHorizontal" }
+      ],
+      "budgetRanges": [
+        { "id": "under-2k", "label": "Unter 2.000€", "range": "500€ - 2.000€" },
+        { "id": "5k-15k", "label": "5.000€ - 15.000€", "range": "5.000€ - 15.000€" },
+        { "id": "15k-20k", "label": "15.000€ - 20.000€", "range": "15.000€ - 20.000€" },
+        { "id": "over-20k", "label": "20.000€+", "range": "20.000€+" },
+        { "id": "discuss", "label": "Lassen Sie uns besprechen", "range": "Individuelles Budget" }
+      ],
+      "featureOptions": [
+        "Benutzerauthentifizierung",
+        "Zahlungsabwicklung",
+        "Admin-Dashboard",
+        "API-Integration",
+        "Echtzeit-Funktionen",
+        "Mobile App",
+        "E-Commerce",
+        "Analytics",
+        "Mehrsprachigkeit",
+        "Drittanbieter-Integrationen"
+      ]
+    },
+    "success": {
+      "title": "Vielen Dank für Ihre Anfrage!",
+      "subtitle": "Wir haben Ihre Projektdetails erhalten und werden uns innerhalb von 2 Stunden mit folgenden Informationen bei Ihnen melden:",
+      "items": [
+        "Detaillierter Projektzeitplan",
+        "Genaue Kostenschätzung",
+        "Nächste Schritte und Prozessübersicht"
+      ],
+      "estimatedTimeline": "Geschätzter Zeitplan",
+      "footer": "Überprüfen Sie Ihre E-Mails für eine Bestätigung und einen Kalenderlink zur Terminvereinbarung Ihrer kostenlosen Beratung."
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "QK DEV",
+      "tagline": "Professionelle Entwicklung",
+      "description": "Verwandeln Sie Ihre Geschäftsideen in leistungsstarke digitale Lösungen. Wir liefern hochwertige Entwicklungsdienstleistungen mit transparenten Preisen und garantierten Zeitplänen."
+    },
+    "contactInfo": [
+      {
+        "icon": "Phone",
+        "value": "+49 17655298403",
+        "description": "Deutsche & englische Sprecher"
+      },
+      {
+        "icon": "Phone",
+        "value": "+90 5393225378",
+        "description": "Arabische & türkische Sprecher"
+      },
+      {
+        "icon": "Mail",
+        "value": "info@qk-dev.com"
+      },
+      {
+        "icon": "MapPin",
+        "value": "Königstraße 73, 47178 Duisburg, Germany"
+      }
+    ],
+    "socialLinks": [
+      { "name": "X", "icon": "X", "href": "https://x.com/qk_dev" },
+      { "name": "LinkedIn", "icon": "Linkedin", "href": "https://linkedin.com/company/qk_dev" },
+      { "name": "Instagram", "icon": "Instagram", "href": "https://instagram.com/qk_dev" },
+      { "name": "Facebook", "icon": "Facebook", "href": "https://facebook.com/qk_dev" },
+      { "name": "TikTok", "icon": "Video", "href": "https://tiktok.com/@qk_dev" }
+    ],
+    "sections": {
+      "services": "Dienstleistungen",
+      "company": "Unternehmen",
+      "support": "Support"
+    },
+    "links": {
+      "services": [
+        { "label": "Landing Pages", "href": "#services" },
+        { "label": "Website-Entwicklung", "href": "#services" },
+        { "label": "Mobile Apps", "href": "#services" }
+      ],
+      "company": [
+        { "label": "Über uns", "href": "#about" },
+        { "label": "Unser Prozess", "href": "#process" },
+        { "label": "Portfolio", "href": "#portfolio" },
+        { "label": "Karriere", "href": "#contact" }
+      ],
+      "support": [
+        { "label": "FAQ", "href": "#faq" },
+        { "label": "Support kontaktieren", "href": "#contact" }
+      ],
+      "legal": [
+        { "label": "Datenschutzrichtlinie", "href": "/privacy" },
+        { "label": "Nutzungsbedingungen", "href": "/terms" },
+        { "label": "Cookie-Richtlinie", "href": "/cookies" },
+        { "label": "GDPR-Konformität", "href": "/gdpr" },
+        { "label": "Sicherheit", "href": "/security" }
+      ]
+    },
+    "certifications": {
+      "title": "Vertrauenswürdig & Zertifiziert",
+      "items": [
+        { "name": "ISO 27001", "description": "Informationssicherheit" },
+        { "name": "SOC 2 Type II", "description": "Sicherheit & Verfügbarkeit" },
+        { "name": "GDPR-konform", "description": "Datenschutz" },
+        { "name": "AWS-Partner", "description": "Cloud-Exzellenz" }
+      ]
+    },
+    "copyright": "© {{year}} QK DEV. Alle Rechte vorbehalten.",
+    "status": "Alle Systeme funktionsfähig",
+    "modal": {
+      "close": "Schließen"
+    },
+    "legalContent": {
+      "privacy": {
+        "title": "Datenschutzrichtlinie",
+        "content": "<h3>Informationen, die wir sammeln</h3><p>Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, wie z.B. beim Erstellen eines Kontos, beim Kauf oder beim Kontaktieren des Supports.</p><h3>Wie wir Ihre Informationen verwenden</h3><p>Wir verwenden die gesammelten Informationen, um unsere Dienstleistungen zu bieten, zu warten und zu verbessern, Transaktionen zu verarbeiten und mit Ihnen zu kommunizieren.</p><h3>Informationsweitergabe</h3><p>Wir verkaufen, handeln oder übertragen Ihre persönlichen Informationen nicht an Dritte ohne Ihre Zustimmung, außer wie in dieser Richtlinie beschrieben.</p><h3>Datensicherheit</h3><p>Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen Informationen vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung.</p><h3>Ihre Rechte</h3><p>Sie haben das Recht, auf Ihre persönlichen Informationen zuzugreifen, sie zu aktualisieren oder zu löschen. Sie können sich auch von bestimmten Kommunikationen von uns abmelden.</p><p><strong>Zuletzt aktualisiert:</strong> {{date}}</p>"
+      },
+      "terms": {
+        "title": "Nutzungsbedingungen",
+        "content": "<h3>Annahme der Bedingungen</h3><p>Durch den Zugriff auf und die Nutzung unserer Dienstleistungen akzeptieren und stimmen Sie zu, an die Bedingungen und Bestimmungen dieser Vereinbarung gebunden zu sein.</p><h3>Nutzungslizenz</h3><p>Die Erlaubnis wird erteilt, vorübergehend eine Kopie der Materialien auf unserer Website für den persönlichen, nicht-kommerziellen vorübergehenden Betrachtungszweck herunterzuladen.</p><h3>Serviceverfügbarkeit</h3><p>Wir bemühen uns, hohe Serviceverfügbarkeit zu gewährleisten, garantieren aber keinen ununterbrochenen Zugang zu unseren Dienstleistungen.</p><h3>Benutzerverantwortlichkeiten</h3><p>Benutzer sind verantwortlich für die Vertraulichkeit ihrer Kontoinformationen und für alle Aktivitäten, die unter ihrem Konto stattfinden.</p><h3>Haftungsbeschränkung</h3><p>In keinem Fall haften QK DEV oder seine Lieferanten für Schäden, die aus der Nutzung oder Unfähigkeit zur Nutzung unserer Dienstleistungen entstehen.</p><p><strong>Zuletzt aktualisiert:</strong> {{date}}</p>"
+      },
+      "cookies": {
+        "title": "Cookie-Richtlinie",
+        "content": "<h3>Was sind Cookies</h3><p>Cookies sind kleine Textdateien, die auf Ihrem Computer oder mobilen Gerät platziert werden, wenn Sie unsere Website besuchen.</p><h3>Wie wir Cookies verwenden</h3><p>Wir verwenden Cookies, um Ihr Browsing-Erlebnis zu verbessern, Website-Traffic zu analysieren und Inhalte und Werbung zu personalisieren.</p><h3>Cookie-Arten</h3><ul><li><strong>Wesentliche Cookies:</strong> Notwendig für das ordnungsgemäße Funktionieren der Website</li><li><strong>Analytics-Cookies:</strong> Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren</li><li><strong>Marketing-Cookies:</strong> Werden verwendet, um Besucher über Websites hinweg für Werbezwecke zu verfolgen</li></ul><h3>Cookie-Verwaltung</h3><p>Sie können Cookies nach Belieben kontrollieren und/oder löschen. Sie können alle bereits auf Ihrem Computer vorhandenen Cookies löschen und die meisten Browser so einstellen, dass sie verhindert werden.</p><p><strong>Zuletzt aktualisiert:</strong> {{date}}</p>"
+      },
+      "gdpr": {
+        "title": "GDPR-Konformität",
+        "content": "<h3>Datenverantwortlicher</h3><p>QK DEV ist der Datenverantwortliche für die persönlichen Daten, die wir sammeln und verarbeiten.</p><h3>Rechtsgrundlage für die Verarbeitung</h3><p>Wir verarbeiten persönliche Daten basierend auf berechtigten Interessen, vertraglicher Notwendigkeit und Zustimmung, wo zutreffend.</p><h3>Ihre Rechte unter GDPR</h3><ul><li>Recht auf Zugang zu Ihren persönlichen Daten</li><li>Recht auf Berichtigung ungenauer Daten</li><li>Recht auf Löschung (\"Recht auf Vergessenwerden\")</li><li>Recht auf Einschränkung der Verarbeitung</li><li>Recht auf Datenübertragbarkeit</li><li>Recht auf Widerspruch gegen die Verarbeitung</li></ul><h3>Datenspeicherung</h3><p>Wir speichern persönliche Daten nur so lange, wie es zur Erfüllung der Zwecke, für die sie gesammelt wurden, notwendig ist.</p><h3>Datenübertragungen</h3><p>Wenn wir Daten außerhalb des EWR übertragen, stellen wir sicher, dass angemessene Schutzmaßnahmen vorhanden sind.</p><p><strong>Zuletzt aktualisiert:</strong> {{date}}</p>"
+      },
+      "security": {
+        "title": "Sicherheit",
+        "content": "<h3>Sicherheitsmaßnahmen</h3><p>Wir implementieren umfassende Sicherheitsmaßnahmen zum Schutz Ihrer Daten und unserer Systeme.</p><h3>Datenverschlüsselung</h3><p>Alle Daten werden während der Übertragung und im Ruhezustand mit branchenüblichen Verschlüsselungsprotokollen verschlüsselt.</p><h3>Zugangskontrollen</h3><p>Wir implementieren strenge Zugangskontrollen und überprüfen regelmäßig Berechtigungen, um sicherzustellen, dass nur autorisierte Mitarbeiter auf sensible Daten zugreifen können.</p><h3>Sicherheitsüberwachung</h3><p>Wir überwachen unsere Systeme kontinuierlich auf Sicherheitsbedrohungen und Schwachstellen.</p><h3>Incident-Response</h3><p>Im Falle eines Sicherheitsvorfalls haben wir Verfahren zur schnellen Reaktion und Benachrichtigung betroffener Benutzer.</p><h3>Drittanbieter-Sicherheit</h3><p>Wir prüfen alle Drittanbieter-Dienstleistungen sorgfältig und stellen sicher, dass sie unseren Sicherheitsstandards entsprechen.</p><p><strong>Zuletzt aktualisiert:</strong> {{date}}</p>"
+      }
+    }
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "close": "Schließen",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "viewDetails": "Details anzeigen"
+  }
+}

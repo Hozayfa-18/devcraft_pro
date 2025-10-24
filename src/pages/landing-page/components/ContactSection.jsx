@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 import Input from '../../../components/ui/Input';
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     // Step 1
@@ -23,59 +25,15 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const projectTypes = [
-    { id: 'landing-page', label: 'Landing Page', icon: 'FileText', price: 'From $500' },
-    { id: 'web-app', label: 'Web Application', icon: 'Globe', price: 'From $5,000' },
-    { id: 'mobile-app', label: 'Mobile App', icon: 'Smartphone', price: 'From $5,000' }
-  ];
+  const projectTypes = t('contact.form.projectTypes', { returnObjects: true });
 
-  const timelines = [
-    { id: 'asap', label: 'ASAP (Rush Job)', icon: 'Zap' },
-    { id: '1-month', label: 'Within 1 Month', icon: 'Calendar' },
-    { id: '2-3-months', label: '2-3 Months', icon: 'Clock' },
-    { id: 'flexible', label: 'Flexible Timeline', icon: 'MoreHorizontal' }
-  ];
+  const timelines = t('contact.form.timelines', { returnObjects: true });
 
-  const budgetRanges = [
-    { id: 'under-2k', label: 'Under $2,000', range: '$500 - $2,000' },
-    { id: '5k-15k', label: '$5,000 - $15,000', range: '$5,000 - $15,000' },
-    { id: '15k-20k', label: '$15,000 - $20,000', range: '$15,000 - $20,000' },
-    { id: 'over-20k', label: '$20,000+', range: '$20,000+' },
-    { id: 'discuss', label: 'Let\'s Discuss', range: 'Custom Budget' }
-  ];
+  const budgetRanges = t('contact.form.budgetRanges', { returnObjects: true });
 
-  const featureOptions = [
-    'User Authentication',
-    'Payment Processing',
-    'Admin Dashboard',
-    'API Integration',
-    'Real-time Features',
-    'Mobile App',
-    'E-commerce',
-    'Analytics',
-    'Multi-language',
-    'Third-party Integrations'
-  ];
+  const featureOptions = t('contact.form.featureOptions', { returnObjects: true });
 
-  const contactMethods = [
-    {
-      icon: 'Phone',
-      title: 'Call Us',
-      value: '+49 17655298403',
-      value2: '+90 5393225378',
-      description: 'German & English speakers:',
-      description2: 'Arabic & Turkish speakers:',
-      action: () => window.open('tel:+4917655298403'),
-      action2: () => window.open('tel:+905393225378')
-    },
-    {
-      icon: 'Mail',
-      title: 'Email Us',
-      value: 'info@qk-dev.com',
-      description: 'We respond within 2 hours',
-      action: () => window.open('mailto:info@qk-dev.com')
-    }
-  ];
+  const contactMethods = t('contact.methods', { returnObjects: true });
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
@@ -132,7 +90,7 @@ ${formData.projectDescription || 'No description provided'}
 Estimated Timeline: ${getEstimatedTimeline()}
 
 ---
-This inquiry was submitted through the QK Dev website contact form.`
+This inquiry was submitted through the QK DEV website contact form.`
       };
 
       // Send email using EmailJS
@@ -191,32 +149,26 @@ This inquiry was submitted through the QK Dev website contact form.`
               <Icon name="CheckCircle" size={40} className="text-success" />
             </div>
             <h2 className="text-3xl font-heading text-text-primary mb-4">
-              Thank You for Your Request!
+              {t('contact.success.title')}
             </h2>
             <p className="text-lg text-text-secondary mb-6">
-              We've received your project details and will get back to you within 2 hours with:
+              {t('contact.success.subtitle')}
             </p>
             <div className="space-y-3 mb-8 text-left max-w-md mx-auto">
-              <div className="flex items-center space-x-3">
-                <Icon name="Check" size={16} className="text-success" />
-                <span className="text-text-secondary">Detailed project timeline</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Icon name="Check" size={16} className="text-success" />
-                <span className="text-text-secondary">Accurate cost estimate</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Icon name="Check" size={16} className="text-success" />
-                <span className="text-text-secondary">Next steps and process overview</span>
-              </div>
+              {t('contact.success.items', { returnObjects: true })?.map((item, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-success" />
+                  <span className="text-text-secondary">{item}</span>
+                </div>
+              ))}
             </div>
             <div className="bg-muted/50 rounded-lg p-4 mb-6">
               <div className="text-sm text-text-secondary">
-                <strong>Estimated Timeline:</strong> {getEstimatedTimeline()}
+                <strong>{t('contact.success.estimatedTimeline')}:</strong> {getEstimatedTimeline()}
               </div>
             </div>
             <p className="text-text-secondary">
-              Check your email for a confirmation and calendar link to schedule your free consultation.
+              {t('contact.success.footer')}
             </p>
           </div>
         </div>
@@ -230,10 +182,10 @@ This inquiry was submitted through the QK Dev website contact form.`
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            Ready to Start Your <span className="text-primary">Project?</span>
+            {t('contact.title')} <span className="text-primary">{t('contact.titleHighlight')}</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            Get a free quote and timeline estimate. No commitment required.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -241,7 +193,7 @@ This inquiry was submitted through the QK Dev website contact form.`
           {/* Contact Methods */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-text-primary mb-6">
-              Get In Touch
+              {t('contact.getInTouch.title')}
             </h3>
             {contactMethods?.map((method, index) => (
               <div
@@ -258,31 +210,31 @@ This inquiry was submitted through the QK Dev website contact form.`
                       <div className="space-y-2">
                           <div className="text-sm text-text-secondary">{method?.description}</div>
                         <div>
-                          <button
-                            onClick={method?.action}
+                          <a
+                            href={method?.action}
                             className="block text-primary font-medium hover:text-primary/80 transition-colors"
                           >
                             {method?.value}
-                          </button>
+                          </a>
                         </div>
                         <div className="text-sm text-text-secondary">{method?.description2}</div>
                         <div>
-                          <button
-                            onClick={method?.action2}
+                          <a
+                            href={method?.action2}
                             className="block text-primary font-medium hover:text-primary/80 transition-colors"
                           >
                             {method?.value2}
-                          </button>
+                          </a>
                         </div>
                       </div>
                     ) : (
                       <div>
-                        <button
-                          onClick={method?.action}
+                        <a
+                          href={method?.action}
                           className="text-primary font-medium hover:text-primary/80 transition-colors"
                         >
                           {method?.value}
-                        </button>
+                        </a>
                         <div className="text-sm text-text-secondary mt-1">{method?.description}</div>
                       </div>
                     )}
@@ -293,20 +245,14 @@ This inquiry was submitted through the QK Dev website contact form.`
 
             {/* Trust Badges */}
             <div className="bg-background border border-border rounded-xl p-6">
-              <h4 className="font-semibold text-text-primary mb-4">Why Choose Us?</h4>
+              <h4 className="font-semibold text-text-primary mb-4">{t('contact.trustBadges.title')}</h4>
               <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <Icon name="Shield" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">100% Satisfaction Guarantee</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Clock" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">On-Time Delivery Promise</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Award" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">500+ Successful Projects</span>
-                </div>
+                {t('contact.trustBadges.items', { returnObjects: true })?.map((item, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <Icon name={item.icon} size={16} className="text-success" />
+                    <span className="text-sm text-text-secondary">{item.text}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -330,7 +276,7 @@ This inquiry was submitted through the QK Dev website contact form.`
                   </div>
                 </div>
                 <div className="text-sm text-text-secondary">
-                  Step {currentStep} of 2
+                  {t('contact.form.stepIndicator', { current: currentStep, total: 2 })}
                 </div>
               </div>
 
@@ -340,7 +286,7 @@ This inquiry was submitted through the QK Dev website contact form.`
                   <div className="space-y-8">
                     <div>
                       <h3 className="text-xl font-semibold text-text-primary mb-6">
-                        What type of project do you need?
+                        {t('contact.form.step1.projectType.title')}
                       </h3>
                       <div className="grid md:grid-cols-2 gap-4">
                         {projectTypes?.map((type) => (
@@ -367,7 +313,7 @@ This inquiry was submitted through the QK Dev website contact form.`
 
                     <div>
                       <h3 className="text-xl font-semibold text-text-primary mb-6">
-                        When do you need it completed?
+                        {t('contact.form.step1.timeline.title')}
                       </h3>
                       <div className="grid md:grid-cols-2 gap-4">
                         {timelines?.map((timeline) => (
@@ -391,7 +337,7 @@ This inquiry was submitted through the QK Dev website contact form.`
 
                     <div>
                       <h3 className="text-xl font-semibold text-text-primary mb-6">
-                        What's your budget range?
+                        {t('contact.form.step1.budget.title')}
                       </h3>
                       <div className="space-y-3">
                         {budgetRanges?.map((budget) => (
@@ -422,7 +368,7 @@ This inquiry was submitted through the QK Dev website contact form.`
                         iconName="ArrowRight"
                         iconPosition="right"
                       >
-                        Continue
+{t('contact.form.continue')}
                       </Button>
                     </div>
                   </div>
@@ -433,7 +379,7 @@ This inquiry was submitted through the QK Dev website contact form.`
                   <div className="space-y-6">
                     <div className="flex items-center justify-between mb-6">
                       <h3 className="text-xl font-semibold text-text-primary">
-                        Tell us about yourself
+                        {t('contact.form.step2.title')}
                       </h3>
                       <button
                         type="button"
@@ -441,23 +387,23 @@ This inquiry was submitted through the QK Dev website contact form.`
                         className="text-primary hover:text-primary/80 font-medium flex items-center space-x-1"
                       >
                         <Icon name="ArrowLeft" size={16} />
-                        <span>Back</span>
+                        <span>{t('contact.form.back')}</span>
                       </button>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
                       <Input
-                        label="Full Name"
+                        label={t('contact.form.fields.name.label')}
                         type="text"
-                        placeholder="John Doe"
+                        placeholder={t('contact.form.fields.name.placeholder')}
                         value={formData?.name}
                         onChange={(e) => handleInputChange('name', e?.target?.value)}
                         required
                       />
                       <Input
-                        label="Email Address"
+                        label={t('contact.form.fields.email.label')}
                         type="email"
-                        placeholder="john@company.com"
+                        placeholder={t('contact.form.fields.email.placeholder')}
                         value={formData?.email}
                         onChange={(e) => handleInputChange('email', e?.target?.value)}
                         required
@@ -466,16 +412,16 @@ This inquiry was submitted through the QK Dev website contact form.`
 
                     <div className="grid md:grid-cols-2 gap-6">
                       <Input
-                        label="Phone Number"
+                        label={t('contact.form.fields.phone.label')}
                         type="tel"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder={t('contact.form.fields.phone.placeholder')}
                         value={formData?.phone}
                         onChange={(e) => handleInputChange('phone', e?.target?.value)}
                       />
                       <Input
-                        label="Company Name"
+                        label={t('contact.form.fields.company.label')}
                         type="text"
-                        placeholder="Your Company"
+                        placeholder={t('contact.form.fields.company.placeholder')}
                         value={formData?.company}
                         onChange={(e) => handleInputChange('company', e?.target?.value)}
                       />
@@ -483,10 +429,10 @@ This inquiry was submitted through the QK Dev website contact form.`
 
                     <div>
                       <label className="block text-sm font-medium text-text-primary mb-2">
-                        Project Description
+                        {t('contact.form.fields.description.label')}
                       </label>
                       <textarea
-                        placeholder="Tell us about your project goals, target audience, and any specific requirements..."
+                        placeholder={t('contact.form.fields.description.placeholder')}
                         value={formData?.projectDescription}
                         onChange={(e) => handleInputChange('projectDescription', e?.target?.value)}
                         rows={4}
@@ -496,7 +442,7 @@ This inquiry was submitted through the QK Dev website contact form.`
 
                     <div>
                       <label className="block text-sm font-medium text-text-primary mb-4">
-                        Features Needed (Select all that apply)
+                        {t('contact.form.fields.features.label')}
                       </label>
                       <div className="grid md:grid-cols-2 gap-3">
                         {featureOptions?.map((feature) => (
@@ -530,12 +476,11 @@ This inquiry was submitted through the QK Dev website contact form.`
                       iconName="Send"
                       iconPosition="right"
                     >
-                      {isSubmitting ? 'Sending Request...' : 'Get My Free Quote'}
+{t('contact.form.submit', { isSubmitting })}
                     </Button>
 
                     <div className="text-center text-sm text-text-secondary">
-                      By submitting this form, you agree to receive communication from QK Dev. 
-                      We respect your privacy and never share your information.
+                      {t('contact.form.privacy')}
                     </div>
                   </div>
                 )}

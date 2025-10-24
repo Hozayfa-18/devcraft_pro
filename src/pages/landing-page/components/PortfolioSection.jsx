@@ -33,7 +33,7 @@ const PortfolioSection = () => {
       technologies: ['React', 'Node.js', 'Stripe', 'MongoDB'],
       challenges: 'Complex product categorization and inventory management',
       solution: 'Custom taxonomy system with real-time inventory tracking',
-      testimonial: "QK Dev delivered exactly what we needed. The platform handles our complex product catalog beautifully and our sales have tripled since launch.",
+      testimonial: "QK DEV delivered exactly what we needed. The platform handles our complex product catalog beautifully and our sales have tripled since launch.",
       clientRole: 'CEO, GreenTech Solutions'
     },
     {

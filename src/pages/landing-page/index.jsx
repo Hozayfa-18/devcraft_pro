@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../../components/ui/Header';
 import FloatingCTA from '../../components/ui/FloatingCTA';
 import SectionProgressIndicator from '../../components/ui/SectionProgressIndicator';
@@ -16,18 +17,20 @@ import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
 
 const LandingPage = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     // Set page title
-    document.title = 'QK Dev - Transform Your Ideas Into Powerful Digital Solutions';
+    document.title = `QK Dev - ${t('hero.title')} ${t('hero.titleHighlight1')} ${t('hero.titleHighlight2')}`;
     
     // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription?.setAttribute('content', 'Professional web and mobile development services with transparent pricing, guaranteed timelines, and ongoing support. Transform your business ideas into powerful digital solutions.');
+      metaDescription?.setAttribute('content', t('hero.subtitle'));
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional web and mobile development services with transparent pricing, guaranteed timelines, and ongoing support. Transform your business ideas into powerful digital solutions.';
+      meta.content = t('hero.subtitle');
       document.getElementsByTagName('head')?.[0]?.appendChild(meta);
     }
 
@@ -35,7 +38,7 @@ const LandingPage = () => {
     // const structuredData = {
     //   "@context": "https://schema.org",
     //   "@type": "Organization",
-    //   "name": "QK Dev",
+    //   "name": "QK DEV",
     //   "description": "Professional development agency specializing in web and mobile applications",
     //   "url": "https://qk-dev.com",
     //   "logo": "https://qk-dev.com/logo.png",
@@ -68,12 +71,12 @@ const LandingPage = () => {
       // Remove the structured data script when component unmounts
       const scripts = document.querySelectorAll('script[type="application/ld+json"]');
       scripts?.forEach(script => {
-        if (script?.text?.includes('QK Dev')) {
+        if (script?.text?.includes('QK DEV')) {
           script?.remove();
         }
       });
     };
-  }, []);
+  }, [t]);
 
   return (
     <div className="min-h-screen bg-background">

@@ -1,169 +1,104 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 
 const PricingSection = () => {
+  const { t } = useTranslation();
   const [selectedType, setSelectedType] = useState('landing-page');
   const [billingCycle, setBillingCycle] = useState('project');
 
   const projectTypes = [
-    { id: 'landing-page', label: 'Landing Page', icon: 'FileText' },
-    { id: 'webapp', label: 'Web Application', icon: 'Globe' },
-    { id: 'mobile', label: 'Mobile Apps', icon: 'Smartphone' }
+    { id: 'landing-page', label: t('pricing.projectTypes.landingPage'), icon: 'FileText' },
+    { id: 'webapp', label: t('pricing.projectTypes.webApp'), icon: 'Globe' },
+    { id: 'mobile', label: t('pricing.projectTypes.mobileApp'), icon: 'Smartphone' }
   ];
 
   const pricingData = {
     'landing-page': {
       starter: {
-        name: 'Basic Landing Page',
-        price: 'Starting from $500',
-        timeline: '1-2 weeks',
-        description: 'Simple, high-converting landing page for your campaigns',
-        features: [
-          'Single page design',
-          'Mobile responsive',
-          'Contact form integration',
-          'Basic SEO optimization',
-          'Social media links',
-          '3 months support'
-        ],
-        revisions: '3 rounds',
+        name: t('pricing.packages.landingPage.basic.name'),
+        price: t('pricing.packages.landingPage.basic.price'),
+        timeline: t('pricing.packages.landingPage.basic.timeline'),
+        description: t('pricing.packages.landingPage.basic.description'),
+        features: t('pricing.packages.landingPage.basic.features', { returnObjects: true }),
+        revisions: t('pricing.packages.landingPage.basic.revisions'),
         popular: false
       },
       professional: {
-        name: 'Professional Landing Page',
-        price: 'Starting from $1,000',
-        timeline: '2-3 weeks',
-        description: 'Advanced landing page with conversion optimization',
-        features: [
-          'Custom design & animations',
-          'A/B testing setup',
-          'Advanced analytics',
-          'Lead capture forms',
-          'Email integration',
-          '6 months support'
-        ],
-        revisions: '5 rounds',
+        name: t('pricing.packages.landingPage.professional.name'),
+        price: t('pricing.packages.landingPage.professional.price'),
+        timeline: t('pricing.packages.landingPage.professional.timeline'),
+        description: t('pricing.packages.landingPage.professional.description'),
+        features: t('pricing.packages.landingPage.professional.features', { returnObjects: true }),
+        revisions: t('pricing.packages.landingPage.professional.revisions'),
         popular: true
       },
       enterprise: {
-        name: 'Enterprise Landing Page',
-        price: 'Starting from $2,000',
-        timeline: '3-4 weeks',
-        description: 'Full-scale landing page solution with advanced features',
-        features: [
-          'Multi-variant testing',
-          'CRM integration',
-          'Advanced tracking',
-          'Custom functionality',
-          'Performance optimization',
-          '12 months support'
-        ],
-        revisions: 'Unlimited',
+        name: t('pricing.packages.landingPage.enterprise.name'),
+        price: t('pricing.packages.landingPage.enterprise.price'),
+        timeline: t('pricing.packages.landingPage.enterprise.timeline'),
+        description: t('pricing.packages.landingPage.enterprise.description'),
+        features: t('pricing.packages.landingPage.enterprise.features', { returnObjects: true }),
+        revisions: t('pricing.packages.landingPage.enterprise.revisions'),
         popular: false
       }
     },
     webapp: {
       starter: {
-        name: 'Basic Web App',
-        price: 'Starting from $5,000',
-        timeline: '3-4 weeks',
-        description: 'Simple web application with core functionality',
-        features: [
-          'Custom functionality',
-          'User authentication',
-          'Basic dashboard',
-          'Database integration',
-          'Responsive design',
-          '3 months support'
-        ],
-        revisions: '3 rounds',
+        name: t('pricing.packages.webApp.basic.name'),
+        price: t('pricing.packages.webApp.basic.price'),
+        timeline: t('pricing.packages.webApp.basic.timeline'),
+        description: t('pricing.packages.webApp.basic.description'),
+        features: t('pricing.packages.webApp.basic.features', { returnObjects: true }),
+        revisions: t('pricing.packages.webApp.basic.revisions'),
         popular: false
       },
       professional: {
-        name: 'Advanced Web App',
-        price: 'Starting from $7,500',
-        timeline: '4-6 weeks',
-        description: 'Feature-rich web application ready for production',
-        features: [
-          'Advanced features',
-          'Multi-user system',
-          'Admin dashboard',
-          'API development',
-          'Third-party integrations',
-          'Analytics & reporting',
-          '6 months support'
-        ],
-        revisions: '5 rounds',
+        name: t('pricing.packages.webApp.professional.name'),
+        price: t('pricing.packages.webApp.professional.price'),
+        timeline: t('pricing.packages.webApp.professional.timeline'),
+        description: t('pricing.packages.webApp.professional.description'),
+        features: t('pricing.packages.webApp.professional.features', { returnObjects: true }),
+        revisions: t('pricing.packages.webApp.professional.revisions'),
         popular: true
       },
       enterprise: {
-        name: 'Enterprise Web App',
-        price: 'Starting from $15,000',
-        timeline: '10-12 weeks',
-        description: 'Enterprise-grade web application with custom features',
-        features: [
-          'Custom architecture',
-          'Advanced security',
-          'Scalable infrastructure',
-          'Custom integrations',
-          'Advanced analytics',
-          'Priority support',
-          '12 months support'
-        ],
-        revisions: 'Unlimited',
+        name: t('pricing.packages.webApp.enterprise.name'),
+        price: t('pricing.packages.webApp.enterprise.price'),
+        timeline: t('pricing.packages.webApp.enterprise.timeline'),
+        description: t('pricing.packages.webApp.enterprise.description'),
+        features: t('pricing.packages.webApp.enterprise.features', { returnObjects: true }),
+        revisions: t('pricing.packages.webApp.enterprise.revisions'),
         popular: false
       }
     },
     mobile: {
       starter: {
-        name: 'Basic Mobile App',
-        price: 'Starting from $5,000',
-        timeline: '4-5 weeks',
-        description: 'Simple app for core functionality',
-        features: [
-          'iOS & Android',
-          'Up to 5 screens',
-          'Basic user authentication',
-          'Push notifications',
-          'App store submission',
-          '3 months support'
-        ],
-        revisions: '3 rounds',
+        name: t('pricing.packages.mobileApp.basic.name'),
+        price: t('pricing.packages.mobileApp.basic.price'),
+        timeline: t('pricing.packages.mobileApp.basic.timeline'),
+        description: t('pricing.packages.mobileApp.basic.description'),
+        features: t('pricing.packages.mobileApp.basic.features', { returnObjects: true }),
+        revisions: t('pricing.packages.mobileApp.basic.revisions'),
         popular: false
       },
       professional: {
-        name: 'Advanced Mobile App',
-        price: 'Starting from $10,000',
-        timeline: '6-8 weeks',
-        description: 'Feature-rich app for business growth',
-        features: [
-          'Cross-platform development',
-          'Up to 15 screens',
-          'Advanced user management',
-          'Payment integration',
-          'Offline functionality',
-          'Analytics integration',
-          '6 months support'
-        ],
-        revisions: '5 rounds',
+        name: t('pricing.packages.mobileApp.professional.name'),
+        price: t('pricing.packages.mobileApp.professional.price'),
+        timeline: t('pricing.packages.mobileApp.professional.timeline'),
+        description: t('pricing.packages.mobileApp.professional.description'),
+        features: t('pricing.packages.mobileApp.professional.features', { returnObjects: true }),
+        revisions: t('pricing.packages.mobileApp.professional.revisions'),
         popular: true
       },
       enterprise: {
-        name: 'Custom Mobile Solution',
-        price: 'Starting from $15,000',
-        timeline: '10-12 weeks',
-        description: 'Fully customized mobile experience',
-        features: [
-          'Native iOS & Android',
-          'Unlimited screens',
-          'Custom backend',
-          'Third-party integrations',
-          'Advanced security',
-          'Performance optimization',
-          '12 months support'
-        ],
-        revisions: 'Unlimited',
+        name: t('pricing.packages.mobileApp.enterprise.name'),
+        price: t('pricing.packages.mobileApp.enterprise.price'),
+        timeline: t('pricing.packages.mobileApp.enterprise.timeline'),
+        description: t('pricing.packages.mobileApp.enterprise.description'),
+        features: t('pricing.packages.mobileApp.enterprise.features', { returnObjects: true }),
+        revisions: t('pricing.packages.mobileApp.enterprise.revisions'),
         popular: false
       }
     }
@@ -177,10 +112,10 @@ const PricingSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            Transparent <span className="text-primary">Pricing</span>
+            {t('pricing.title')} <span className="text-primary">{t('pricing.titleHighlight')}</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            No hidden fees, no surprises. Choose the package that fits your needs and budget.
+            {t('pricing.subtitle')}
           </p>
         </div>
 
@@ -219,7 +154,7 @@ const PricingSection = () => {
               {plan?.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold">
-                    Most Popular
+                    {t('pricing.popular')}
                   </div>
                 </div>
               )}
@@ -234,18 +169,18 @@ const PricingSection = () => {
                 </p>
                 <div className="space-y-2">
                   <div className="text-4xl font-heading text-primary">
-                    <span className="text-lg font-normal text-text-secondary">Starting from</span><br />
-                    <span className="text-4xl font-heading text-primary">{plan?.price?.replace('Starting from ', '')}</span>
+                    <span className="text-lg font-normal text-text-secondary">{t('pricing.startingFrom')}</span><br />
+                    <span className="text-4xl font-heading text-primary">{plan?.price?.replace(t('pricing.startingFrom') + ' ', '')}</span>
                   </div>
                   <div className="text-sm text-text-secondary">
-                    Timeline: {plan?.timeline}
+                    {t('pricing.timeline')}: {plan?.timeline}
                   </div>
                 </div>
               </div>
 
               {/* Features */}
               <div className="space-y-4 mb-8">
-                {plan?.features?.map((feature, index) => (
+                {Array.isArray(plan?.features) && plan.features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <Icon name="Check" size={16} className="text-success flex-shrink-0 mt-1" />
                     <span className="text-text-secondary text-sm">{feature}</span>
@@ -257,7 +192,7 @@ const PricingSection = () => {
               <div className="bg-muted/50 rounded-lg p-4 mb-8">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium text-text-primary">
-                    Design Revisions:
+                    {t('pricing.revisions')}:
                   </span>
                   <span className="text-sm font-semibold text-primary">
                     {plan?.revisions}
@@ -277,7 +212,7 @@ const PricingSection = () => {
                   }
                 }}
               >
-                Get Started
+                {t('pricing.getStarted')}
               </Button>
             </div>
           ))}
@@ -286,15 +221,10 @@ const PricingSection = () => {
         {/* Feature Comparison */}
         <div className="mt-16 bg-background border border-border rounded-2xl p-8">
           <h3 className="text-2xl font-semibold text-text-primary text-center mb-8">
-            What's Included in Every Package
+            {t('pricing.included.title')}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: 'Shield', title: 'Quality Guarantee', desc: '100% satisfaction or money back' },
-              { icon: 'Clock', title: 'On-Time Delivery', desc: 'Guaranteed timeline adherence' },
-              { icon: 'Headphones', title: 'Dedicated Support', desc: 'Direct access to your team' },
-              { icon: 'Repeat', title: 'Free Revisions', desc: 'Included in every package' }
-            ]?.map((item, index) => (
+            {t('pricing.included.items', { returnObjects: true })?.map((item, index) => (
               <div key={index} className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <Icon name={item?.icon} size={24} className="text-primary" />
@@ -310,10 +240,10 @@ const PricingSection = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-semibold mb-4">
-              Need Something Custom?
+              {t('pricing.custom.title')}
             </h3>
             <p className="mb-6 opacity-90">
-              Every business is unique. Let's discuss your specific requirements and create a custom solution.
+              {t('pricing.custom.subtitle')}
             </p>
             <Button
               variant="outline"
@@ -325,7 +255,7 @@ const PricingSection = () => {
                 }
               }}
             >
-              Request Custom Quote
+              {t('pricing.custom.button')}
             </Button>
           </div>
         </div>

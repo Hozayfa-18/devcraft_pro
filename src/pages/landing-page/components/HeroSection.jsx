@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Button from '../../../components/ui/Button';
 import Icon from '../../../components/AppIcon';
 
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const [projectsCount, setProjectsCount] = useState(0);
   const [satisfactionRate, setSatisfactionRate] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -66,19 +68,18 @@ const HeroSection = () => {
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
               <Icon name="Zap" size={16} />
-              <span>Trusted by 500+ Businesses</span>
+              <span>{t('hero.badge')}</span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl xl:text-7xl font-heading text-text-primary leading-tight">
-                Transform Your Ideas Into{' '}
-                <span className="text-primary">Powerful Digital</span>{' '}
-                <span className="text-accent">Solutions</span>
+                {t('hero.title')}{' '}
+                <span className="text-primary">{t('hero.titleHighlight1')}</span>{' '}
+                <span className="text-accent">{t('hero.titleHighlight2')}</span>
               </h1>
               <p className="text-lg lg:text-xl text-text-secondary leading-relaxed max-w-2xl">
-                Professional development with transparent pricing, guaranteed timelines, and ongoing support. 
-                Eliminate the risk and uncertainty of custom development projects.
+                {t('hero.subtitle')}
               </p>
             </div>
 
@@ -91,7 +92,7 @@ const HeroSection = () => {
                 iconName="ArrowRight"
                 iconPosition="right"
               >
-                Get Your Free Quote
+                {t('hero.cta.getQuote')}
               </Button>
               <Button
                 variant="outline"
@@ -101,7 +102,7 @@ const HeroSection = () => {
                 iconName="Eye"
                 iconPosition="left"
               >
-                View Our Work
+                {t('hero.cta.viewWork')}
               </Button>
             </div>
 
@@ -111,13 +112,13 @@ const HeroSection = () => {
                 <div className="text-3xl lg:text-4xl font-heading text-primary">
                   {projectsCount}+
                 </div>
-                <div className="text-text-secondary font-medium">Projects Delivered</div>
+                <div className="text-text-secondary font-medium">{t('hero.metrics.projects')}</div>
               </div>
               <div className="text-center sm:text-left">
                 <div className="text-3xl lg:text-4xl font-heading text-accent">
                   {satisfactionRate}%
                 </div>
-                <div className="text-text-secondary font-medium">Client Satisfaction</div>
+                <div className="text-text-secondary font-medium">{t('hero.metrics.satisfaction')}</div>
               </div>
             </div>
           </div>
@@ -168,7 +169,7 @@ const HeroSection = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center space-y-2 text-text-secondary">
-          <span className="text-sm font-medium">Scroll to explore</span>
+          <span className="text-sm font-medium">{t('hero.scrollIndicator')}</span>
           <Icon name="ChevronDown" size={20} />
         </div>
       </div>

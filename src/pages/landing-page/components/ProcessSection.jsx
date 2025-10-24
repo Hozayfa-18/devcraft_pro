@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Icon from '../../../components/AppIcon';
 
 const ProcessSection = () => {
+  const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState(null);
@@ -9,95 +11,51 @@ const ProcessSection = () => {
   const processSteps = [
     {
       id: 0,
-      title: 'Consult',
-      subtitle: 'Discovery & Planning',
-      duration: '1-2 days',
+      title: t('process.steps.consult.title'),
+      subtitle: t('process.steps.consult.subtitle'),
+      duration: t('process.steps.consult.duration'),
       icon: 'MessageCircle',
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',
-      description: 'We understand your vision, goals, and requirements through detailed consultation.',
-      deliverables: [
-        'Project requirements document',
-        'Technical specification',
-        'Timeline and milestones',
-        'Budget breakdown',
-        'Risk assessment'
-      ],
-      clientInvolvement: [
-        'Initial consultation call (2 hours)',
-        'Requirements review meeting',
-        'Approval of project scope',
-        'Contract signing'
-      ]
+      description: t('process.steps.consult.description'),
+      deliverables: t('process.steps.consult.deliverables', { returnObjects: true }),
+      clientInvolvement: t('process.steps.consult.clientInvolvement', { returnObjects: true })
     },
     {
       id: 1,
-      title: 'Design',
-      subtitle: 'UI/UX & Architecture',
-      duration: '3-5 days',
+      title: t('process.steps.design.title'),
+      subtitle: t('process.steps.design.subtitle'),
+      duration: t('process.steps.design.duration'),
       icon: 'Palette',
       color: 'text-purple-600',
       bgColor: 'bg-purple-100',
-      description: 'Create stunning designs and robust architecture that align with your brand and goals.',
-      deliverables: [
-        'Wireframes and mockups',
-        'Interactive prototypes',
-        'Design system',
-        'Technical architecture',
-        'Database schema'
-      ],
-      clientInvolvement: [
-        'Design review sessions',
-        'Feedback incorporation',
-        'Final design approval',
-        'Architecture walkthrough'
-      ]
+      description: t('process.steps.design.description'),
+      deliverables: t('process.steps.design.deliverables', { returnObjects: true }),
+      clientInvolvement: t('process.steps.design.clientInvolvement', { returnObjects: true })
     },
     {
       id: 2,
-      title: 'Develop',
-      subtitle: 'Build & Integration',
-      duration: '2-12 weeks',
+      title: t('process.steps.develop.title'),
+      subtitle: t('process.steps.develop.subtitle'),
+      duration: t('process.steps.develop.duration'),
       icon: 'Code',
       color: 'text-green-600',
       bgColor: 'bg-green-100',
-      description: 'Expert development using modern technologies with regular progress updates.',
-      deliverables: [
-        'Clean, documented code',
-        'Responsive implementation',
-        'API integrations',
-        'Testing suite',
-        'Performance optimization'
-      ],
-      clientInvolvement: [
-        'Weekly progress demos',
-        'Feature testing and feedback',
-        'Content and asset provision',
-        'User acceptance testing'
-      ]
+      description: t('process.steps.develop.description'),
+      deliverables: t('process.steps.develop.deliverables', { returnObjects: true }),
+      clientInvolvement: t('process.steps.develop.clientInvolvement', { returnObjects: true })
     },
     {
       id: 3,
-      title: 'Deploy',
-      subtitle: 'Launch & Support',
-      duration: '1-3 days',
+      title: t('process.steps.deploy.title'),
+      subtitle: t('process.steps.deploy.subtitle'),
+      duration: t('process.steps.deploy.duration'),
       icon: 'Rocket',
       color: 'text-orange-600',
       bgColor: 'bg-orange-100',
-      description: 'Seamless deployment with comprehensive testing and ongoing support.',
-      deliverables: [
-        'Production deployment',
-        'SSL certificates',
-        'Performance monitoring',
-        'Backup systems',
-        'Documentation'
-      ],
-      clientInvolvement: [
-        'Go-live approval',
-        'Training sessions',
-        'Support handover',
-        'Success celebration!'
-      ]
+      description: t('process.steps.deploy.description'),
+      deliverables: t('process.steps.deploy.deliverables', { returnObjects: true }),
+      clientInvolvement: t('process.steps.deploy.clientInvolvement', { returnObjects: true })
     }
   ];
 
@@ -117,11 +75,10 @@ const ProcessSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            Our Proven <span className="text-primary">Process</span>
+            {t('process.title')} <span className="text-primary">{t('process.titleHighlight')}</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            A transparent, collaborative approach that ensures your project succeeds. 
-            Click any step to see detailed deliverables and timelines.
+            {t('process.subtitle')}
           </p>
         </div>
 
@@ -183,7 +140,7 @@ const ProcessSection = () => {
 
                   {/* View Details Button */}
                   <button className="mt-4 text-primary hover:text-primary/80 text-sm font-medium flex items-center space-x-1 transition-colors">
-                    <span>View Details</span>
+                    <span>{t('common.viewDetails')}</span>
                     <Icon name="ChevronRight" size={14} />
                   </button>
 
@@ -201,10 +158,10 @@ const ProcessSection = () => {
         <div className="text-center mt-16">
           <div className="bg-background border border-border rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-semibold text-text-primary mb-4">
-              Ready to Start Your Project?
+              {t('process.cta.title')}
             </h3>
             <p className="text-text-secondary mb-6">
-              Let's discuss your requirements and create a custom timeline for your success.
+              {t('process.cta.subtitle')}
             </p>
             <button
               onClick={() => {
@@ -215,7 +172,7 @@ const ProcessSection = () => {
               }}
               className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
             >
-              <span>Schedule Consultation</span>
+              <span>{t('process.cta.button')}</span>
               <Icon name="Calendar" size={18} />
             </button>
           </div>
@@ -236,7 +193,7 @@ const ProcessSection = () => {
                     {modalContent?.title} - {modalContent?.subtitle}
                   </h3>
                   <div className="text-sm text-text-secondary">
-                    Duration: {modalContent?.duration}
+                    {t('process.modal.duration')}: {modalContent?.duration}
                   </div>
                 </div>
               </div>
@@ -257,7 +214,7 @@ const ProcessSection = () => {
               {/* Deliverables */}
               <div>
                 <h4 className="text-lg font-semibold text-text-primary mb-3">
-                  What You'll Receive:
+                  {t('process.modal.deliverables')}:
                 </h4>
                 <div className="space-y-2">
                   {modalContent?.deliverables?.map((item, index) => (
@@ -272,7 +229,7 @@ const ProcessSection = () => {
               {/* Client Involvement */}
               <div>
                 <h4 className="text-lg font-semibold text-text-primary mb-3">
-                  Your Involvement:
+                  {t('process.modal.involvement')}:
                 </h4>
                 <div className="space-y-2">
                   {modalContent?.clientInvolvement?.map((item, index) => (

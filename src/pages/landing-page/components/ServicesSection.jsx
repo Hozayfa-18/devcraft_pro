@@ -1,59 +1,40 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Icon from '../../../components/AppIcon';
 import Image from '../../../components/AppImage';
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
   const [hoveredService, setHoveredService] = useState(null);
 
   const services = [
     {
       id: 'landing-pages',
-      title: 'Landing Pages',
-      description: 'High-converting pages that turn visitors into customers',
+      title: t('services.items.landingPages.title'),
+      description: t('services.items.landingPages.description'),
       icon: 'Globe',
-      startingPrice: '$2,500',
-      features: [
-        'Mobile-responsive design',
-        'SEO optimization',
-        'A/B testing setup',
-        'Analytics integration',
-        'Lead capture forms',
-        '7-day delivery'
-      ],
+      startingPrice: t('services.items.landingPages.price'),
+      features: t('services.items.landingPages.features', { returnObjects: true }),
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
       gradient: 'from-blue-500 to-purple-600'
     },
     {
       id: 'websites',
-      title: 'Websites',
-      description: 'Professional websites that establish your digital presence',
+      title: t('services.items.websites.title'),
+      description: t('services.items.websites.description'),
       icon: 'Monitor',
-      startingPrice: '$5,000',
-      features: [
-        'Custom design & development',
-        'Content management system',
-        'E-commerce integration',
-        'Multi-page architecture',
-        'Performance optimization',
-        '3-4 week delivery'
-      ],
+      startingPrice: t('services.items.websites.price'),
+      features: t('services.items.websites.features', { returnObjects: true }),
       image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop',
       gradient: 'from-green-500 to-teal-600'
     },
     {
       id: 'mobile-apps',
-      title: 'Mobile Apps',
-      description: 'Native and cross-platform apps for iOS and Android',
+      title: t('services.items.mobileApps.title'),
+      description: t('services.items.mobileApps.description'),
       icon: 'Smartphone',
-      startingPrice: '$15,000',
-      features: [
-        'iOS & Android development',
-        'Cross-platform compatibility',
-        'App store optimization',
-        'Push notifications',
-        'Offline functionality',
-        '8-12 week delivery'
-      ],
+      startingPrice: t('services.items.mobileApps.price'),
+      features: t('services.items.mobileApps.features', { returnObjects: true }),
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop',
       gradient: 'from-orange-500 to-red-600'
     }
@@ -65,11 +46,10 @@ const ServicesSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            Professional Development <span className="text-primary">Services</span>
+            {t('services.title')} <span className="text-primary">{t('services.titleHighlight')}</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            From simple landing pages to complex web applications and mobile apps, we deliver quality solutions 
-            with transparent pricing and guaranteed timelines.
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -98,7 +78,7 @@ const ServicesSection = () => {
 
                 {/* Price Badge */}
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-text-primary px-3 py-1 rounded-full text-sm font-semibold">
-                  From {service?.startingPrice}
+                  {service?.startingPrice}
                 </div>
               </div>
 
@@ -136,7 +116,7 @@ const ServicesSection = () => {
                   }}
                   className="w-full bg-primary hover:bg-primary/90 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
                 >
-                  <span>Get Quote</span>
+                  <span>{t('services.cta')}</span>
                   <Icon name="ArrowRight" size={16} />
                 </button>
               </div>
@@ -154,15 +134,15 @@ const ServicesSection = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-heading text-primary mb-2">500+</div>
-              <div className="text-text-secondary">Projects Completed</div>
+              <div className="text-text-secondary">{t('services.stats.projects')}</div>
             </div>
             <div>
               <div className="text-3xl font-heading text-accent mb-2">98%</div>
-              <div className="text-text-secondary">On-Time Delivery</div>
+              <div className="text-text-secondary">{t('services.stats.delivery')}</div>
             </div>
             <div>
               <div className="text-3xl font-heading text-success mb-2">24/7</div>
-              <div className="text-text-secondary">Support Available</div>
+              <div className="text-text-secondary">{t('services.stats.support')}</div>
             </div>
           </div>
         </div>

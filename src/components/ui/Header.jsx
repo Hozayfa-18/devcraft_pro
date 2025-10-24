@@ -1,20 +1,32 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Icon from '../AppIcon';
 import Button from './Button';
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState('hero');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
 
   const navigationItems = [
-    { label: 'Services', anchor: '#services', description: 'Web & Mobile Development' },
-    { label: 'Process', anchor: '#process', description: 'How We Work' },
-    { label: 'Portfolio', anchor: '#portfolio', description: 'Our Projects' },
-    { label: 'Pricing', anchor: '#pricing', description: 'Transparent Rates' },
-    { label: 'About', anchor: '#about', description: 'Our Team' },
-    { label: 'Contact', anchor: '#contact', description: 'Get Started' }
+    { label: t('header.nav.services'), anchor: '#services', description: 'Web & Mobile Development' },
+    { label: t('header.nav.process'), anchor: '#process', description: 'How We Work' },
+    { label: t('header.nav.portfolio'), anchor: '#portfolio', description: 'Our Projects' },
+    { label: t('header.nav.pricing'), anchor: '#pricing', description: 'Transparent Rates' },
+    { label: t('header.nav.about'), anchor: '#about', description: 'Our Team' },
+    { label: t('header.nav.contact'), anchor: '#contact', description: 'Get Started' }
   ];
+
+  const languages = [
+    { code: 'en', name: 'English', flag: '🇺🇸' },
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+    { code: 'tr', name: 'Türkçe', flag: '🇹🇷' }
+  ];
+
+  const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,9 +48,20 @@ const Header = () => {
       }
     };
 
+    const handleClickOutside = (event) => {
+      if (isLanguageMenuOpen && !event.target.closest('.language-menu')) {
+        setIsLanguageMenuOpen(false);
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    document.addEventListener('click', handleClickOutside);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isLanguageMenuOpen]);
 
   const handleNavClick = (anchor) => {
     const element = document.querySelector(anchor);
@@ -50,6 +73,11 @@ const Header = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const changeLanguage = (langCode) => {
+    i18n.changeLanguage(langCode);
+    setIsLanguageMenuOpen(false);
   };
 
   return (
@@ -73,7 +101,7 @@ const Header = () => {
                   <Icon name="Code2" size={20} color="white" />
                 </div>
                 <div className="text-left">
-                  <div className="text-lg lg:text-xl font-heading text-primary">QK Dev</div>
+                  <div className="text-lg lg:text-xl font-heading text-primary">QK DEV</div>
                 </div>
               </button>
             </div>
@@ -94,15 +122,47 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* Desktop CTA */}
+            {/* Desktop CTA & Language Switcher */}
             <div className="hidden lg:flex items-center space-x-4">
+              {/* Language Switcher */}
+              <div className="relative language-menu">
+                <button
+                  onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
+                  className="flex items-center space-x-2 px-3 py-2 rounded-lg border border-border hover:border-primary transition-colors"
+                >
+                  <span className="text-lg">{currentLanguage.flag}</span>
+                  <span className="text-sm font-medium">{currentLanguage.name}</span>
+                  <Icon name="ChevronDown" size={16} />
+                </button>
+                
+                {isLanguageMenuOpen && (
+                  <div className="absolute top-full right-0 mt-2 w-48 bg-background border border-border rounded-lg shadow-lg z-50">
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => changeLanguage(lang.code)}
+                        className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-muted transition-colors first:rounded-t-lg last:rounded-b-lg ${
+                          lang.code === i18n.language ? 'bg-primary/10 text-primary' : ''
+                        }`}
+                      >
+                        <span className="text-lg">{lang.flag}</span>
+                        <span className="font-medium">{lang.name}</span>
+                        {lang.code === i18n.language && (
+                          <Icon name="Check" size={16} className="ml-auto text-primary" />
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => handleNavClick('#contact')}
                 className="border-primary text-primary hover:bg-primary hover:text-white"
               >
-                Get Quote
+                {t('header.cta.getQuote')}
               </Button>
               <Button
                 variant="default"
@@ -110,7 +170,7 @@ const Header = () => {
                 onClick={() => handleNavClick('#contact')}
                 className="cta-button"
               >
-                Start Project
+                {t('header.cta.startProject')}
               </Button>
             </div>
 
@@ -142,7 +202,7 @@ const Header = () => {
                   <Icon name="Code2" size={18} color="white" />
                 </div>
                 <div>
-                  <div className="text-lg font-heading text-primary">QK Dev</div>
+                  <div className="text-lg font-heading text-primary">QK DEV</div>
                 </div>
               </div>
               <button
@@ -170,6 +230,27 @@ const Header = () => {
             </nav>
             
             <div className="px-6 py-4 border-t border-border mt-4">
+              {/* Mobile Language Switcher */}
+              <div className="mb-4">
+                <div className="text-sm font-medium text-text-secondary mb-2">Language / اللغة</div>
+                <div className="grid grid-cols-2 gap-2">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => changeLanguage(lang.code)}
+                      className={`flex items-center space-x-2 px-3 py-2 rounded-lg border transition-colors ${
+                        lang.code === i18n.language 
+                          ? 'border-primary bg-primary/10 text-primary' 
+                          : 'border-border hover:border-primary/50'
+                      }`}
+                    >
+                      <span className="text-sm">{lang.flag}</span>
+                      <span className="text-xs font-medium">{lang.name}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
               <div className="space-y-3">
                 <Button
                   variant="outline"
@@ -177,7 +258,7 @@ const Header = () => {
                   onClick={() => handleNavClick('#contact')}
                   className="border-primary text-primary hover:bg-primary hover:text-white"
                 >
-                  Get Free Quote
+                  {t('header.cta.getQuote')}
                 </Button>
                 <Button
                   variant="default"
@@ -185,7 +266,7 @@ const Header = () => {
                   onClick={() => handleNavClick('#contact')}
                   className="cta-button"
                 >
-                  Start Your Project
+                  {t('header.cta.startProject')}
                 </Button>
               </div>
             </div>

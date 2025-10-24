@@ -14,7 +14,7 @@ const TestimonialsSection = () => {
       company: 'TechStart Solutions',
       avatar: 'https://randomuser.me/api/portraits/women/32.jpg',
       rating: 5,
-      testimonial: `QK Dev transformed our outdated website into a modern, high-converting platform. Our online sales increased by 300% within the first quarter after launch. The team's attention to detail and commitment to deadlines was exceptional.`,project: 'E-commerce Website Redesign',
+      testimonial: `QK DEV transformed our outdated website into a modern, high-converting platform. Our online sales increased by 300% within the first quarter after launch. The team's attention to detail and commitment to deadlines was exceptional.`,project: 'E-commerce Website Redesign',
       results: ['300% increase in sales', '50% faster load times', '85% mobile conversion rate'],
       companyLogo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=120&h=40&fit=crop'
     },
@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
       id: 2,
       name: 'Michael Chen',role: 'Founder',company: 'HealthTech Innovations',avatar: 'https://randomuser.me/api/portraits/men/45.jpg',
       rating: 5,
-      testimonial: `Working with QK Dev was a game-changer for our startup. They delivered our mobile app ahead of schedule and under budget. The app now has over 100K downloads and a 4.8-star rating. Their technical expertise is unmatched.`,
+      testimonial: `Working with QK DEV was a game-changer for our startup. They delivered our mobile app ahead of schedule and under budget. The app now has over 100K downloads and a 4.8-star rating. Their technical expertise is unmatched.`,
       project: 'Healthcare Mobile App',
       results: ['100K+ downloads', '4.8-star app rating', '90% user retention'],
       companyLogo: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=120&h=40&fit=crop'
@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
       id: 3,
       name: 'Emily Rodriguez',role: 'CTO',company: 'DataFlow Systems',avatar: 'https://randomuser.me/api/portraits/women/28.jpg',
       rating: 5,
-      testimonial: `The web application QK Dev built for us handles thousands of concurrent users flawlessly. Their scalable architecture and clean code made it easy for our team to maintain and extend. ROI was achieved within 6 months.`,
+      testimonial: `The web application QK DEV built for us handles thousands of concurrent users flawlessly. Their scalable architecture and clean code made it easy for our team to maintain and extend. ROI was achieved within 6 months.`,
       project: 'Enterprise Web Application',
       results: ['$2M ARR achieved', '99.9% uptime', '10K+ active users'],
       companyLogo: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&h=40&fit=crop'
@@ -98,7 +98,7 @@ const TestimonialsSection = () => {
             What Our <span className="text-primary">Clients Say</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            Don't just take our word for it. Here's what business owners say about working with QK Dev.
+            Don't just take our word for it. Here's what business owners say about working with QK DEV.
           </p>
         </div>
 

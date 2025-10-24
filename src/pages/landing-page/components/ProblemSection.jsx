@@ -1,61 +1,43 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Icon from '../../../components/AppIcon';
 
 const ProblemSection = () => {
+  const { t } = useTranslation();
   const [selectedProblem, setSelectedProblem] = useState(0);
 
   const problems = [
     {
       id: 0,
-      title: "Budget Overruns",
-      description: "Projects that start at $5K end up costing $15K",
+      title: t('problem.problems.budget.title'),
+      description: t('problem.problems.budget.description'),
       icon: "DollarSign",
-      stats: "73% of projects exceed initial budget",
-      consequences: [
-        "Unexpected costs drain business resources",
-        "Project scope creep without clear boundaries", 
-        "Hidden fees discovered mid-development",
-        "No transparent pricing structure"
-      ]
+      stats: t('problem.problems.budget.stats'),
+      consequences: t('problem.problems.budget.consequences', { returnObjects: true })
     },
     {
       id: 1,
-      title: "Missed Deadlines",
-      description: "Promised 6-week delivery becomes 6-month nightmare",
+      title: t('problem.problems.deadlines.title'),
+      description: t('problem.problems.deadlines.description'),
       icon: "Clock",
-      stats: "68% of projects delivered late",
-      consequences: [
-        "Market opportunities lost to competitors",
-        "Launch dates pushed indefinitely",
-        "Revenue goals missed due to delays",
-        "Team productivity severely impacted"
-      ]
+      stats: t('problem.problems.deadlines.stats'),
+      consequences: t('problem.problems.deadlines.consequences', { returnObjects: true })
     },
     {
       id: 2,
-      title: "Poor Communication",
-      description: "Weeks of silence followed by disappointing updates",
+      title: t('problem.problems.communication.title'),
+      description: t('problem.problems.communication.description'),
       icon: "MessageSquare",
-      stats: "81% report communication issues",
-      consequences: [
-        "No visibility into project progress",
-        "Requirements misunderstood repeatedly",
-        "Feedback ignored or implemented incorrectly",
-        "Constant anxiety about project status"
-      ]
+      stats: t('problem.problems.communication.stats'),
+      consequences: t('problem.problems.communication.consequences', { returnObjects: true })
     },
     {
       id: 3,
-      title: "Subpar Quality",
-      description: "Delivered product breaks on launch day",
+      title: t('problem.problems.quality.title'),
+      description: t('problem.problems.quality.description'),
       icon: "AlertTriangle",
-      stats: "59% need immediate fixes post-launch",
-      consequences: [
-        "Embarrassing bugs in front of customers",
-        "Security vulnerabilities expose business",
-        "Performance issues drive users away",
-        "Additional costs for emergency fixes"
-      ]
+      stats: t('problem.problems.quality.stats'),
+      consequences: t('problem.problems.quality.consequences', { returnObjects: true })
     }
   ];
 
@@ -65,11 +47,10 @@ const ProblemSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            Tired of Development <span className="text-error">Disasters?</span>
+            {t('problem.title')} <span className="text-error">{t('problem.titleHighlight')}</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            You're not alone. Most business owners have horror stories about failed development projects. 
-            Click below to see the real cost of these common problems.
+            {t('problem.subtitle')}
           </p>
         </div>
 
@@ -127,7 +108,7 @@ const ProblemSection = () => {
               {/* Consequences */}
               <div>
                 <h4 className="text-lg font-semibold text-text-primary mb-4">
-                  Real Business Impact:
+                  {t('problem.impact')}
                 </h4>
                 <div className="space-y-3">
                   {problems?.[selectedProblem]?.consequences?.map((consequence, index) => (
@@ -145,10 +126,10 @@ const ProblemSection = () => {
                   <Icon name="CheckCircle" size={20} className="text-primary mt-1" />
                   <div>
                     <div className="font-semibold text-primary mb-1">
-                      We eliminate this risk completely
+                      {t('problem.solution.title')}
                     </div>
                     <div className="text-sm text-text-secondary">
-                      Our proven process and transparent approach ensures you never face these problems.
+                      {t('problem.solution.description')}
                     </div>
                   </div>
                 </div>
@@ -161,10 +142,10 @@ const ProblemSection = () => {
         <div className="text-center mt-16">
           <div className="bg-background border border-border rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-semibold text-text-primary mb-4">
-              Ready for a Different Experience?
+              {t('problem.cta.title')}
             </h3>
             <p className="text-text-secondary mb-6">
-              Join 500+ business owners who chose reliability over risk.
+              {t('problem.cta.subtitle')}
             </p>
             <button
               onClick={() => {
@@ -175,7 +156,7 @@ const ProblemSection = () => {
               }}
               className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
             >
-              <span>See Our Solution</span>
+              <span>{t('problem.cta.button')}</span>
               <Icon name="ArrowRight" size={18} />
             </button>
           </div>

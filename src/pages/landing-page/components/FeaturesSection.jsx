@@ -1,99 +1,77 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Icon from '../../../components/AppIcon';
 
 const FeaturesSection = () => {
+  const { t } = useTranslation();
   const [visibleFeatures, setVisibleFeatures] = useState([]);
 
   const features = [
     {
       id: 'speed',
-      title: 'Launch 3x Faster',
-      description: 'Our streamlined process and pre-built components accelerate development',
+      title: t('features.items.speed.title'),
+      description: t('features.items.speed.description'),
       icon: 'Zap',
-      metric: '3x',
-      metricLabel: 'Faster Delivery',
+      metric: t('features.items.speed.metric'),
+      metricLabel: t('features.items.speed.metricLabel'),
       color: 'text-yellow-600',
       bgColor: 'bg-yellow-100',
-      examples: [
-        'Landing page in 7 days vs 21 days',
-        'Mobile app in 8 weeks vs 24 weeks',
-        'Web application in 10 weeks vs 30 weeks'
-      ]
+      examples: t('features.items.speed.examples', { returnObjects: true })
     },
     {
       id: 'reliability',
-      title: 'Guaranteed Reliability',
-      description: 'Enterprise-grade infrastructure with 99.9% uptime guarantee',
+      title: t('features.items.reliability.title'),
+      description: t('features.items.reliability.description'),
       icon: 'Shield',
-      metric: '99.9%',
-      metricLabel: 'Uptime SLA',
+      metric: t('features.items.reliability.metric'),
+      metricLabel: t('features.items.reliability.metricLabel'),
       color: 'text-green-600',
       bgColor: 'bg-green-100',
-      examples: [
-        'Automated backups every 6 hours',
-        'Load balancing for high traffic',
-        'Security monitoring 24/7'
-      ]
+      examples: t('features.items.reliability.examples', { returnObjects: true })
     },
     {
       id: 'scalability',
-      title: 'Built to Scale',
-      description: 'Architecture designed to handle growth from day one',
+      title: t('features.items.scalability.title'),
+      description: t('features.items.scalability.description'),
       icon: 'TrendingUp',
-      metric: '10x',
-      metricLabel: 'Traffic Capacity',
+      metric: t('features.items.scalability.metric'),
+      metricLabel: t('features.items.scalability.metricLabel'),
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',
-      examples: [
-        'Cloud-native infrastructure',
-        'Auto-scaling capabilities',
-        'CDN for global performance'
-      ]
+      examples: t('features.items.scalability.examples', { returnObjects: true })
     },
     {
       id: 'support',
-      title: '24/7 Expert Support',
-      description: 'Dedicated support team available whenever you need assistance',
+      title: t('features.items.support.title'),
+      description: t('features.items.support.description'),
       icon: 'Headphones',
-      metric: '<2hr',
-      metricLabel: 'Response Time',
+      metric: t('features.items.support.metric'),
+      metricLabel: t('features.items.support.metricLabel'),
       color: 'text-purple-600',
       bgColor: 'bg-purple-100',
-      examples: [
-        'Live chat support',
-        'Emergency hotline',
-        'Dedicated account manager'
-      ]
+      examples: t('features.items.support.examples', { returnObjects: true })
     },
     {
       id: 'security',
-      title: 'Bank-Level Security',
-      description: 'Advanced security measures protect your data and users',
+      title: t('features.items.security.title'),
+      description: t('features.items.security.description'),
       icon: 'Lock',
-      metric: '256-bit',
-      metricLabel: 'SSL Encryption',
+      metric: t('features.items.security.metric'),
+      metricLabel: t('features.items.security.metricLabel'),
       color: 'text-red-600',
       bgColor: 'bg-red-100',
-      examples: [
-        'GDPR compliance',
-        'Regular security audits',
-        'Penetration testing'
-      ]
+      examples: t('features.items.security.examples', { returnObjects: true })
     },
     {
       id: 'performance',
-      title: 'Lightning Fast',
-      description: 'Optimized for speed with Core Web Vitals compliance',
+      title: t('features.items.performance.title'),
+      description: t('features.items.performance.description'),
       icon: 'Gauge',
-      metric: '<2s',
-      metricLabel: 'Load Time',
+      metric: t('features.items.performance.metric'),
+      metricLabel: t('features.items.performance.metricLabel'),
       color: 'text-orange-600',
       bgColor: 'bg-orange-100',
-      examples: [
-        'Image optimization',
-        'Code splitting',
-        'Browser caching'
-      ]
+      examples: t('features.items.performance.examples', { returnObjects: true })
     }
   ];
 
@@ -122,10 +100,10 @@ const FeaturesSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            Why Choose <span className="text-primary">QK Dev?</span>
+            {t('features.title')} <span className="text-primary">{t('features.titleHighlight')}</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            We don't just build software - we deliver competitive advantages that drive real business results.
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -186,41 +164,25 @@ const FeaturesSection = () => {
         <div className="mt-20 bg-muted/50 rounded-2xl p-8 lg:p-12">
           <div className="text-center mb-8">
             <h3 className="text-2xl lg:text-3xl font-semibold text-text-primary mb-4">
-              Real Results from Real Clients
+              {t('features.successStories.title')}
             </h3>
             <p className="text-text-secondary">
-              See how our technical strengths translate to business success
+              {t('features.successStories.subtitle')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-background rounded-xl p-6 border border-border">
-                <div className="text-3xl font-heading text-primary mb-2">150%</div>
-                <div className="text-sm text-text-secondary mb-2">Traffic Increase</div>
-                <div className="text-xs text-text-secondary">
-                  "Our new website loads 3x faster and converts much better"
+            {t('features.successStories.stats', { returnObjects: true })?.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="bg-background rounded-xl p-6 border border-border">
+                  <div className={`text-3xl font-heading ${stat.color} mb-2`}>{stat.value}</div>
+                  <div className="text-sm text-text-secondary mb-2">{stat.label}</div>
+                  <div className="text-xs text-text-secondary">
+                    "{stat.quote}"
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-background rounded-xl p-6 border border-border">
-                <div className="text-3xl font-heading text-success mb-2">$2.5M</div>
-                <div className="text-sm text-text-secondary mb-2">Revenue Generated</div>
-                <div className="text-xs text-text-secondary">
-                  "The mobile app helped us reach new markets globally"
-                </div>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-background rounded-xl p-6 border border-border">
-                <div className="text-3xl font-heading text-accent mb-2">90%</div>
-                <div className="text-sm text-text-secondary mb-2">Time Saved</div>
-                <div className="text-xs text-text-secondary">
-                  "Automation features eliminated manual processes"
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

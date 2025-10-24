@@ -1,83 +1,17 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
   const [hoveredStat, setHoveredStat] = useState(null);
 
-  const stats = [
-    {
-      number: '500+',
-      label: 'Projects Delivered',
-      description: 'Successfully completed projects across various industries',
-      icon: 'CheckCircle'
-    },
-    {
-      number: '98%',
-      label: 'On-Time Delivery',
-      description: 'Consistent delivery within agreed timelines',
-      icon: 'Clock'
-    },
-    {
-      number: '100%',
-      label: 'Client Satisfaction',
-      description: 'Every project backed by our satisfaction guarantee',
-      icon: 'Heart'
-    },
-    {
-      number: '5+',
-      label: 'Years Experience',
-      description: 'Proven track record in web and mobile development',
-      icon: 'Award'
-    }
-  ];
+  const stats = t('about.trackRecord.stats', { returnObjects: true });
 
-  const teamMembers = [
-    {
-      name: 'Alex Johnson',
-      role: 'Lead Developer',
-      expertise: 'Full-Stack Development',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face',
-      description: '10+ years building scalable web applications and mobile apps'
-    },
-    {
-      name: 'Sarah Chen',
-      role: 'UI/UX Designer',
-      expertise: 'Design & User Experience',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face',
-      description: 'Creating beautiful, user-friendly interfaces that convert'
-    },
-    {
-      name: 'Mike Rodriguez',
-      role: 'Project Manager',
-      expertise: 'Project Coordination',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face',
-      description: 'Ensuring smooth project delivery and clear communication'
-    }
-  ];
+  const teamMembers = t('about.team.members', { returnObjects: true });
 
-  const values = [
-    {
-      icon: 'Shield',
-      title: 'Quality First',
-      description: 'We never compromise on quality. Every line of code is written with care and attention to detail.'
-    },
-    {
-      icon: 'Clock',
-      title: 'On-Time Delivery',
-      description: 'We respect your timeline and deliver projects when promised, every single time.'
-    },
-    {
-      icon: 'MessageCircle',
-      title: 'Transparent Communication',
-      description: 'You\'ll always know exactly where your project stands with regular updates and clear communication.'
-    },
-    {
-      icon: 'Users',
-      title: 'Client-Focused',
-      description: 'Your success is our success. We\'re invested in helping your business grow and thrive.'
-    }
-  ];
+  const values = t('about.values.items', { returnObjects: true });
 
   return (
     <section id="about" className="py-20 lg:py-32 bg-background">
@@ -85,11 +19,10 @@ const AboutSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-5xl font-heading text-text-primary mb-6">
-            About <span className="text-primary">QK Dev</span>
+            {t('about.title')} <span className="text-primary">{t('about.titleHighlight')}</span>
           </h2>
           <p className="text-lg lg:text-xl text-text-secondary leading-relaxed">
-            We're a team of passionate developers and designers who transform your ideas into powerful digital solutions. 
-            Our mission is to help businesses succeed through exceptional web and mobile development.
+            {t('about.subtitle')}
           </p>
         </div>
 
@@ -97,91 +30,33 @@ const AboutSection = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-2xl lg:text-3xl font-semibold text-text-primary mb-6">
-              What We Do
+              {t('about.whatWeDo.title')}
             </h3>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              We specialize in three core services that help businesses establish and grow their digital presence
+              {t('about.whatWeDo.subtitle')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Landing Pages */}
-            <div className="bg-background border border-border rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                <Icon name="FileText" size={32} className="text-primary" />
-              </div>
-              <h4 className="text-xl font-semibold text-text-primary mb-4">Landing Pages</h4>
-              <p className="text-text-secondary mb-6">
-                High-converting landing pages that turn visitors into customers. Perfect for marketing campaigns, 
-                product launches, and lead generation.
-              </p>
-              <div className="space-y-2">
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">Mobile responsive design</span>
+            {t('about.whatWeDo.services', { returnObjects: true })?.map((service, index) => (
+              <div key={index} className="bg-background border border-border rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                  <Icon name={service.icon} size={32} className="text-primary" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">SEO optimized</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">Fast loading times</span>
+                <h4 className="text-xl font-semibold text-text-primary mb-4">{service.title}</h4>
+                <p className="text-text-secondary mb-6">
+                  {service.description}
+                </p>
+                <div className="space-y-2">
+                  {service.features?.map((feature, featureIndex) => (
+                    <div key={featureIndex} className="flex items-center space-x-2">
+                      <Icon name="Check" size={16} className="text-success" />
+                      <span className="text-sm text-text-secondary">{feature}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
-
-            {/* Web Applications */}
-            <div className="bg-background border border-border rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                <Icon name="Globe" size={32} className="text-primary" />
-              </div>
-              <h4 className="text-xl font-semibold text-text-primary mb-4">Web Applications</h4>
-              <p className="text-text-secondary mb-6">
-                Custom web applications that solve complex business problems. From simple dashboards to 
-                enterprise-level platforms.
-              </p>
-              <div className="space-y-2">
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">Custom functionality</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">User authentication</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">Database integration</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Mobile Apps */}
-            <div className="bg-background border border-border rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                <Icon name="Smartphone" size={32} className="text-primary" />
-              </div>
-              <h4 className="text-xl font-semibold text-text-primary mb-4">Mobile Apps</h4>
-              <p className="text-text-secondary mb-6">
-                Native and cross-platform mobile applications for iOS and Android. 
-                Reach your customers wherever they are.
-              </p>
-              <div className="space-y-2">
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">iOS & Android</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">App store optimization</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" size={16} className="text-success" />
-                  <span className="text-sm text-text-secondary">Push notifications</span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -189,10 +64,10 @@ const AboutSection = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-2xl lg:text-3xl font-semibold text-text-primary mb-6">
-              Our Track Record
+              {t('about.trackRecord.title')}
             </h3>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Numbers that speak to our commitment to excellence and client success
+              {t('about.trackRecord.subtitle')}
             </p>
           </div>
 
@@ -264,10 +139,10 @@ const AboutSection = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl lg:text-3xl font-semibold text-text-primary mb-6">
-              Our Values
+              {t('about.values.title')}
             </h3>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              The principles that guide everything we do
+              {t('about.values.subtitle')}
             </p>
           </div>
 
@@ -292,10 +167,10 @@ const AboutSection = () => {
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white">
             <h3 className="text-2xl lg:text-3xl font-semibold mb-4">
-              Ready to Work With Us?
+              {t('about.cta.title')}
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Let's discuss your project and see how we can help bring your ideas to life.
+              {t('about.cta.subtitle')}
             </p>
             <Button
               variant="outline"
@@ -307,7 +182,7 @@ const AboutSection = () => {
                 }
               }}
             >
-              Start Your Project
+              {t('about.cta.button')}
             </Button>
           </div>
         </div>
